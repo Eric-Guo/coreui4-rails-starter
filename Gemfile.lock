@@ -125,9 +125,6 @@ GEM
     io-console (0.6.0)
     irb (1.6.2)
       reline (>= 0.3.0)
-    importmap-rails (1.1.5)
-      actionpack (>= 6.0.0)
-      railties (>= 6.0.0)
     json (2.6.3)
     language_server-protocol (3.17.0.2)
     loofah (2.19.1)
@@ -166,6 +163,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (3.0.4.1)
+    rack-proxy (0.7.6)
+      rack
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.0.2)
@@ -205,6 +204,12 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    semantic_range (3.0.0)
+    shakapacker (6.5.5)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -219,14 +224,8 @@ GEM
       language_server-protocol (~> 3.17.0.2)
       rubocop (= 1.42.0)
       rubocop-performance (= 1.15.2)
-    stimulus-rails (1.2.1)
-      railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.1)
-    turbo-rails (1.3.2)
-      actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
-      railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
@@ -256,15 +255,13 @@ PLATFORMS
 DEPENDENCIES
   capybara
   debug
-  importmap-rails
   puma (>= 5.0)
   rails!
   selenium-webdriver
+  shakapacker
   sprockets-rails
   sqlite3 (~> 1.4)
   standard
-  stimulus-rails
-  turbo-rails
   tzinfo-data
   web-console
   webdrivers
