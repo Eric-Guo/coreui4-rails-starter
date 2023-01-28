@@ -117,7 +117,6 @@ GEM
     debug (1.7.1)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
-    error_highlight (0.5.1)
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -257,7 +256,6 @@ PLATFORMS
 DEPENDENCIES
   capybara
   debug
-  error_highlight (>= 0.4.0)
   importmap-rails
   puma (>= 5.0)
   rails!
