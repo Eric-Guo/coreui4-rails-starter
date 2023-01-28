@@ -13,7 +13,7 @@ gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", ">= 5.0"
+gem "puma", "< 6"
 
 gem "shakapacker"
 
@@ -48,6 +48,11 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  gem "capistrano"
+  gem "capistrano-rails"
+  gem "capistrano-rbenv"
+  gem "capistrano3-puma"
 end
 
 group :test do
