@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.0"
+ruby "~> 3.2"
 
-# Use local checkout of Rails
-gem "rails", path: "/Users/guochunzhong/git/oss/rails"
+# bundle config local.rails /Users/guochunzhong/git/oss/rails
+gem "rails", git: "https://git.thape.com.cn/rails/rails.git", branch: "eric_read"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
