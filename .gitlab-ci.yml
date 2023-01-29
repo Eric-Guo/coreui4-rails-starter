@@ -10,6 +10,7 @@ before_script:
 
 stages:
   - test
+  - deploy
 
 test:
   stage: test
@@ -32,3 +33,21 @@ test:
     - bundle exec standardrb
     - bin/rails test
     - bin/rails test:system
+
+deploy_production:
+  cache:
+    - key:
+        files:
+          - Gemfile.lock
+      paths:
+        - vendor/ruby
+  stage: deploy
+  script:
+    - bundle install -j $(nproc)
+    - mkdir ~/.ssh
+    - mv "$SSH_ID_RSA" ~/.ssh/id_rsa
+    - mv "$SSH_CONFIG_FILE" ~/.ssh/config
+    - bundle exec cap production deploy
+  environment:
+    name: production
+    url: https://starter.redwoodjs.cn
