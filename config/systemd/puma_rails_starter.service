@@ -1,0 +1,23 @@
+[Unit]
+Description=Puma HTTP Server for rails_starter (production)
+After=network.target
+
+[Service]
+Type=simple
+User=starter
+WorkingDirectory=/var/www/rails_starter/current
+
+# Support older bundler versions where file descriptors weren't kept
+# See https://github.com/rubygems/rubygems/issues/3254
+ExecStart=/home/starter/.rbenv/bin/rbenv exec bundle exec --keep-file-descriptors puma -C /var/www/rails_starter/shared/puma.rb
+ExecReload=/bin/kill -USR1 $MAINPID
+StandardOutput=append:/var/www/rails_starter/shared/log/puma_access.log
+StandardError=append:/var/www/rails_starter/shared/log/puma_error.log
+
+Restart=always
+RestartSec=10
+
+SyslogIdentifier=puma
+
+[Install]
+WantedBy=multi-user.target
