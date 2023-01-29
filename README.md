@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Development notes
 
-Things you may want to cover:
+### When you want to debug the SCSS
 
-* Ruby version
+Set `webpacker.yml` hmr to true.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```yml
+hmr: true
+```
