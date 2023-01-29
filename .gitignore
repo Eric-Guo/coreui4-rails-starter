@@ -32,6 +32,7 @@
 /config/credentials.yml.enc
 
 rails-starter.sublime-workspace
+.DS_Store
 
 /public/packs
 /public/packs-test
