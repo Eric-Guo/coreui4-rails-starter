@@ -13,7 +13,8 @@ gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "< 6"
+gem "puma"
+gem "sd_notify"
 
 gem "shakapacker"
 
@@ -52,7 +53,10 @@ group :development do
   gem "capistrano"
   gem "capistrano-rails"
   gem "capistrano-rbenv"
-  gem "capistrano3-puma"
+  gem "capistrano3-puma", ">= 6.0.0.beta.1"
+
+  gem "ed25519"
+  gem "bcrypt_pbkdf"
 end
 
 group :test do

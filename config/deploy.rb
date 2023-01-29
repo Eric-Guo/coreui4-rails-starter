@@ -26,7 +26,7 @@ set :branch, :main
 append :linked_files, *%w[puma.rb config/database.yml config/master.key config/credentials.yml.enc]
 
 # Default value for linked_dirs is []
-append :linked_dirs, *%w[log tmp/pids tmp/cache tmp/sockets public/system node_modules]
+append :linked_dirs, *%w[log tmp/pids tmp/cache tmp/sockets public/packs public/system node_modules]
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
