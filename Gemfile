@@ -6,8 +6,7 @@ ruby "~> 3.0"
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
 gem "rails", git: "https://git.thape.com.cn/rails/rails.git", branch: "eric_read"
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem "propshaft"
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
