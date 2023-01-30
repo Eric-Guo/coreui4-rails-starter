@@ -1,1 +1,67 @@
+// Configuration
+@import "@coreui/coreui/scss/functions";
+
+@import "stylesheets/theme-colors";
+
+@import "@coreui/coreui/scss/variables";
+@import "@coreui/coreui/scss/maps";
+@import "@coreui/coreui/scss/mixins";
+
+// If you want to override variables do it here
+@import "stylesheets/variables";
+
+@import "@coreui/coreui/scss/utilities";
+
+// Layout & components
+@import "@coreui/coreui/scss/root";
+@import "@coreui/coreui/scss/reboot";
+@import "@coreui/coreui/scss/type";
+@import "@coreui/coreui/scss/images";
+@import "@coreui/coreui/scss/containers";
+@import "@coreui/coreui/scss/grid";
+@import "@coreui/coreui/scss/tables";
+@import "@coreui/coreui/scss/forms";
+@import "@coreui/coreui/scss/buttons";
+// @import "@coreui/coreui-pro/scss/loading-button";
+@import "@coreui/coreui/scss/transitions";
+@import "@coreui/coreui/scss/dropdown";
+@import "@coreui/coreui/scss/button-group";
+@import "@coreui/coreui/scss/nav";
+@import "@coreui/coreui/scss/navbar";
+@import "@coreui/coreui/scss/card";
+@import "@coreui/coreui/scss/accordion";
+@import "@coreui/coreui/scss/breadcrumb";
+@import "@coreui/coreui/scss/pagination";
+@import "@coreui/coreui/scss/badge";
+@import "@coreui/coreui/scss/alert";
+@import "@coreui/coreui/scss/progress";
+@import "@coreui/coreui/scss/list-group";
+@import "@coreui/coreui/scss/close";
+@import "@coreui/coreui/scss/toasts";
+@import "@coreui/coreui/scss/modal";
+@import "@coreui/coreui/scss/tooltip";
+@import "@coreui/coreui/scss/popover";
+@import "@coreui/coreui/scss/carousel";
+@import "@coreui/coreui/scss/spinners";
+@import "@coreui/coreui/scss/offcanvas";
+@import "@coreui/coreui/scss/placeholders";
+
+@import "@coreui/coreui/scss/avatar";
+@import "@coreui/coreui/scss/callout";
+@import "@coreui/coreui/scss/footer";
+@import "@coreui/coreui/scss/header";
+@import "@coreui/coreui/scss/icon";
+@import "@coreui/coreui/scss/sidebar";
+@import "@coreui/coreui/scss/subheader";
+
+// Helpers
+@import "@coreui/coreui/scss/helpers";
+
+// Utilities
+@import "@coreui/coreui/scss/utilities/api";
+// @import "@coreui/coreui-pro/scss/utilities/bg-gradients";
+
+@import "stylesheets/layout";
+
+// If you want to add custom CSS you can put it here.
 @import "stylesheets/custom";

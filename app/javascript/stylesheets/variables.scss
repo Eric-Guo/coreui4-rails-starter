@@ -1,0 +1,40 @@
+// stylelint-disable scss/dollar-variable-default
+$enable-elevations: false;
+$enable-ltr: true;
+$enable-rtl: true;
+
+$font-size-base: .9375rem;
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+$border-color-translucent:  rgba($black, .0875);
+
+$breadcrumb-divider-color:  $text-disabled;
+$breadcrumb-active-color:   $text-disabled;
+
+$card-border-width: 0;
+$card-cap-bg: transparent;
+$card-cap-padding-y: .75rem;
+
+$dropdown-padding-y:         .75rem;
+$dropdown-item-padding-y:    $spacer * .5;
+$dropdown-item-padding-x:    $spacer;
+$dropdown-header-padding-x:  $dropdown-item-padding-x;
+$dropdown-header-padding-y:  $dropdown-padding-y;
+$dropdown-link-hover-bg:     $gray-100;
+
+$footer-bg:  $white;
+
+$header-color:               $disabled;
+$header-hover-color:         $medium-emphasis;
+$header-active-color:        $medium-emphasis;
+
+$sidebar-brand-bg:             rgba($black, .15);
+$sidebar-nav-link-padding-y:   .75rem;
+$sidebar-nav-link-padding-x:   1.5rem;
+$sidebar-nav-link-hover-bg:    rgba($black, .05);
+$sidebar-nav-link-active-bg:   rgba($black, .05);
+$sidebar-nav-link-icon-color:  $disabled-inverse;
+
+$table-cell-padding-y:  .75rem;
+$table-cell-padding-x:  .75rem;

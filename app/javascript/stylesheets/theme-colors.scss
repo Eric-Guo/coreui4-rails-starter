@@ -1,0 +1,46 @@
+// stylelint-disable scss/dollar-variable-default
+$white:     #fff;
+$gray-base: #3c4b64;
+$gray-100:  #f0f4f7;
+$gray-200:  #ebedef;
+$gray-300:  #d8dbe0;
+$gray-400:  #c4c9d0;
+$gray-500:  #b1b7c1;
+$gray-600:  #9da5b1;
+$gray-700:  #8a93a2;
+$gray-800:  #768192;
+$gray-900:  #636f83;
+$black:     #000015;
+
+$primary:   #39f;
+$secondary: #ebedef;
+$success:   #51cc8a;
+$danger:    #ef376e;
+$warning:   #fc0;
+$info:      #747af2;
+$light:     $gray-100;
+
+$primary-gradient: (
+  "start":  tint-color($primary, 30%),
+  "stop":   shade-color($primary, 10%)
+) !default;
+
+$danger-gradient: (
+  "start":  tint-color($danger, 30%),
+  "stop":   shade-color($danger, 10%)
+) !default;
+
+$warning-gradient: (
+  "start":  tint-color($warning, 30%),
+  "stop":   shade-color($warning, 10%)
+) !default;
+
+$success-gradient: (
+  "start":  tint-color($success, 30%),
+  "stop":   shade-color($success, 10%)
+) !default;
+
+$info-gradient: (
+  "start":  tint-color($info, 30%),
+  "stop":   shade-color($info, 10%)
+) !default;

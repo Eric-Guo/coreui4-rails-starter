@@ -13,5 +13,4 @@
 //
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
-const onlyP = document.getElementById('only_p');
-onlyP.style.color = 'blue';
+import "@coreui/coreui";
