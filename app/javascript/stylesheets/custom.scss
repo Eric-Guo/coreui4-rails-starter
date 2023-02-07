@@ -1,1 +1,55 @@
 // Here you can add other styles
+.card,
+.dropdown-menu,
+.footer,
+.header,
+.sidebar {
+  box-shadow: rgb(50 50 93 / 2%) 0 2px 5px -1px, rgb(0 0 0 / 5%) 0 1px 3px -1px;
+}
+
+.sidebar-overlaid {
+  box-shadow: rgb(50 50 93 / 2%) 0 2px 5px -1px, rgb(0 0 0 / 5%) 0 1px 3px -1px, 0 5px 6px -3px rgb(0 0 0 / 25%);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--cui-card-border-color);
+}
+
+.footer,
+.header {
+  border: 0;
+}
+
+.sidebar-brand {
+  justify-content: space-between;
+  padding: 0 $sidebar-nav-link-padding-x * .5;
+}
+
+.sidebar-toggler {
+  flex: 0 0 2rem;
+  background-color: transparent;
+
+  &::before {
+    width: 2rem;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.sidebar-narrow-unfoldable:not(:hover) {
+  .sidebar-brand {
+    justify-content: center;
+    padding: 0;
+  }
+  .sidebar-toggler {
+    display: none;
+  }
+}
+
+.simplebar-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}

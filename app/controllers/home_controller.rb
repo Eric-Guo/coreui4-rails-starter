@@ -6,5 +6,6 @@ class HomeController < ApplicationController
 
   def set_page_layout_data
     @_wrapper_class = %w[bg-light min-vh-100 d-flex flex-row align-items-center dark:bg-transparent]
+    @_sidebar_name = nil
   end
 end
