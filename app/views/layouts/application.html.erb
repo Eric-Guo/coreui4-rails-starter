@@ -9,6 +9,8 @@
     <%= javascript_pack_tag "application" %>
   </head>
   <body>
-    <%= yield %>
+    <div class="<%= @_wrapper_class.join(" ") -%>">
+      <%= yield %>
+    </div>
   </body>
 </html>
