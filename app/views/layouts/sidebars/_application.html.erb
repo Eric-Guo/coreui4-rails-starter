@@ -23,7 +23,9 @@
         Account
       </a>
       <ul class="nav-group-items" data-expender-target='htc'>
-        <%= render partial: 'ui/nav_group_items/account', locals: {} %>
+        <% if controller_name == 'profiles' %>
+          <%= render partial: 'ui/nav_group_items/account', locals: {} %>
+        <% end %>
       </ul>
     </li>
   </ul>
