@@ -30,15 +30,17 @@
             <% end %>
           </div>
         </div>
+      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
         <div class="card col-md-5 text-white bg-primary py-5">
           <div class="card-body text-center">
             <div>
               <h2>Sign up</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="btn btn-lg btn-outline-light mt-3" type='button'>Register Now!</button>
+              <%= link_to "Register Now!", new_registration_path(resource_name), class: "btn btn-lg btn-outline-light mt-3" %>
             </div>
           </div>
         </div>
+      <% end %>
       </div>
     </div>
   </div>
