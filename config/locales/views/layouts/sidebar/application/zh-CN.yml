@@ -1,0 +1,7 @@
+---
+zh-CN:
+  layouts:
+    sidebar:
+      application:
+        header: "首页"
+        account: "账号"

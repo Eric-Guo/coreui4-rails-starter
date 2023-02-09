@@ -1,0 +1,27 @@
+<div class="fs-2 fw-semibold">
+  <%= breadcrumbs.last[:text] %>
+</div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb mb-4">
+    <% breadcrumbs[0..-2].each do |item| %>
+      <li class="breadcrumb-item">
+        <% if item[:link].nil? %>
+          <span>
+            <%= item[:text] %>
+          </span>
+        <% else %>
+          <a href="<%= item[:link] %>">
+            <%= item[:text] %>
+          </a>
+        <% end %>
+      </li>
+    <% end %>
+    <% if breadcrumbs.last %>
+      <li class="breadcrumb-item active">
+        <span>
+          <%= breadcrumbs.last[:text] %>
+        </span>
+      </li>
+    <% end %>
+  </ol>
+</nav>
