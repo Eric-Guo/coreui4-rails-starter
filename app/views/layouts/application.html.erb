@@ -14,8 +14,10 @@
       <% if @_sidebar_name.nil? %>
         <%= yield %>
       <% else %>
+        <%= render partial: 'layouts/header', locals: {} %>
         <div class="body flex-grow-1 px-3">
           <div class="container-lg">
+            <%= render partial: "layouts/breadcrumb", locals: { breadcrumbs: @_breadcrumbs } if @_breadcrumbs.present? %>
             <%= yield %>
           </div>
         </div>
