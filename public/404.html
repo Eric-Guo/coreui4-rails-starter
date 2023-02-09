@@ -1,67 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
-
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
-
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
-
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-  </style>
-</head>
-
-<body class="rails-default-error-page">
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+  <head>
+    <title>CoreuiProRailsStarter</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/packs/css/application-b4229230.css" />
+    <script src="/packs/js/runtime-8502770123940fbdde9b.js" defer="defer"></script>
+    <script src="/packs/js/756-9f6befca64f1d68e8d97.js" defer="defer"></script>
+    <script src="/packs/js/application-e07d8cb496b5513c6584.js" defer="defer"></script>
+  </head>
+  <body>
+    <div class="bg-light min-vh-100 d-flex flex-row align-items-center dark:bg-transparent">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="clearfix">
+              <h1 class="float-start display-3 me-4">404</h1>
+              <h4 class="pt-3">Oops! You're lost.</h4>
+              <p class="text-medium-emphasis">The page you are looking for was not found.</p>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">
+                <svg class="icon"><use xlink:href="/assets/free-50900d12c02d9674adac41a63e04c3b15357b781.svg#cil-magnifying-glass"></use></svg>
+              </span>
+              <input class="form-control" id="prependedInput" size='16' type='text' placeholder='What are you looking for?'>
+              </input>
+              <button class="btn btn-info" type='button'>Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
-</body>
+  </body>
 </html>
