@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  include SidebarHelper
   before_action :authenticate_user!
   before_action :set_page_layout_data, if: -> { request.format.html? }
 

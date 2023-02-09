@@ -9,7 +9,7 @@
     <%= javascript_pack_tag "application" %>
   </head>
   <body>
-    <%= render_sidebar %>
+    <%= render "layouts/sidebars/#{@_sidebar_name}" unless @_sidebar_name.nil? %>
     <div class="<%= @_wrapper_class.join(" ") -%>">
       <%= yield %>
     </div>
