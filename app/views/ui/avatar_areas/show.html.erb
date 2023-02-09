@@ -6,7 +6,7 @@
   Profile
 <% end %>
 <div class="dropdown-divider"></div>
-<%= link_to destroy_user_session_path, class: "dropdown-item" do %>
+<%= button_to destroy_user_session_path, method: :delete, class: "dropdown-item" do %>
   <%= svg_icon('free.svg#cil-account-logout', %w[icon me-2]) %>
   Logout
 <% end %>
