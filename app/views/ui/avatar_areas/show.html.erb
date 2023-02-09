@@ -1,0 +1,12 @@
+<div class="dark:bg-white dark:bg-opacity-10 dropdown-header bg-light py-2">
+  <div class="fw-semibold">Account</div>
+</div>
+<%= link_to account_profile_path, class: "dropdown-item" do %>
+  <%= svg_icon('free.svg#cil-user', %w[icon me-2]) %>
+  Profile
+<% end %>
+<div class="dropdown-divider"></div>
+<%= link_to destroy_user_session_path, class: "dropdown-item" do %>
+  <%= svg_icon('free.svg#cil-account-logout', %w[icon me-2]) %>
+  Logout
+<% end %>
