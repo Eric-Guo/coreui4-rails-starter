@@ -1,0 +1,12 @@
+---
+en:
+  accounts:
+    profiles:
+      show:
+        title: "Edit Profile"
+        submit: "Submit"
+        updated: "Profile update successfully"
+        section:
+          email:
+            title: "Whether to enable the new UI"
+            description: "Choose whether to use the UI new user interface"
