@@ -13,7 +13,9 @@
 //
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
-import "@coreui/coreui";
+global.coreui = require("@coreui/coreui")
+import "simplebar";
+
 import { Application } from "@hotwired/stimulus"
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
 
