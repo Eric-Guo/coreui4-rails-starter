@@ -1,0 +1,23 @@
+<header class="header header-sticky mb-4">
+  <div class="container-fluid">
+    <button class="header-toggler px-md-0 me-md-3 d-md-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+      <%= svg_icon('free.svg#cil-menu', %w[icon icon-lg]) %>
+    </button>
+    <a class="header-brand d-md-none">
+      <svg width="118" height="46" alt="CoreUI Logo">
+        <use xlink:href="<%= asset_path('coreui.svg#full') -%>"></use>
+      </svg>
+    </a>
+    <ul class="header-nav ms-auto">
+      <li class="nav-item dropdown d-flex align-items-center" data-controller="expender" data-expender-loaded-value="<%= false %>" data-expender-url-value="<%= ui_avatar_area_path %>">
+        <a class="nav-link py-0" data-action="expender#click" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <div class="avatar avatar-md">
+            <img alt="user@email.com" class="avatar-img" src="<%= asset_path('default_avatar.jpg') %>"/>
+            <span class="avatar-status bg-success"></span>
+          </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end pt-0" data-expender-target="htc"></div>
+      </li>
+    </ul>
+  </div>
+</header>

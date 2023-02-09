@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   }
 
   namespace :ui do
+    resource :avatar_area, only: %i[show]
     resources :nav_group_items, only: %i[] do
       collection do
         get :account
