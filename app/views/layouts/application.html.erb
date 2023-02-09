@@ -11,7 +11,16 @@
   <body>
     <%= render "layouts/sidebars/#{@_sidebar_name}" unless @_sidebar_name.nil? %>
     <div class="<%= @_wrapper_class.join(" ") -%>">
-      <%= yield %>
+      <% if @_sidebar_name.nil? %>
+        <%= yield %>
+      <% else %>
+        <div class="body flex-grow-1 px-3">
+          <div class="container-lg">
+            <%= yield %>
+          </div>
+        </div>
+        <%= footer %>
+      <% end %>
     </div>
   </body>
 </html>
