@@ -1,8 +1,10 @@
 class Users::PasswordsController < Devise::PasswordsController
+  before_action :set_page_layout_data, if: -> { request.format.html? }
+
   # GET /resource/password/new
-  # def new
-  #   super
-  # end
+  def new
+    super
+  end
 
   # POST /resource/password
   # def create
@@ -20,6 +22,13 @@ class Users::PasswordsController < Devise::PasswordsController
   # end
 
   # protected
+
+  protected
+
+  def set_page_layout_data
+    @_wrapper_class = %w[bg-light min-vh-100 d-flex flex-row align-items-center dark:bg-transparent]
+    @_sidebar_name = nil
+  end
 
   # def after_resetting_password_path_for(resource)
   #   super(resource)
