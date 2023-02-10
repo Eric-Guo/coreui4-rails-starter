@@ -1,0 +1,14 @@
+---
+zh-CN:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "电子邮件为空"
+            password:
+              blank: "密码为空"
+              too_short: "太短"
+    models:
+      user: "用户"

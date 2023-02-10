@@ -1,0 +1,14 @@
+---
+en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "Email is blank"
+            password:
+              blank: "Password is blank"
+              too_short: "too short"
+    models:
+      user: "User"
