@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Accounts
   class ProfilesController < ApplicationController
     before_action :set_breadcrumbs, if: -> { request.format.html? }
