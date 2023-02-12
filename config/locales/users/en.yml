@@ -1,0 +1,6 @@
+---
+en:
+  users:
+    registrations:
+      edit:
+        title: "Edit user registrations"

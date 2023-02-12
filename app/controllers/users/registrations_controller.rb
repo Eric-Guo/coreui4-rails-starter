@@ -1,6 +1,8 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   before_action :set_new_page_layout_data, only: %i[new]
   before_action :set_edit_page_layout_data, only: %i[edit]
+  before_action :set_breadcrumbs, only: %i[edit]
+
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
@@ -16,6 +18,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/edit
   def edit
+    add_to_breadcrumbs t(".title")
     super
   end
 
@@ -48,6 +51,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def set_edit_page_layout_data
     @_wrapper_class = %w[wrapper d-flex flex-column min-vh-100 bg-light]
     @_sidebar_name = "application"
+  end
+
+  def set_breadcrumbs
+    @_breadcrumbs = [
+      {text: t("layouts.sidebar.application.header"),
+       link: root_path},
+      {text: t("layouts.sidebar.application.account"),
+       link: nil}
+    ]
   end
 
   # If you have extra params to permit, append them to the sanitizer.
