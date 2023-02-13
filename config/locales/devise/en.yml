@@ -1,0 +1,18 @@
+---
+en:
+  devise:
+    registrations:
+      edit:
+        section:
+          email:
+            title: "Change email"
+            description: ""
+          password:
+            title: "Change password"
+            description: "Leave blank if you don't want to change it"
+          password_confirmation:
+            title: "Change password confirmation"
+            description: "Retype the password for make sure not typo it."
+          current_password:
+            title: "Current password"
+            description: "we need your current password to confirm your changes"

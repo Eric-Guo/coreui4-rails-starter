@@ -1,0 +1,18 @@
+---
+zh-CN:
+  devise:
+    registrations:
+      edit:
+        section:
+          email:
+            title: "更改email"
+            description: ""
+          password:
+            title: "更改密码"
+            description: "如果您不想更改，请留空"
+          password_confirmation:
+            title: "更改密码的确认"
+            description: "重新输入密码以确保没有输入错误。"
+          current_password:
+            title: "当前密码"
+            description: "我们需要您当前的密码来确认您的更改"
