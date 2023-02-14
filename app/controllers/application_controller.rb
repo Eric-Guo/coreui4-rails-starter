@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
-  before_action :set_page_layout_data, if: -> { request.format.html? }
+  before_action :set_page_layout_data, if: -> { request.get? && request.format.html? }
+  before_action :prepare_meta_tags, if: -> { request.get? && request.format.html? }
 
   protected
 
@@ -15,5 +16,11 @@ class ApplicationController < ActionController::Base
       text: text,
       link: link
     )
+  end
+
+  private
+
+  def prepare_meta_tags
+    set_meta_tags title: t(".title")
   end
 end
