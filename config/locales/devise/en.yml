@@ -16,3 +16,6 @@ en:
           current_password:
             title: "Current password"
             description: "we need your current password to confirm your changes"
+    sessions:
+      new:
+        sign_in_title: "Sign In to your account"

@@ -7,13 +7,13 @@
         <p class="text-medium-emphasis">Input your email to reset password</p>
       </div>
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-      <div class="input-group">
-        <span class="input-group-text">
-          <%= svg_icon('free.svg#cil-envelope-open', %w[icon]) %>
-        </span>
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'joe@hotmail.com', class: "form-control", size: 16 %>
-        <%= f.submit "Send me reset password instructions", class: "btn btn-primary" %>
-      </div>
+        <div class="input-group">
+          <span class="input-group-text">
+            <%= svg_icon('free.svg#cil-envelope-open', %w[icon]) %>
+          </span>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'joe@hotmail.com', class: "form-control", size: 16 %>
+          <%= f.submit "Send me reset password instructions", class: "btn btn-primary" %>
+        </div>
       <% end %>
     </div>
   </div>

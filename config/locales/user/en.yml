@@ -13,7 +13,7 @@ en:
     sign_in: "Sign in"
     sign_up: "Sign up"
     stay_signed_in: "Stay Signed in"
-    forgot_password: "Forgot Password ?"
+    forgot_password: "Forgot Password?"
     back_to_login: "Back to Login"
     characters_minimum: "characters minimum"
     leave_blank_hint: "leave blank if you don't want to change it"

@@ -13,7 +13,7 @@ zh-CN:
     sign_in: "登录"
     sign_up: "注册"
     stay_signed_in: "保持登录"
-    forgot_password: "忘记密码 ？"
+    forgot_password: "忘记密码 ?"
     back_to_login: "回到登入"
     characters_minimum: "字符以上"
     leave_blank_hint: "如果您不想更改它，请留空"

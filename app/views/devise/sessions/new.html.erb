@@ -5,7 +5,7 @@
         <div class="card col-md-7 p-4 mb-0">
           <div class="card-body">
             <h1>Login</h1>
-            <p class="text-medium-emphasis">Sign In to your account</p>
+            <p class="text-medium-emphasis"><%= t('.sign_in_title') %></p>
             <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
               <div class="input-group mb-3">
                 <span class="input-group-text">
@@ -21,10 +21,10 @@
               </div>
               <div class="row">
                 <div class="col-6">
-                  <%= f.submit "Login", class: "btn btn-primary px-4" %>
+                  <%= f.submit t('user.sign_in'), class: "btn btn-primary px-4" -%>
                 </div>
                 <div class="col-6 text-end">
-                  <button class="btn btn-link px-0" type='button'>Forgot password?</button>
+                  <%= link_to t('user.forgot_password'), new_user_password_path, class: "btn btn-link px-0" -%>
                 </div>
               </div>
             <% end %>
