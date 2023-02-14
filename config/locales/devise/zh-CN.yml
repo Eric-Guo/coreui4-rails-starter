@@ -2,6 +2,12 @@
 zh-CN:
   devise:
     registrations:
+      new:
+        register: "注册"
+        register_description: "创建您的帐户"
+        password_placeholder: "输入密码"
+        repeat_password_placeholder: "重复输入密码"
+        create: "创建账户"
       edit:
         section:
           email:

@@ -3,8 +3,8 @@
     <div class="col-md-6">
       <div class="card mb-4 mx-4">
         <div class="card-body p-4">
-          <h1>Register</h1>
-          <p class="text-medium-emphasis">Create your account</p>
+          <h1><%= t(".register") -%></h1>
+          <p class="text-medium-emphasis"><%= t(".register_description") -%></p>
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <div class="input-group mb-3">
               <span class="input-group-text">
@@ -16,15 +16,15 @@
               <span class="input-group-text">
                 <%= svg_icon('free.svg#cil-lock-locked', %w[icon]) %>
               </span>
-              <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password', class: "form-control" %>
+              <%= f.password_field :password, autocomplete: "new-password", placeholder: t(".password_placeholder"), class: "form-control" %>
             </div>
             <div class="input-group mb-4">
               <span class="input-group-text">
                 <%= svg_icon('free.svg#cil-lock-locked', %w[icon]) %>
               </span>
-              <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Repeat password', class: "form-control" %>
+              <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: t('.repeat_password_placeholder'), class: "form-control" %>
             </div>
-            <%= f.submit "Create Account", class: "btn btn-block btn-success" %>
+            <%= f.submit t(".create"), class: "btn btn-block btn-success" %>
           <% end %>
         </div>
       </div>

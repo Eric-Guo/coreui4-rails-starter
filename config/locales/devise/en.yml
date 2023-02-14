@@ -2,6 +2,12 @@
 en:
   devise:
     registrations:
+      new:
+        register: "Register"
+        register_description: "Create your account"
+        password_placeholder: "Password"
+        repeat_password_placeholder: "Repeat password"
+        create: "Create Account"
       edit:
         section:
           email:
