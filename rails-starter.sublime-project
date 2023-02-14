@@ -7,6 +7,10 @@
                                   "node_modules", "public/packs", "public/packs-test"],
       "file_exclude_patterns": ["*.sublime-workspace",".DS_Store","config/master.key",
                                 "config/credentials.yml.enc"]
+    },
+    {
+      "path": "./node_modules/@coreui/coreui",
+      "folder_exclude_patterns": ["dist"]
     }
 	],
   "settings":
