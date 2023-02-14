@@ -3,7 +3,7 @@ zh-CN:
   devise:
     registrations:
       new:
-        register: "注册"
+        title: "注册用户"
         register_description: "创建您的帐户"
         password_placeholder: "输入密码"
         repeat_password_placeholder: "重复输入密码"
@@ -24,7 +24,7 @@ zh-CN:
             description: "我们需要您当前的密码来确认您的更改"
     sessions:
       new:
-        sign_in_title: "登录到您的帐户"
+        title: "登录到您的帐户"
     passwords:
       new:
         forgot_title: "忘记密码 ?"

@@ -1,11 +1,12 @@
 class Users::SessionsController < Devise::SessionsController
-  before_action :set_page_layout_data, if: -> { request.format.html? }
+  before_action :set_page_layout_data, only: :new
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
-  # def new
-  #   super
-  # end
+  def new
+    set_meta_tags title: t("devise.sessions.new.title")
+    super
+  end
 
   # POST /resource/sign_in
   # def create

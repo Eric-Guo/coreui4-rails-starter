@@ -3,7 +3,7 @@ en:
   devise:
     registrations:
       new:
-        register: "Register"
+        title: "Register"
         register_description: "Create your account"
         password_placeholder: "Password"
         repeat_password_placeholder: "Repeat password"
@@ -24,7 +24,7 @@ en:
             description: "we need your current password to confirm your changes"
     sessions:
       new:
-        sign_in_title: "Sign In to your account"
+        title: "Sign In to your account"
     passwords:
       new:
         forgot_title: "Forgot ?"

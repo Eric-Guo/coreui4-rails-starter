@@ -8,6 +8,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/sign_up
   def new
+    set_meta_tags title: t("devise.registrations.new.title")
     super
   end
 
