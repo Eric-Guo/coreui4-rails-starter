@@ -27,8 +27,10 @@ en:
         title: "Sign In to your account"
     passwords:
       new:
-        forgot_title: "Forgot ?"
+        title: "Forgot ?"
         forgot_description: "Oops! You're lost your password."
         instructions: "Input your email to reset password."
         placeholder_email: "joe@hotmail.com"
         send_reset_instruction: "Send me reset password instructions"
+      edit:
+        title: "Change your password"

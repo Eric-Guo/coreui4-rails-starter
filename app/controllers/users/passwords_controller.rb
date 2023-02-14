@@ -1,8 +1,9 @@
 class Users::PasswordsController < Devise::PasswordsController
-  before_action :set_page_layout_data, if: -> { request.format.html? }
+  before_action :set_page_layout_data, only: %i[new edit]
 
   # GET /resource/password/new
   def new
+    set_meta_tags title: t("devise.passwords.new.title")
     super
   end
 
@@ -13,6 +14,7 @@ class Users::PasswordsController < Devise::PasswordsController
 
   # GET /resource/password/edit?reset_password_token=abcdef
   def edit
+    set_meta_tags title: t("devise.passwords.edit.title")
     super
   end
 

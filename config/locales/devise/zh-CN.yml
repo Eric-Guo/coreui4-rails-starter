@@ -27,8 +27,10 @@ zh-CN:
         title: "登录到您的帐户"
     passwords:
       new:
-        forgot_title: "忘记密码 ?"
+        title: "忘记密码 ?"
         forgot_description: "哎呀！您丢失了密码。"
         instruction: "输入您的电子邮件以重置密码"
         placeholder_email: "xiaoming@163.com"
         send_reset_instruction: "向我发送重置密码说明"
+      edit:
+        title: "更改您的密码"
