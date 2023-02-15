@@ -1,9 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.1"
 
-set :application, "rails_starter"
-set :repo_url, "https://git.thape.com.cn/Eric-Guo/coreui-pro-rails-starter.git"
-
 # Default branch is :master
 set :branch, :main
 

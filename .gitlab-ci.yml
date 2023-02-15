@@ -34,7 +34,7 @@ test:
     - bin/rails test
     - bin/rails test:system
 
-deploy_production:
+deploy_staging:
   cache:
     - key:
         files:
@@ -47,7 +47,7 @@ deploy_production:
     - mkdir ~/.ssh
     - mv "$SSH_ID_RSA" ~/.ssh/id_rsa
     - mv "$SSH_CONFIG_FILE" ~/.ssh/config
-    - bundle exec cap production deploy
+    - bundle exec cap staging deploy
   environment:
-    name: production
+    name: staging
     url: https://starter.redwoodjs.cn
