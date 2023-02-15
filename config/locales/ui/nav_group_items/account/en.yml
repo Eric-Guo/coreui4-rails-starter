@@ -1,0 +1,6 @@
+---
+en:
+  ui:
+    nav_group_items:
+      account:
+        profile: "Profile"

@@ -1,0 +1,7 @@
+---
+zh-CN:
+  layouts:
+    sidebars:
+      application:
+        dashboard: "仪表板"
+        account: "账户"

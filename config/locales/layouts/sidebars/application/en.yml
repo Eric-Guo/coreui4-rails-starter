@@ -1,0 +1,7 @@
+---
+en:
+  layouts:
+    sidebars:
+      application:
+        dashboard: "Dashboard"
+        account: "Account"

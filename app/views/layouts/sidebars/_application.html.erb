@@ -9,18 +9,18 @@
     <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
   </div>
   <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
-    <%= nav_item('Dashboard', root_path, 'free.svg#cil-speedometer') do %>
+    <%= nav_item(t('.dashboard'), root_path, 'free.svg#cil-speedometer') do %>
       <span class="badge bg-primary ms-auto">NEW</span>
     <% end %>
 
-    <li class="nav-title">Account</li>
+    <li class="nav-title"><%= t('.account') -%></li>
     <li class="nav-group" data-controller='expender'
       data-expender-url-value='<%= account_ui_nav_group_items_path -%>'
       data-expender-loaded-value="<%= controller_name == 'profiles' -%>"
       class="<%= controller_name == 'profiles' ? 'show' : '' -%>">
       <a class="nav-link nav-group-toggle" data-action='expender#click'>
         <%= svg_icon('free.svg#cil-puzzle', 'nav-icon') %>
-        Account
+        <%= t('.account') -%>
       </a>
       <ul class="nav-group-items" data-expender-target='htc'>
         <% if controller_name == 'profiles' %>
