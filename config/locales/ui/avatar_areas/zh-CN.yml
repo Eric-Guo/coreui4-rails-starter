@@ -1,0 +1,9 @@
+---
+zh-CN:
+  ui:
+    avatar_areas:
+      show:
+        account: "账户"
+        profile: "个人资料"
+        password: "修改密码"
+        logout: "登出"

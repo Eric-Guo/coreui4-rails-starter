@@ -1,0 +1,9 @@
+---
+en:
+  ui:
+    avatar_areas:
+      show:
+        account: "Account"
+        profile: "Profile"
+        password: "Password"
+        logout: "Logout"
