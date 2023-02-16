@@ -2,27 +2,27 @@
   <div class="col-lg-12">
     <div class="container">
       <%= form_with(model: @user, url: account_profile_path, html: { method: :put }) do |f| %>
-      <div class="row">
-        <div class="col-md-4">
-          <h5>
-            <%= t(".section.email.title") %>
-          </h5>
-          <p class="text-medium-emphasis">
-            <%= t(".section.email.description") %>
-          </p>
+        <div class="row">
+          <div class="col-md-4">
+            <h5>
+              <%= t(".section.email.title") %>
+            </h5>
+            <p class="text-medium-emphasis">
+              <%= t(".section.email.description") %>
+            </p>
+          </div>
+          <div class="col-md-8">
+              <div class="form-group text-left">
+                <%= f.label :email %>
+                <%= f.text_field :email, autofocus: true, required: "required", class: "form-control" %>
+              </div>
+          </div>
         </div>
-        <div class="col-md-8">
-            <div class="form-group text-left">
-              <%= f.label :email %>
-              <%= f.text_field :email, autofocus: true, required: "required", class: "form-control" %>
-            </div>
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+              <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 offset-md-4">
-            <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
-        </div>
-      </div>
       <% end %>
     </div>
   </div>
