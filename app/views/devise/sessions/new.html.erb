@@ -30,17 +30,17 @@
             <% end %>
           </div>
         </div>
-      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
         <div class="card col-md-5 text-white bg-primary py-5">
           <div class="card-body text-center">
             <div>
-              <h2>Sign up</h2>
+              <h2><%= t('user.sign_in_via_openid') -%></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <%= link_to "Register Now!", new_registration_path(resource_name), class: "btn btn-lg btn-outline-light mt-3" %>
+              <%= form_tag '/auth/openid_connect', method: 'post', remote: false do %>
+                <button type='submit' class="btn btn-lg btn-outline-light mt-3"><%= t('user.click_to_sign_in') -%></button>
+              <% end %>
             </div>
           </div>
         </div>
-      <% end %>
       </div>
     </div>
   </div>
