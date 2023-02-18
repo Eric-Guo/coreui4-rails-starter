@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     passwords: "users/passwords",
     registrations: "users/registrations"
   }
+  get "auth/openid_connect/callback" => "openid_connect#callback"
 
   draw :admin
 

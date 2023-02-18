@@ -18,6 +18,8 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+require_relative "../lib/gitlab/request_forgery_protection"
+
 module CoreuiProRailsStarter
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.

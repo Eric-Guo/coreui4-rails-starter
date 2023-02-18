@@ -15,6 +15,8 @@ en:
     password: "Password"
     password_confirmation: "Password confirmation"
     sign_in: "Sign in"
+    sign_in_via_openid: "Sign in via SSO"
+    click_to_sign_in: "Click to sign in"
     sign_up: "Sign up"
     stay_signed_in: "Stay Signed in"
     forgot_password: "Forgot Password?"
