@@ -15,6 +15,8 @@ zh-CN:
     password: "密码"
     password_confirmation: "确认密码"
     sign_in: "登录"
+    sign_in_via_openid: "通过 SSO 登录"
+    click_to_sign_in: "点击登陆"
     sign_up: "注册"
     stay_signed_in: "保持登录"
     forgot_password: "忘记密码 ?"
