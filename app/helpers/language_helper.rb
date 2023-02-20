@@ -1,9 +1,9 @@
 module LanguageHelper
   LANGUAGES = {
-    "es-co": "Spanish (Columbia)",
+    "es-co": "Español (Colombia)",
     en: "English",
-    fr: "French",
-    "zh-CN": "Chinese (Simplified)",
+    fr: "Français",
+    "zh-CN": "简体中文"
   }
 
   def language_options
