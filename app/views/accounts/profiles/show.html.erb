@@ -5,16 +5,16 @@
         <div class="row">
           <div class="col-md-4">
             <h5>
-              <%= t(".section.email.title") %>
+              <%= t(".section.preferred_language.title") %>
             </h5>
             <p class="text-medium-emphasis">
-              <%= t(".section.email.description") %>
+              <%= t(".section.preferred_language.description") %>
             </p>
           </div>
           <div class="col-md-8">
               <div class="form-group text-left">
-                <%= f.label :email %>
-                <%= f.text_field :email, autofocus: true, required: "required", class: "form-control" %>
+                <%= f.label :preferred_language %>
+                <%= f.select :preferred_language, language_options, {}, { class: "form-control w-75" } %>
               </div>
           </div>
         </div>

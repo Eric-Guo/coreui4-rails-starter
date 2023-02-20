@@ -18,7 +18,7 @@ module Accounts
     private
 
     def user_params
-      params.require(:user).permit(:email)
+      params.require(:user).permit(:preferred_language)
     end
 
     def set_breadcrumbs

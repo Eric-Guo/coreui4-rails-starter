@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  include SetLocale
+
   before_action :authenticate_user!
   before_action :set_page_layout_data, if: -> { request.get? && request.format.html? }
   before_action :prepare_meta_tags, if: -> { request.get? && request.format.html? }

@@ -7,6 +7,6 @@ en:
         submit: "Submit"
         updated: "Profile update successfully"
         section:
-          email:
-            title: "Whether to enable the new UI"
-            description: "Choose whether to use the UI new user interface"
+          preferred_language:
+            title: "Preferred language"
+            description: "Please chooose your preferred language."

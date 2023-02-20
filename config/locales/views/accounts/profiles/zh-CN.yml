@@ -7,6 +7,6 @@ zh-CN:
         submit: "提交"
         updated: "个人资料更新成功"
         section:
-          email:
-            title: "更改email"
-            description: "用户的邮件地址"
+          preferred_language:
+            title: "首选语言"
+            description: "请选择您喜欢的界面语言。"
