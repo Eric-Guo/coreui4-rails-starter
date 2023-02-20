@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 5008a9c437fedac5f2adc2f19900d0b0dd7d56eb
+  revision: 812187b39a3aeff28cd41012218f47ef116aace6
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -258,7 +258,7 @@ GEM
     sqlite3 (1.6.0-arm64-darwin)
     sqlite3 (1.6.0-x86_64-darwin)
     sqlite3 (1.6.0-x86_64-linux)
-    sshkit (1.21.3)
+    sshkit (1.21.4)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     standard (1.24.3)
