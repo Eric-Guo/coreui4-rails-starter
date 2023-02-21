@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: bb8ee8fdee170f4908f71bd2662d5a1e7c84e734
+  revision: 464cc6efec5429b15625331a067cbbf8f38eb9b7
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -106,7 +106,7 @@ GEM
     bcrypt_pbkdf (1.1.0)
     bindex (0.8.1)
     builder (3.2.4)
-    capistrano (3.17.1)
+    capistrano (3.17.2)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
