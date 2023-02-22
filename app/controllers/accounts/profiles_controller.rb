@@ -15,6 +15,13 @@ module Accounts
       end
     end
 
+    protected
+
+    def set_page_layout_data
+      super
+      @_sidebar_name = "application"
+    end
+
     private
 
     def user_params

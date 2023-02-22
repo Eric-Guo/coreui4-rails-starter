@@ -1,7 +1,0 @@
----
-zh-CN:
-  layouts:
-    sidebars:
-      admin:
-        dashboard: "仪表板"
-        users: "用户"

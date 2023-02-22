@@ -1,7 +1,0 @@
----
-en:
-  layouts:
-    sidebars:
-      admin:
-        dashboard: "Dashboard"
-        users: "User"

@@ -5,3 +5,5 @@ en:
       admin:
         header: "Home"
         dashboard: "Dashboard"
+        account: "Account"
+        users: "User"

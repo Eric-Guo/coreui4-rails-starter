@@ -1,0 +1,6 @@
+---
+en:
+  admin:
+    users:
+      index:
+        title: "User management"
