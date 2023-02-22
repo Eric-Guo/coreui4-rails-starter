@@ -2,5 +2,6 @@
 en:
   layouts:
     sidebars:
-      application:
+      admin:
         dashboard: "Dashboard"
+        users: "User"

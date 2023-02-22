@@ -14,6 +14,8 @@ Rails.application.routes.draw do
     registrations: "users/registrations"
   }
 
+  draw :admin
+
   namespace :ui do
     resource :avatar_area, only: %i[show]
     resources :nav_group_items, only: %i[] do

@@ -1,6 +1,7 @@
 ---
 en:
   user:
+    account: "Account"
     email: "Email"
     change_my_password: "Change my password"
     change_profile: "Change Profile"

@@ -2,5 +2,6 @@
 zh-CN:
   layouts:
     sidebars:
-      application:
+      admin:
         dashboard: "仪表板"
+        users: "用户"

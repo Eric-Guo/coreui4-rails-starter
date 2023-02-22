@@ -13,14 +13,14 @@
       <span class="badge bg-primary ms-auto">NEW</span>
     <% end %>
 
-    <li class="nav-title"><%= t('.account') -%></li>
+    <li class="nav-title"><%= t('user.account') -%></li>
     <li class="nav-group" data-controller='expender'
       data-expender-url-value='<%= account_ui_nav_group_items_path -%>'
       data-expender-loaded-value="<%= controller_name == 'profiles' -%>"
       class="<%= controller_name == 'profiles' ? 'show' : '' -%>">
       <a class="nav-link nav-group-toggle" data-action='expender#click'>
         <%= svg_icon('free.svg#cil-puzzle', 'nav-icon') %>
-        <%= t('.account') -%>
+        <%= t('user.account') -%>
       </a>
       <ul class="nav-group-items" data-expender-target='htc'>
         <% if controller_name == 'profiles' %>
