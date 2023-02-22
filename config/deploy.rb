@@ -18,7 +18,7 @@ set :branch, :main
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, *%w[puma.rb config/database.yml config/master.key config/credentials.yml.enc]
+append :linked_files, *%w[puma.rb config/settings.local.yml config/database.yml config/master.key config/credentials.yml.enc]
 
 # Default value for linked_dirs is []
 append :linked_dirs, *%w[log storage tmp/pids tmp/cache tmp/sockets public/packs public/system node_modules]
