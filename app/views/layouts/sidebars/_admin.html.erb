@@ -1,0 +1,16 @@
+<div class="sidebar sidebar-dark sidebar-fixed bg-dark-gradient" id="sidebar">
+  <div class="sidebar-brand d-none d-md-flex">
+    <svg alt="CoreUI Logo" class="sidebar-brand-full" height="46" width="118">
+      <use xlink:href="<%= asset_path('coreui.svg#full') %>"></use>
+    </svg>
+    <svg alt="CoreUI Logo" class="sidebar-brand-narrow" height="46" width="46">
+      <use xlink:href="<%= asset_path('coreui.svg#signet') %>"></use>
+    </svg>
+    <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+  </div>
+  <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+    <%= nav_item(t('.dashboard'), root_path, 'free.svg#cil-speedometer') do %>
+      <span class="badge bg-primary ms-auto">NEW</span>
+    <% end %>
+  </ul>
+</div>

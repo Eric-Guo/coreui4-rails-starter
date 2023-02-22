@@ -56,9 +56,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def set_breadcrumbs
     @_breadcrumbs = [
-      {text: t("layouts.sidebar.application.header"),
+      {text: t("layouts.sidebars.application.header"),
        link: root_path},
-      {text: t("layouts.sidebar.application.account"),
+      {text: t("layouts.sidebars.application.account"),
        link: nil}
     ]
   end

@@ -2,7 +2,6 @@
 en:
   layouts:
     sidebars:
-      application:
+      admin:
         header: "Home"
         dashboard: "Dashboard"
-        account: "Account"
