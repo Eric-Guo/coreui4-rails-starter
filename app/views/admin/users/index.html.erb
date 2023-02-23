@@ -1,15 +1,22 @@
 <% content_for :head do %>
   <%= append_stylesheet_pack_tag 'datatables' %>
+  <%= append_javascript_pack_tag 'stimulus' %>
   <%= append_javascript_pack_tag 'datatables' %>
 <% end %>
 
-<table class="table table-striped border datatable" id="users-datatable" data-source="<%= admin_users_path(format: :json) %>">
-  <thead>
-    <tr>
-      <th><%= t('user.email') %></th>
-      <th><%= t('user.preferred_language') %></th>
-      <th>Status</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-</table>
+<div class="row justify-content-center">
+  <div class="col-lg-12">
+    <div class="container">
+      <table class="table table-striped border datatable" data-controller="datatables" data-datatables-target="datatable" data-source="<%= admin_users_path(format: :json) %>">
+        <thead>
+          <tr>
+            <th><%= t('user.email') %></th>
+            <th><%= t('user.preferred_language') %></th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</div>
