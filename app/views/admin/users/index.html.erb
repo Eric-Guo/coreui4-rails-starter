@@ -1,0 +1,15 @@
+<% content_for :head do %>
+  <%= append_stylesheet_pack_tag 'datatables' %>
+  <%= append_javascript_pack_tag 'datatables' %>
+<% end %>
+
+<table class="table table-striped border datatable">
+  <thead>
+    <tr>
+      <th><%= t('user.email') %></th>
+      <th><%= t('user.preferred_language') %></th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+</table>

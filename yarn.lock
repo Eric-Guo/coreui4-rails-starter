@@ -1917,6 +1917,21 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
+datatables.net-bs4@^1.13.2:
+  version "1.13.2"
+  resolved "https://registry.npmmirror.com/datatables.net-bs4/-/datatables.net-bs4-1.13.2.tgz#681b77d5dfd755019dd1266aa8fa69ca2c2513b7"
+  integrity sha512-sr5D4pV+VqIfPGPh3oKQDu+denk/bZ3ObyAYp/EbQLoLw2U6dvVJifHeccCC5M+ZhYtucHVID/qpbswx90QQHA==
+  dependencies:
+    datatables.net ">=1.12.1"
+    jquery ">=1.7"
+
+datatables.net@>=1.12.1:
+  version "1.13.2"
+  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.2.tgz#48f7035b1696a29cb70909db1f2e0ebd5f946f3e"
+  integrity sha512-u5nOU+C9SBp1SyPmd6G+niozZtrBwo1E8xzdOk3JJaAkFYgX/KxF3Gd79R8YLbUfmIs2OLnLe5gaz/qs5U8UDA==
+  dependencies:
+    jquery ">=1.7"
+
 date-fns@^2.29.3:
   version "2.29.3"
   resolved "https://registry.npmmirror.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
@@ -2578,6 +2593,11 @@ jest-worker@^29.1.2:
     jest-util "^29.4.3"
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
+
+jquery@>=1.7:
+  version "3.6.3"
+  resolved "https://registry.npmmirror.com/jquery/-/jquery-3.6.3.tgz#23ed2ffed8a19e048814f13391a19afcdba160e6"
+  integrity sha512-bZ5Sy3YzKo9Fyc8wH2iIQK4JImJ6R0GWI9kL1/k7Z91ZBNgkRXE6U0JfHIizZbort8ZunhSI3jw9I6253ahKfg==
 
 js-tokens@^4.0.0:
   version "4.0.0"
