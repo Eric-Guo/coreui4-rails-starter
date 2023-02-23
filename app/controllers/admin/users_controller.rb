@@ -3,8 +3,15 @@ module Admin
     before_action :set_breadcrumbs, if: -> { request.format.html? }
 
     def index
-      add_to_breadcrumbs t(".title")
-      @users = User.all
+      users = User.all
+      respond_to do |format|
+        format.html do
+          add_to_breadcrumbs t(".title")
+        end
+        format.json do
+          render json: UsersDatatable.new(params, users: users, view_context: view_context)
+        end
+      end
     end
 
     private

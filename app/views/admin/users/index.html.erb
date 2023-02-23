@@ -3,7 +3,7 @@
   <%= append_javascript_pack_tag 'datatables' %>
 <% end %>
 
-<table class="table table-striped border datatable">
+<table class="table table-striped border datatable" id="users-datatable" data-source="<%= admin_users_path(format: :json) %>">
   <thead>
     <tr>
       <th><%= t('user.email') %></th>
