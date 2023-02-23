@@ -10,7 +10,7 @@
       <table class="table table-striped table-bordered datatable" data-controller="datatables" data-datatables-target="datatable"
       data-source="<%= admin_users_path(format: :json) %>"
       data-datatables-columns-value='["email","preferred_language","status","actions"]'
-      data-datatables-dt-url-value="<%= asset_path('dt_zh-CN.json') -%>">
+      data-datatables-dt-url-value="<%= asset_path("dt_#{I18n.locale}.json") -%>">
         <thead>
           <tr>
             <th><%= t('user.email') %></th>
