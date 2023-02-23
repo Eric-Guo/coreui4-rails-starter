@@ -6,8 +6,8 @@ class UsersDatatable < ApplicationDatatable
 
   def view_columns
     @view_columns ||= {
-      email: {source: "User.email", cond: :eq},
-      preferred_language: {source: "User.preferred_language", cond: :eq},
+      email: {source: "User.email", cond: :like},
+      preferred_language: {source: "User.preferred_language", searchable: false, orderable: false},
       status: {source: nil, searchable: false, orderable: false},
       actions: {source: nil, searchable: false, orderable: false}
     }
