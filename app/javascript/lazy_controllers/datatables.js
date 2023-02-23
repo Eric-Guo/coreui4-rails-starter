@@ -3,11 +3,13 @@ import { Controller } from "@hotwired/stimulus"
 Stimulus.register("datatables", class extends Controller {
   static targets = [ "datatable" ];
   static values = {
-    dtUrl: String
+    dtUrl: String,
+    columns: Array
   }
 
   connect() {
     if (typeof this.datatable == "undefined") {
+      const columns = this.columnsValue.map(function(m) { return {"data": m} });
       this.datatable = $(this.datatableTarget).DataTable({
         "serverSide": true,
         "ajax": {
@@ -17,12 +19,7 @@ Stimulus.register("datatables", class extends Controller {
           "url": this.dtUrlValue
         },
         "pagingType": "full_numbers",
-        "columns": [
-          {"data": "email"},
-          {"data": "preferred_language"},
-          {"data": "status"},
-          {"data": "actions"}
-        ]
+        "columns": columns
       });
     }
   }
