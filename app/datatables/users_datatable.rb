@@ -6,8 +6,8 @@ class UsersDatatable < ApplicationDatatable
 
   def view_columns
     @view_columns ||= {
-      email: { source: "User.email", cond: :eq },
-      preferred_language: { source: "User.preferred_language", cond: :eq },
+      email: {source: "User.email", cond: :eq},
+      preferred_language: {source: "User.preferred_language", cond: :eq},
       status: {source: nil, searchable: false, orderable: false},
       actions: {source: nil, searchable: false, orderable: false}
     }
@@ -20,7 +20,7 @@ class UsersDatatable < ApplicationDatatable
         preferred_language: r.preferred_language,
         status: "",
         actions: "",
-        DT_RowId: r.id, # This will automagically set the id attribute on the corresponding <tr> in the datatable
+        DT_RowId: r.id # This will automagically set the id attribute on the corresponding <tr> in the datatable
       }
     end
   end
