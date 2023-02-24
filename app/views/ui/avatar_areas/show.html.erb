@@ -1,5 +1,5 @@
-<div class="dark:bg-white dark:bg-opacity-10 dropdown-header bg-light py-2">
-  <div class="fw-semibold"><%= t('user.account') -%></div>
+<div class="dropdown-header bg-light py-2 dark:bg-white dark:bg-opacity-10">
+  <div class="fw-semibold"><%= current_user.email -%></div>
 </div>
 <%= link_to account_profile_path, class: "dropdown-item" do %>
   <%= svg_icon('free.svg#cil-user', %w[icon me-2]) %>
