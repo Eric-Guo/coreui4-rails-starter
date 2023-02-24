@@ -24,6 +24,7 @@ gem "shakapacker"
 
 gem "devise"
 gem "devise-i18n"
+gem "pundit"
 
 gem "meta-tags"
 

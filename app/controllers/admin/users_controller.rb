@@ -1,10 +1,12 @@
 module Admin
   class UsersController < ApplicationController
+    after_action :verify_authorized, except: :index
+    after_action :verify_policy_scoped, only: :index
     before_action :set_user, only: %i[sign_in_as]
     before_action :set_breadcrumbs, if: -> { request.format.html? }
 
     def index
-      users = User.all
+      users = policy_scope(User).all
       respond_to do |format|
         format.html do
           add_to_breadcrumbs t(".title")
@@ -25,7 +27,7 @@ module Admin
     private
 
     def set_user
-      @user = User.find(params[:id])
+      @user = authorize User.find(params[:id])
     end
 
     def set_breadcrumbs
