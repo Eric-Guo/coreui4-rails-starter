@@ -4,3 +4,5 @@ zh-CN:
     users:
       index:
         title: "用户管理"
+        status: "状态"
+        action: "动作"

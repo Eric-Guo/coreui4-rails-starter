@@ -1,6 +1,7 @@
 class ApplicationDatatable < ::AjaxDatatablesRails::ActiveRecord
   extend Forwardable
 
+  def_delegator :@view, :content_tag
   def_delegator :@view, :link_to
 
   def initialize(params, opts = {})

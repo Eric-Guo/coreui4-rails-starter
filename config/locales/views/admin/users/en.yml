@@ -4,3 +4,5 @@ en:
     users:
       index:
         title: "User management"
+        status: "Status"
+        action: "Action"
