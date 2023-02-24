@@ -9,6 +9,14 @@ class UserPolicy < ApplicationPolicy
     end
   end
 
+  def show?
+    user.admin? || record.id == user.id
+  end
+
+  def update?
+    show?
+  end
+
   def sign_in_as?
     user.admin?
   end
