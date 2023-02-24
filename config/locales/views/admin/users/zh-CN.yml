@@ -6,3 +6,5 @@ zh-CN:
         title: "用户管理"
         status: "状态"
         action: "动作"
+      sign_in_as:
+        not_allow: "只允许管理员变成其他用户"

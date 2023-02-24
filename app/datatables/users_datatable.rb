@@ -1,6 +1,10 @@
 class UsersDatatable < ApplicationDatatable
+  def_delegator :@view, :button_to
+  def_delegator :@view, :sign_in_as_admin_user_path
+
   def initialize(params, opts = {})
     @users = opts[:users]
+    @current_user = opts[:current_user]
     super
   end
 
@@ -19,7 +23,7 @@ class UsersDatatable < ApplicationDatatable
         email: r.email,
         preferred_language: r.preferred_language,
         status: r.admin? ? content_tag("span", I18n.t("user.admin"), class: "badge bg-danger") : "",
-        actions: "",
+        actions: @current_user.admin? ? button_to(I18n.t("user.sign_in"), sign_in_as_admin_user_path(id: r.id), class: "btn btn-primary btn-sm") : "",
         DT_RowId: r.id # This will automagically set the id attribute on the corresponding <tr> in the datatable
       }
     end

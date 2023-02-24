@@ -6,3 +6,5 @@ en:
         title: "User management"
         status: "Status"
         action: "Action"
+      sign_in_as:
+        not_allow: "Only allow administrators to become other users"
