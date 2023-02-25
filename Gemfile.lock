@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 1f302150f856b1a0caaf8eea0a4a8706ba9bddbb
+  revision: 196bea135d75fd13d682aed962f603a548b7af10
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -135,7 +135,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     config (4.1.0)
       deep_merge (~> 1.2, >= 1.2.1)
       dry-validation (~> 1.0, >= 1.0.0)
