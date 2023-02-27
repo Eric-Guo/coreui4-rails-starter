@@ -23,7 +23,7 @@ class UsersDatatable < ApplicationDatatable
         email: r.email,
         preferred_language: r.preferred_language,
         status: r.admin? ? content_tag("span", I18n.t("user.admin"), class: "badge bg-danger") : "",
-        actions: @current_user.admin? ? button_to(I18n.t("user.sign_in"), sign_in_as_admin_user_path(id: r.id), class: "btn btn-primary btn-sm") : "",
+        actions: render(partial: "datatable/user_action", locals: {user: r}, formats: :html),
         DT_RowId: r.id # This will automagically set the id attribute on the corresponding <tr> in the datatable
       }
     end

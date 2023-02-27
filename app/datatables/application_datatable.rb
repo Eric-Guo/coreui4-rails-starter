@@ -3,6 +3,7 @@ class ApplicationDatatable < ::AjaxDatatablesRails::ActiveRecord
 
   def_delegator :@view, :content_tag
   def_delegator :@view, :link_to
+  def_delegator :@view, :render
 
   def initialize(params, opts = {})
     @view = opts[:view_context]

@@ -1,0 +1,3 @@
+<% if policy(user).sign_in_as? %>
+  <%= button_to(I18n.t("user.sign_in"), sign_in_as_admin_user_path(id: user.id), class: "btn btn-primary btn-sm") -%>
+<% end %>
