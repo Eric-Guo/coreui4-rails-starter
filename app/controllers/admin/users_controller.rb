@@ -2,7 +2,7 @@ module Admin
   class UsersController < ApplicationController
     after_action :verify_authorized, except: :index
     after_action :verify_policy_scoped, only: :index
-    before_action :set_user, only: %i[sign_in_as]
+    before_action :set_user, only: %i[show sign_in_as]
     before_action :set_breadcrumbs, if: -> { request.format.html? }
 
     def index
@@ -15,6 +15,10 @@ module Admin
           render json: UsersDatatable.new(params, users: users, current_user: current_user, view_context: view_context)
         end
       end
+    end
+
+    def show
+      render layout: false
     end
 
     def sign_in_as
