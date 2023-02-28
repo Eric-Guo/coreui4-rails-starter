@@ -1,3 +1,8 @@
-<% if policy(user).sign_in_as? %>
-  <%= button_to(I18n.t("user.sign_in"), sign_in_as_admin_user_path(id: user.id), class: "btn btn-primary btn-sm") -%>
-<% end %>
+<div class="d-flex flex-row align-items-center flex-wrap">
+  <% if policy(user).sign_in_as? %>
+    <%= button_to(I18n.t("user.sign_in"), sign_in_as_admin_user_path(id: user.id), class: "btn btn-primary btn-sm") -%>
+  <% end %>
+  <%= link_to admin_user_path(user.id), class: 'px-2', data: {controller: "modal", action: "modal#click"} do %>
+    <%= svg_icon('free.svg#cil-description', %w[icon]) %>
+  <% end %>
+</div>

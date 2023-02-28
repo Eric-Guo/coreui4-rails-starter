@@ -23,6 +23,9 @@
             <%= yield %>
           </div>
         </div>
+        <div class="modal fade" id="coreuiModal" tabindex="-1" aria-hidden="true" style="display: none;">
+          <%= render partial: "ui/modal/dialog" %>
+        </div>
         <%= footer %>
       <% end %>
     </div>
