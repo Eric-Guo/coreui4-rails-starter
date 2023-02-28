@@ -30,6 +30,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.1, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="airbrussh (v1.4.1, ruby-3.2.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ajax-datatables-rails (v1.4.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.18, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt_pbkdf (v1.1.0, ruby-3.2.0-p0) [gem]" level="application" />
@@ -42,7 +43,7 @@
     <orderEntry type="library" scope="PROVIDED" name="capistrano-rbenv (v2.2.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano3-puma (v6.0.0.beta.1, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.38.0, ruby-3.2.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.2.0, ruby-3.2.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.2.2, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="config (v4.1.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.3.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-3.2.0-p0) [gem]" level="application" />
@@ -82,7 +83,8 @@
     <orderEntry type="library" scope="PROVIDED" name="parser (v3.2.1.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="propshaft (v0.6.4, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v5.0.1, ruby-3.2.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="puma (v6.1.0, ruby-3.2.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v6.1.1, ruby-3.2.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pundit (v2.3.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v3.0.4.1, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-proxy (v0.7.6, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.0.0, ruby-3.2.0-p0) [gem]" level="application" />
@@ -96,7 +98,7 @@
     <orderEntry type="library" scope="PROVIDED" name="responders (v3.1.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.44.1, ruby-3.2.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.26.0, ruby-3.2.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.27.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.15.2, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.11.0, ruby-3.2.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, ruby-3.2.0-p0) [gem]" level="application" />
