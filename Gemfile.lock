@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 8d1b5f7ad76c87ce3be0b68331ccd7adf3fa9f03
+  revision: e0b7d429596d6ee9bc8f8afca75fdcc552fcee46
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -240,7 +240,7 @@ GEM
       rack
       railties (>= 7.0.0)
     public_suffix (5.0.1)
-    puma (6.1.0)
+    puma (6.1.1)
       nio4r (~> 2.0)
     pundit (2.3.0)
       activesupport (>= 3.0.0)
@@ -279,7 +279,7 @@ GEM
       rubocop-ast (>= 1.24.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.26.0)
+    rubocop-ast (1.27.0)
       parser (>= 3.2.1.0)
     rubocop-performance (1.15.2)
       rubocop (>= 1.7.0, < 2.0)
