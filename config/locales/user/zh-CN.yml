@@ -18,6 +18,7 @@ zh-CN:
     forgot_password: "忘记密码 ?"
     back_to_login: "回到登入"
     characters_minimum: "字符以上"
+    current_sign_in_at: "当前登录于"
     leave_blank_hint: "如果您不想更改它，请留空"
     need_current_password_hint: "我们需要您当前的密码来确认您的更改"
     resend_unlock_instructions: "重新发送解锁说明"

@@ -18,6 +18,7 @@ en:
     forgot_password: "Forgot Password?"
     back_to_login: "Back to Login"
     characters_minimum: "characters minimum"
+    current_sign_in_at: "current sign in at"
     leave_blank_hint: "leave blank if you don't want to change it"
     need_current_password_hint: "we need your current password to confirm your changes"
     resend_unlock_instructions: "Resend unlock instructions"
