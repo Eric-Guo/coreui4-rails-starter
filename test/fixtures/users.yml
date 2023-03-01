@@ -4,8 +4,8 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-guochunzhong:
+user_guochunzhong:
   email: guochunzhong@thape.com.cn
 
-fangzixue:
+user_fangzixue:
   email: fangzixue@thape.com.cn

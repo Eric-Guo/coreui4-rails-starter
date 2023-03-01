@@ -1,0 +1,12 @@
+---
+ur_one:
+  user: user_guochunzhong
+  role: role_staff
+
+ur_two:
+  user: user_fangzixue
+  role: role_intern
+
+ur_three:
+  user: user_fangzixue
+  role: role_guest

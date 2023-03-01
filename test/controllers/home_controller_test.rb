@@ -4,7 +4,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
 
   test "should get root after sign in" do
-    sign_in users(:guochunzhong)
+    sign_in users(:user_guochunzhong)
     get root_url
     assert_response :success
   end

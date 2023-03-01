@@ -1,0 +1,16 @@
+class CreateRoles < ActiveRecord::Migration[7.1]
+  def change
+    create_table :roles do |t|
+      t.string :role_name
+
+      t.timestamps
+    end
+
+    create_table :user_roles do |t|
+      t.references :user, null: false, foreign_key: true
+      t.references :role, null: false, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end

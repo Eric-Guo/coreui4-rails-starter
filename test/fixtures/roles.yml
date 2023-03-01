@@ -1,0 +1,9 @@
+---
+role_staff:
+  role_name: "Staff"
+
+role_intern:
+  role_name: "Intern"
+
+role_guest:
+  role_name: "Guest"
