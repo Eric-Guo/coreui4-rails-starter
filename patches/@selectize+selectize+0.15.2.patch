@@ -1,0 +1,14 @@
+diff --git a/node_modules/@selectize/selectize/dist/scss/selectize.bootstrap5.scss b/node_modules/@selectize/selectize/dist/scss/selectize.bootstrap5.scss
+index ac37fff..ace1c24 100644
+--- a/node_modules/@selectize/selectize/dist/scss/selectize.bootstrap5.scss
++++ b/node_modules/@selectize/selectize/dist/scss/selectize.bootstrap5.scss
+@@ -1,6 +1,6 @@
+-@import "lib/bootstrap5/functions";
+-@import "lib/bootstrap5/variables";
+-@import "lib/bootstrap5/mixins";
++@import "@coreui/coreui/scss/functions";
++@import "@coreui/coreui/scss/variables";
++@import "@coreui/coreui/scss/mixins";
+ 
+ $enable-shadows: true !default;
+ $select-font-family: inherit !default;

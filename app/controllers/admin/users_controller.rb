@@ -40,7 +40,7 @@ module Admin
     end
 
     def user_params
-      params.require(:user).permit(:preferred_language)
+      params.require(:user).permit(:preferred_language, role_ids: [])
     end
 
     def set_breadcrumbs
