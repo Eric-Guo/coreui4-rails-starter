@@ -14,7 +14,7 @@ class UserPolicy < ApplicationPolicy
   end
 
   def update?
-    show?
+    edit?
   end
 
   def sign_in_as?

@@ -1,23 +1,22 @@
 <div class="modal-dialog">
   <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title"><%= @user.email -%></h5>
-      <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6"><%= t("user.preferred_language") -%></div>
-          <div class="col-md-6"><%= @user.preferred_language -%></div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"><%= t("user.current_sign_in_at") -%></div>
-          <div class="col-md-6"><%= @user.current_sign_in_at -%></div>
+    <%= form_with model: @user, url: admin_user_path(id: @user.id), method: :put do |f| %>
+      <div class="modal-header">
+        <h5 class="modal-title"><%= t(".title", email: @user.email) -%></h5>
+        <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row mb-3">
+            <%= f.label :preferred_language %>
+            <%= f.select :preferred_language, language_options, {}, { class: "form-control" } %>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-secondary" type="button" data-coreui-dismiss="modal">Close</button>
-    </div>
+      <div class="modal-footer">
+        <%= f.submit t('form.update'), class: 'btn btn-primary' %>
+        <button class="btn btn-secondary" type="button" data-coreui-dismiss="modal"><%= t("form.close") -%></button>
+      </div>
+    <% end %>
   </div>
 </div>

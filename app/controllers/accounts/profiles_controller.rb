@@ -26,7 +26,7 @@ module Accounts
     private
 
     def set_user
-      @user = authorize current_user
+      @user = authorize(current_user, :edit?)
     end
 
     def user_params

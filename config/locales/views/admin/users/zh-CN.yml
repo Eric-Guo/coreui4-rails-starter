@@ -6,5 +6,7 @@ zh-CN:
         title: "用户管理"
         status: "状态"
         action: "动作"
+      edit:
+        title: "编辑用户: %{email}"
       sign_in_as:
         not_allow: "只允许管理员变成其他用户"
