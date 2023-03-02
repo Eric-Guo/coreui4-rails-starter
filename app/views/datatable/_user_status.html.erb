@@ -1,0 +1,6 @@
+<% if user.admin? %>
+  <span class="badge bg-danger"><%= I18n.t("user.admin") -%></span>
+<% end %>
+<% user.roles.each do |role| %>
+  <span class="badge bg-primary"><%= role.role_name -%></span>
+<% end %>
