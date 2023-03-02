@@ -8,8 +8,10 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row mb-3">
-            <%= f.label :preferred_language %>
-            <%= f.select :preferred_language, language_options, {}, { class: "form-control" } %>
+            <%= f.label :preferred_language, class: 'col-4 col-form-label' %>
+            <div class="col-8">
+              <%= f.select :preferred_language, language_options, {}, { class: "form-control" } %>
+            </div>
           </div>
         </div>
       </div>
