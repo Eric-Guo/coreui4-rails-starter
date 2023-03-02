@@ -1,6 +1,7 @@
 ---
 en:
   form:
+    action: "Action"
     edit: "Edit"
     update: "Update"
     reset: "Reset"
