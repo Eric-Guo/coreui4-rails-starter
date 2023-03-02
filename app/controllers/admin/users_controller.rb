@@ -22,6 +22,8 @@ module Admin
     end
 
     def update
+      @user.update_without_password(user_params)
+      head :no_content
     end
 
     def sign_in_as
@@ -35,6 +37,10 @@ module Admin
 
     def set_user
       @user = authorize User.find(params[:id])
+    end
+
+    def user_params
+      params.require(:user).permit(:preferred_language)
     end
 
     def set_breadcrumbs

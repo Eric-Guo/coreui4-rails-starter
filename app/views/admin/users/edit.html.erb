@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <%= f.submit t('form.update'), class: 'btn btn-primary' %>
+        <%= f.submit t('form.update'), class: 'btn btn-primary', data: {'coreui-dismiss': :modal} %>
         <button class="btn btn-secondary" type="button" data-coreui-dismiss="modal"><%= t("form.close") -%></button>
       </div>
     <% end %>
