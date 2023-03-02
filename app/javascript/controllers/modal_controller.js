@@ -12,6 +12,9 @@ export default class extends Controller {
           htmlContent.innerHTML = result;
           const modal = new coreui.Modal('#coreuiModal');
           modal.show();
+          htmlContent.addEventListener('hidden.coreui.modal', event => {
+            this.dispatch("reloadDT", { detail: {} });
+          });
         });
       }
     });

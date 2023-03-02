@@ -23,6 +23,10 @@ Stimulus.register("datatables", class extends Controller {
     });
   }
 
+  reload() {
+    this.datatable.ajax.reload();
+  }
+
   disconnect() {
     this.datatable.destroy();
   }
