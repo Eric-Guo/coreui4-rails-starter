@@ -24,7 +24,7 @@ Stimulus.register("datatables", class extends Controller {
   }
 
   reload() {
-    this.datatable.ajax.reload();
+    this.datatable.ajax.reload(null, false);
   }
 
   disconnect() {
