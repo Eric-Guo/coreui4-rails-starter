@@ -1950,10 +1950,10 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
-datatables.net-bs4@^1.13.2:
+datatables.net-bs5@^1.13.3:
   version "1.13.3"
-  resolved "https://registry.npmmirror.com/datatables.net-bs4/-/datatables.net-bs4-1.13.3.tgz#888f002b343c1e0f9874aa697485bd7abfc702a8"
-  integrity sha512-LtySVYRv8I8FE4+Y8t3IQZYoIQOoKygWvhcUX0qZtdqaEr55MnUTcHzeXVUVNEiycsG62lrCPf/Uurl7Rw6kKA==
+  resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.3.tgz#5b5a51fe48f26f5b8e37f28c8b2aee485291c3ac"
+  integrity sha512-yaZ89SjP1INIotvCVaBkgQ0VPvWTAfywG3dmBaVIosa4u0vUAqlx1+aYyL8WXgqmklSQda3nXdNwJu0OrPw84A==
   dependencies:
     datatables.net ">=1.12.1"
     jquery ">=1.7"
