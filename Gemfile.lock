@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 417e6e8c0006c82f146a317940a53da913ecb2c7
+  revision: b13fb659110e7b539e1b94afcf4a7fe2d498da9d
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -245,7 +245,7 @@ GEM
     pundit (2.3.0)
       activesupport (>= 3.0.0)
     racc (1.6.2)
-    rack (3.0.4.1)
+    rack (3.0.4.2)
     rack-proxy (0.7.6)
       rack
     rack-session (2.0.0)
