@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: aff8e3e8e490857e7f7dfe90471aad1ee13114cf
+  revision: 84d77b1bc33e38e2f16ff45babf85fde930e2a11
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -284,7 +284,7 @@ GEM
     rubocop-performance (1.15.2)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    ruby-progressbar (1.12.0)
+    ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.8.1)
       rexml (~> 3.2, >= 3.2.5)
