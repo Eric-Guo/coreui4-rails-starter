@@ -922,6 +922,14 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@coreui/chartjs@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.npmmirror.com/@coreui/chartjs/-/chartjs-3.1.1.tgz#df7978f46ff2623817c0bf8f22d56118062e0fe1"
+  integrity sha512-lI/GCszpbPnEr6T/XDnIcOFTg2mMWqPToR5os6C6KM98BQihhZhuCeMzixyu0Wi72GoFFMkP5/SW028KpskMSw==
+  dependencies:
+    "@coreui/coreui" "^4.2.6"
+    chart.js "^3.9.1"
+
 "@coreui/coreui@^4.2.6":
   version "4.2.6"
   resolved "https://registry.npmmirror.com/@coreui/coreui/-/coreui-4.2.6.tgz#8ae8aa4c834552328c5748385be5bc33df86aab7"
@@ -933,6 +941,11 @@
   version "3.0.0"
   resolved "https://registry.npmmirror.com/@coreui/icons/-/icons-3.0.0.tgz#e36ef6e10fdc61aaff22e4ab1f6e71775b26f365"
   integrity sha512-t4hJilv5IFBvaHIIQeUoXctV5nJkW21PTIhgeGO80xS25Ii4kkXa2gzryj6v6OEPSDPnY2YWhYm39TBjbXt1Xw==
+
+"@coreui/utils@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/@coreui/utils/-/utils-2.0.0.tgz#522c8c31b999e1c4a17aabb8e53273c16ffaf17c"
+  integrity sha512-U2OvQv6xfP+l8Xbqzd/ZEatu5D68OTTxUkXBp7iqWxaWCKIO6J+hknJQoIl/XUJMa0Fsb5h/OIZ69smQv9DaCg==
 
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
@@ -1648,6 +1661,11 @@ chalk@^4.0, chalk@^4.0.0, chalk@^4.1.2:
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
+
+chart.js@^3.9.1:
+  version "3.9.1"
+  resolved "https://registry.npmmirror.com/chart.js/-/chart.js-3.9.1.tgz#3abf2c775169c4c71217a107163ac708515924b8"
+  integrity sha512-Ro2JbLmvg83gXF5F4sniaQ+lTbSv18E+TIf2cOeiH1Iqd2PGFOtem+DUufMZsCJwFE7ywPOpfXFBwRTGq7dh6w==
 
 "chokidar@>=3.0.0 <4.0.0", chokidar@^3.5.3:
   version "3.5.3"
