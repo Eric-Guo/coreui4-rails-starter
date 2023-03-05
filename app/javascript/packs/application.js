@@ -13,5 +13,4 @@
 //
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
-global.coreui = require("@coreui/coreui")
 import "simplebar";
