@@ -1,0 +1,17 @@
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+    <%= form_with model: @user, url: sign_in_as_admin_user_path(id: @user.id) do |f| %>
+      <div class="modal-header">
+        <h5 class="modal-title"><%= t(".title") -%></h5>
+        <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><%= t(".description", email: @user.email) -%></p>
+      </div>
+      <div class="modal-footer">
+        <%= f.submit t('form.confirm'), class: 'btn btn-primary', data: {'coreui-dismiss': :modal} %>
+        <button class="btn btn-secondary" type="button" data-coreui-dismiss="modal"><%= t("form.close") -%></button>
+      </div>
+    <% end %>
+  </div>
+</div>

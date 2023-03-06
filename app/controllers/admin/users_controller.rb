@@ -2,7 +2,7 @@ module Admin
   class UsersController < ApplicationController
     after_action :verify_authorized, except: :index
     after_action :verify_policy_scoped, only: :index
-    before_action :set_user, only: %i[edit update sign_in_as]
+    before_action :set_user, only: %i[edit update impersonation sign_in_as]
     before_action :set_breadcrumbs, if: -> { request.format.html? }
 
     def index
@@ -24,6 +24,10 @@ module Admin
     def update
       @user.update_without_password(user_params)
       head :no_content
+    end
+
+    def impersonation
+      render layout: false
     end
 
     def sign_in_as

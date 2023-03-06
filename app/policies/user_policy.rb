@@ -17,7 +17,11 @@ class UserPolicy < ApplicationPolicy
     edit?
   end
 
-  def sign_in_as?
+  def impersonation?
     user.admin?
+  end
+
+  def sign_in_as?
+    impersonation?
   end
 end

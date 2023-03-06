@@ -8,5 +8,8 @@ zh-CN:
       edit:
         title: "编辑用户: %{email}"
         roles: "角色"
+      impersonation:
+        title: "模仿为用户"
+        description: "登录为: %{email}"
       sign_in_as:
         not_allow: "只允许管理员变成其他用户"

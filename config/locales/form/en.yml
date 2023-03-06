@@ -4,5 +4,6 @@ en:
     action: "Action"
     edit: "Edit"
     update: "Update"
+    confirm: "Confirm"
     reset: "Reset"
     close: "Close"
