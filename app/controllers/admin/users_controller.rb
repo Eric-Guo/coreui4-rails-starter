@@ -1,5 +1,5 @@
 module Admin
-  class UsersController < ApplicationController
+  class UsersController < BaseController
     after_action :verify_authorized, except: :index
     after_action :verify_policy_scoped, only: :index
     before_action :set_user, only: %i[edit update impersonation sign_in_as]

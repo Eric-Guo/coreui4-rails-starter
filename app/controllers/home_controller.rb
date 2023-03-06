@@ -2,6 +2,7 @@ class HomeController < ApplicationController
   before_action :set_breadcrumbs, if: -> { request.format.html? }
 
   def index
+    return redirect_to admin_root_path if current_user&.admin?
   end
 
   protected
@@ -15,7 +16,7 @@ class HomeController < ApplicationController
 
   def set_breadcrumbs
     @_breadcrumbs = [
-      {text: t("layouts.sidebars.admin.header"),
+      {text: t("layouts.sidebars.application.header"),
        link: nil}
     ]
   end

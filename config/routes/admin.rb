@@ -1,4 +1,5 @@
 namespace :admin do
+  root to: "home#index"
   resources :users, only: %i[index edit update] do
     member do
       get :impersonation
