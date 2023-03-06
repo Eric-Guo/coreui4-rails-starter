@@ -44,19 +44,24 @@ const options = {
 
 Stimulus.register("dashboard", class extends Controller {
   static targets = [ "cardChart" ];
+  static values = {
+    title: String,
+    labels: Array,
+    data: Array
+  }
 
   connect() {
     this.cardChart = new Chart(this.cardChartTarget, {
       type: 'line',
       data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: this.labelsValue,
         datasets: [
           {
-            label: 'My First dataset',
+            label: this.titleValue,
             backgroundColor: 'transparent',
             borderColor: 'rgba(255,255,255,.55)',
             pointBackgroundColor: coreui.Utils.getStyle('--cui-primary'),
-            data: [65, 59, 84, 84, 51, 55, 40]
+            data: this.dataValue
           }
         ]
       },
