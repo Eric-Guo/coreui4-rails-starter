@@ -7,5 +7,6 @@ en:
         status: "Status"
       edit:
         title: "Edit user: %{email}"
+        roles: "Roles"
       sign_in_as:
         not_allow: "Only allow administrators to become other users"

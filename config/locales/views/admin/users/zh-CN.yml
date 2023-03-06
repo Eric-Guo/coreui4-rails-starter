@@ -7,5 +7,6 @@ zh-CN:
         status: "状态"
       edit:
         title: "编辑用户: %{email}"
+        roles: "角色"
       sign_in_as:
         not_allow: "只允许管理员变成其他用户"
