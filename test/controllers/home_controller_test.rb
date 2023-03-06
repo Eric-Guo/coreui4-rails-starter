@@ -4,9 +4,15 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
 
   test "should get root after sign in" do
-    sign_in users(:user_guochunzhong)
+    sign_in users(:user_fangzixue)
     get root_url
     assert_response :success
+  end
+
+  test "should redirect to admin home page if user admin" do
+    sign_in users(:user_guochunzhong)
+    get root_url
+    assert_response :redirect
   end
 
   test "should redirect to sign in page if not sign in" do
