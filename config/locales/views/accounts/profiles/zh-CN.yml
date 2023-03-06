@@ -10,3 +10,6 @@ zh-CN:
           preferred_language:
             title: "首选语言"
             description: "请选择您喜欢的界面语言。"
+          preferred_page_length:
+            title: "首选页面长度"
+            description: "请选择您喜欢的页面长度。"

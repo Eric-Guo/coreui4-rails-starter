@@ -23,6 +23,22 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-md-4">
+            <h5>
+              <%= t(".section.preferred_page_length.title") %>
+            </h5>
+            <p class="text-medium-emphasis">
+              <%= t(".section.preferred_page_length.description") %>
+            </p>
+          </div>
+          <div class="col-md-8">
+              <div class="form-group text-left">
+                <%= f.label :preferred_page_length %>
+                <%= f.select :preferred_page_length, User.length_menu_options, {}, { class: "form-control w-75" } %>
+              </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-md-4 offset-md-4">
               <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
           </div>

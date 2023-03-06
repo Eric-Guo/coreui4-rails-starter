@@ -30,4 +30,9 @@ class User < ApplicationRecord
       end
     end
   end
+
+  # default options of datatables: https://datatables.net/reference/option/lengthMenu
+  def self.length_menu_options
+    [10, 25, 50, 100]
+  end
 end

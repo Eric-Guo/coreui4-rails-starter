@@ -9,4 +9,7 @@ en:
         section:
           preferred_language:
             title: "Preferred language"
-            description: "Please chooose your preferred language."
+            description: "Chooose your preferred language."
+          preferred_page_length:
+            title: "Preferred page length"
+            description: "Chooose your preferred page length."
