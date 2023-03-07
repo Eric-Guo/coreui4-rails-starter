@@ -943,9 +943,9 @@
   integrity sha512-t4hJilv5IFBvaHIIQeUoXctV5nJkW21PTIhgeGO80xS25Ii4kkXa2gzryj6v6OEPSDPnY2YWhYm39TBjbXt1Xw==
 
 "@coreui/utils@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmmirror.com/@coreui/utils/-/utils-2.0.0.tgz#522c8c31b999e1c4a17aabb8e53273c16ffaf17c"
-  integrity sha512-U2OvQv6xfP+l8Xbqzd/ZEatu5D68OTTxUkXBp7iqWxaWCKIO6J+hknJQoIl/XUJMa0Fsb5h/OIZ69smQv9DaCg==
+  version "2.0.1"
+  resolved "https://registry.npmmirror.com/@coreui/utils/-/utils-2.0.1.tgz#0d92ae133a481d3e493e6b968d64d28f37ae650d"
+  integrity sha512-6m1aOZI6cLxsQYcl+FTR7Ks9nRNi+RRNXFiUBGxUbvIWAXk/32V4kiNCyPXcKLclknITImDBV6qeeO73usd4VA==
 
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
@@ -1641,9 +1641,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001449:
-  version "1.0.30001460"
-  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001460.tgz#31d2e26f0a2309860ed3eff154e03890d9d851a7"
-  integrity sha512-Bud7abqjvEjipUkpLs4D7gR0l8hBYBHoa+tGtKJHvT2AYzLp1z7EmVkUT4ERpVUfca8S2HGIVs883D8pUH1ZzQ==
+  version "1.0.30001462"
+  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001462.tgz#b2e801e37536d453731286857c8520d3dcee15fe"
+  integrity sha512-PDd20WuOBPiasZ7KbFnmQRyuLE7cFXW2PVd7dmALzbkUXEP46upAuCDm9eY9vho8fgNMGmbAX92QBZHzcnWIqw==
 
 chalk@^2.0.0:
   version "2.4.2"
