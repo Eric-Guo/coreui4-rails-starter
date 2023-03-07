@@ -3,6 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 Stimulus.register("datatables", class extends Controller {
   static targets = [ "datatable" ];
   static values = {
+    pageLength: Number,
     source: String,
     dtUrl: String,
     columns: Array
@@ -18,6 +19,7 @@ Stimulus.register("datatables", class extends Controller {
       language: {
         "url": this.dtUrlValue
       },
+      "pageLength": this.pageLengthValue,
       "pagingType": "full_numbers",
       "columns": columns
     });
