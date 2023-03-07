@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: e50972cc1dc441e5aabfcee81bd5c64c5328bad0
+  revision: 3599771a23592db06f47d765f848055f51e8141f
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -89,6 +89,7 @@ GIT
     railties (7.1.0.alpha)
       actionpack (= 7.1.0.alpha)
       activesupport (= 7.1.0.alpha)
+      irb
       rackup (>= 1.0.0)
       rake (>= 12.2)
       thor (~> 1.0)
