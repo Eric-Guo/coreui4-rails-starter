@@ -1,0 +1,8 @@
+---
+en:
+  admin:
+    users:
+      index:
+        title: "Role management"
+        role_name: "Role name"
+        status: "Status"

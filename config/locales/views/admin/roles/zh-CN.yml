@@ -1,0 +1,8 @@
+---
+zh-CN:
+  admin:
+    roles:
+      index:
+        title: "角色管理"
+        role_name: "角色名称"
+        status: "状态"
