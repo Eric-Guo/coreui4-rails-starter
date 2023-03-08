@@ -2,6 +2,7 @@
 zh-CN:
   form:
     action: "动作"
+    new: "新建"
     edit: "编辑"
     update: "更新"
     confirm: "确认"

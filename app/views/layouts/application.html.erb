@@ -17,7 +17,7 @@
       <% else %>
         <%= render partial: 'layouts/header', locals: {} %>
         <% if content_for?(:action_bar) %>
-          <div class="action_bar">
+          <div class="action_bar dark:bg-transparent">
             <%= yield :action_bar %>
           </div>
         <% end %>

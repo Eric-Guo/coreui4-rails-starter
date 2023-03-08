@@ -2,6 +2,7 @@
 en:
   form:
     action: "Action"
+    new: "New"
     edit: "Edit"
     update: "Update"
     confirm: "Confirm"
