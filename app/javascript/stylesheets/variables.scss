@@ -38,3 +38,16 @@ $sidebar-nav-link-icon-color:  $disabled-inverse;
 
 $table-cell-padding-y:  .75rem;
 $table-cell-padding-x:  .75rem;
+
+$main-header-padding-y:           .75rem;
+$main-header-padding-x:           2rem;
+
+// Action bar
+
+$action_bar-padding-y:            $main-header-padding-y;
+$action_bar-padding-x:            $main-header-padding-x;
+$action_bar-item-padding:         .5rem;
+
+$action_bar-bg:                   $gray-100;
+$action_bar-divider-color:        $gray-600;
+$action_bar-divider:              quote("|");

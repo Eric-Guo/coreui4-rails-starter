@@ -16,7 +16,12 @@
         <%= yield %>
       <% else %>
         <%= render partial: 'layouts/header', locals: {} %>
-        <div class="body flex-grow-1 px-3">
+        <% if content_for?(:action_bar) %>
+          <div class="action_bar">
+            <%= yield :action_bar %>
+          </div>
+        <% end %>
+        <div class="body flex-grow-1 px-2 py-3">
           <div class="container-lg">
             <% unless @skip_title %>
               <div class="fs-3 fw-semibold"><%= title -%></div>
