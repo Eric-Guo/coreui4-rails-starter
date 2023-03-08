@@ -6,5 +6,5 @@ namespace :admin do
       patch :sign_in_as
     end
   end
-  resources :roles, only: %i[index new]
+  resources :roles, only: %i[index new create]
 end

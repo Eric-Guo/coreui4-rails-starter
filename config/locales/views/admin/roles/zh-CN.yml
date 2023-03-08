@@ -6,3 +6,5 @@ zh-CN:
         title: "角色管理"
         role_name: "角色名称"
         status: "状态"
+      new:
+        title: "新建角色"

@@ -9,7 +9,20 @@ module Admin
       @pagy, @roles = pagy(policy_scope(Role).all)
     end
 
+    def new
+      @role = Role.new
+      render layout: false
+    end
+
+    def create
+      Role.create(role_params)
+    end
+
     private
+
+    def role_params
+      params.require(:role).permit(:role_name)
+    end
 
     def set_breadcrumbs
       @_breadcrumbs = [

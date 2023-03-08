@@ -1,8 +1,10 @@
 ---
 en:
   admin:
-    users:
+    roles:
       index:
         title: "Role management"
         role_name: "Role name"
         status: "Status"
+      new:
+        title: "Create role"

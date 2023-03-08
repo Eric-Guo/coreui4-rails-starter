@@ -3,6 +3,7 @@ en:
   form:
     action: "Action"
     new: "New"
+    create: "Create"
     edit: "Edit"
     update: "Update"
     confirm: "Confirm"
