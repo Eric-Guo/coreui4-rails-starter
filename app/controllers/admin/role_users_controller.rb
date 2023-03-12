@@ -4,8 +4,11 @@ module Admin
     before_action :set_breadcrumbs, if: -> { request.format.html? }
 
     def index
-      add_to_breadcrumbs t(".title")
-      @role_users = policy_scope(UserRole).all
+      role = Role.find params[:role_id]
+      title = t(".title", role_name: role.role_name)
+      add_to_breadcrumbs title
+      set_meta_tags(title: title)
+      @role_users = policy_scope(UserRole).where(role_id: role.id)
     end
 
     private
