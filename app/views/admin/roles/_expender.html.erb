@@ -1,0 +1,3 @@
+<% roles.each do |role| %>
+  <%= nav_item(role.role_name, admin_role_role_users_path(role_id: role.id), 'free.svg#cil-wifi-signal-2') %>
+<% end %>

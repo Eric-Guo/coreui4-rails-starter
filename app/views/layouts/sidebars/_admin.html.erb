@@ -19,6 +19,18 @@
 
     <li class="nav-title"><%= t('user.account') -%></li>
     <%= nav_item(t('.users'), admin_users_path, 'free.svg#cil-user') %>
-    <%= nav_item(t('.roles'), admin_roles_path, 'free.svg#cil-functions') %>
+    <li class="nav-group <%= %w[role_users].include?(controller_name) ? "show" : "" -%>" data-controller="expender"
+      data-expender-loaded-value=<%= %w[role_users].include?(controller_name) -%>
+      data-expender-url-value="<%= expender_admin_roles_path -%>">
+      <a class="nav-link nav-group-toggle" data-action="expender#click" href="#">
+        <%= svg_icon('free.svg#cil-functions', 'nav-icon') -%>
+        <%= t('.roles') -%>
+      </a>
+      <ul class="nav-group-items" data-expender-target="htc">
+        <% if %w[role_users].include?(controller_name) %>
+          <%= render partial: 'admin/roles/expender', locals: {roles: policy_scope(Role).all} -%>
+        <% end %>
+      </ul>
+    </li>
   </ul>
 </div>
