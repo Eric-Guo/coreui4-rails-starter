@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: e1ddd3921f0f6bb6e2b3ca17dbe80e2d811405c8
+  revision: 2458aef422c0bdbe8ab861f08232b74da27eb018
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -223,7 +223,7 @@ GEM
       net-ssh (>= 2.6.5, < 8.0.0)
     net-smtp (0.3.3)
       net-protocol
-    net-ssh (7.0.1)
+    net-ssh (7.1.0)
     nio4r (2.5.8)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
@@ -247,7 +247,7 @@ GEM
     pundit (2.3.0)
       activesupport (>= 3.0.0)
     racc (1.6.2)
-    rack (3.0.4.2)
+    rack (3.0.5)
     rack-proxy (0.7.6)
       rack
     rack-session (2.0.0)
@@ -369,4 +369,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.7
+   2.4.8
