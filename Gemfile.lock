@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: d37aa9bfac7a244616d299ebc2d0783ca6722e9e
+  revision: b571b649612e75d1ce3fc9456d7c0d1b9babeb15
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -271,19 +271,19 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.5)
-    rubocop (1.44.1)
+    rubocop (1.48.1)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.2.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.24.1, < 2.0)
+      rubocop-ast (>= 1.26.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.27.0)
       parser (>= 3.2.1.0)
-    rubocop-performance (1.15.2)
+    rubocop-performance (1.16.0)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.13.0)
@@ -304,10 +304,10 @@ GEM
     sshkit (1.21.4)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    standard (1.24.3)
+    standard (1.25.0)
       language_server-protocol (~> 3.17.0.2)
-      rubocop (= 1.44.1)
-      rubocop-performance (= 1.15.2)
+      rubocop (= 1.48.1)
+      rubocop-performance (= 1.16.0)
     thor (1.2.1)
     timeout (0.3.2)
     tzinfo (2.0.6)
