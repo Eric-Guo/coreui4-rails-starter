@@ -8,13 +8,13 @@
         <use xlink:href="<%= asset_path('coreui.svg#full') -%>"></use>
       </svg>
     </a>
+  <% flash.each do |k, v| %>
+    <div class="d-flex mb-0 alert alert-<%= k == "alert" ? "danger" : k -%> alert-dismissible fade show" role="alert">
+      <%= sanitize v.html_safe -%>
+      <button aria-label="Close" class="btn-close" data-coreui-dismiss="alert" type="button"></button>
+    </div>
+  <% end %>
     <ul class="header-nav ms-auto">
-      <% flash.each do |k, v| %>
-        <div class="mb-0 alert alert-<%= k == "alert" ? "danger" : k -%> alert-dismissible fade show" role="alert">
-          <%= sanitize v.html_safe -%>
-          <button aria-label="Close" class="btn-close" data-coreui-dismiss="alert" type="button"></button>
-        </div>
-      <% end %>
       <li class="nav-item dropdown d-flex align-items-center" data-controller="expender" data-expender-loaded-value="<%= false %>" data-expender-url-value="<%= ui_avatar_area_path %>">
         <a class="nav-link py-0" data-action="expender#click" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
           <div class="avatar avatar-md">
