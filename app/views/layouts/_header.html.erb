@@ -9,7 +9,7 @@
       </svg>
     </a>
   <% flash.each do |k, v| %>
-    <div class="d-flex mb-0 alert alert-<%= k == "alert" ? "danger" : (k == "notice" ? "primary" : k) -%> alert-dismissible fade show" role="alert">
+    <div class="d-flex ms-auto mb-0 alert alert-<%= k == "alert" ? "danger" : (k == "notice" ? "primary" : k) -%> alert-dismissible fade show" role="alert">
       <%= sanitize v.html_safe -%>
       <button aria-label="Close" class="btn-close" data-coreui-dismiss="alert" type="button"></button>
     </div>
