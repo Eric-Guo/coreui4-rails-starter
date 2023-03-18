@@ -5,6 +5,10 @@ en:
       index:
         title: "User management"
         status: "Status"
+        new_user: "New user"
+        new_role: "New role"
+      new:
+        title: "New user"
       edit:
         title: "Edit user: %{email}"
         roles: "Roles"

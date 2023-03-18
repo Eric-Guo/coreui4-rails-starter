@@ -17,6 +17,15 @@ module Admin
       end
     end
 
+    def new
+      @user = authorize User.new
+      render layout: false
+    end
+
+    def create
+      authorize User.create(user_params)
+    end
+
     def edit
       render layout: false
     end

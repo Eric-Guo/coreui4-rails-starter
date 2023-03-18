@@ -1,6 +1,6 @@
 namespace :admin do
   root to: "home#index"
-  resources :users, only: %i[index edit update] do
+  resources :users, only: %i[index edit update new create] do
     member do
       get :impersonation
       patch :sign_in_as

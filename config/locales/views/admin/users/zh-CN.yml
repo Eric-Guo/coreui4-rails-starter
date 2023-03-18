@@ -5,6 +5,10 @@ zh-CN:
       index:
         title: "用户管理"
         status: "状态"
+        new_user: "新建用户"
+        new_role: "新建角色"
+      new:
+        title: "新建用户"
       edit:
         title: "编辑用户: %{email}"
         roles: "角色"

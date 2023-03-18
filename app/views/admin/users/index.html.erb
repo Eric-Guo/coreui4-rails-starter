@@ -6,6 +6,17 @@
   <%= append_javascript_pack_tag 'selectize' %>
 <% end %>
 
+<%- content_for :action_bar do %>
+  <ol>
+    <li class="action_bar-item">
+      <%= link_to t(".new_user"), new_admin_user_path, class: "btn text-primary", data: {controller: "modal", action: "modal#click", 'modal-page-reload-value': true} -%>
+    </li>
+    <li class="action_bar-item">
+      <%= link_to t(".new_role"), new_admin_role_path, class: "btn text-primary", data: {controller: "modal", action: "modal#click", 'modal-page-reload-value': false} -%>
+    </li>
+  </ol>
+<% end %>
+
 <div class="row justify-content-center">
   <div class="col-lg-12">
     <div class="container" data-controller="datatables"
