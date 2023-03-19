@@ -26,7 +26,11 @@
             <tr>
               <td><%= role.role_name -%></td>
               <td></td>
-              <td></td>
+              <td>
+                <%= link_to edit_admin_role_path(id: role.id), class: 'px-2', data: {controller: "modal", action: "modal#click", 'modal-page-reload-value': true} do %>
+                  <%= svg_icon('free.svg#cil-pen', %w[icon icon-lg]) %>
+                <% end %>
+              </td>
             </tr>
           <% end %>
         </tbody>

@@ -8,3 +8,5 @@ zh-CN:
         status: "状态"
       new:
         title: "新建角色"
+      edit:
+        title: "编辑角色：%{role_name}"

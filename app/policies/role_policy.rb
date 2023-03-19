@@ -8,4 +8,20 @@ class RolePolicy < ApplicationPolicy
       end
     end
   end
+
+  def new?
+    user.admin?
+  end
+
+  def create?
+    new?
+  end
+
+  def edit?
+    user.admin?
+  end
+
+  def update?
+    edit?
+  end
 end

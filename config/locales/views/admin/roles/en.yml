@@ -8,3 +8,5 @@ en:
         status: "Status"
       new:
         title: "Create role"
+      edit:
+        title: "Edit role：%{role_name}"
