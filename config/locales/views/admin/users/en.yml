@@ -11,7 +11,6 @@ en:
         title: "New user"
       edit:
         title: "Edit user: %{email}"
-        roles: "Roles"
       impersonation:
         title: "Impersonation"
         description: "Sign in as user: %{email}"

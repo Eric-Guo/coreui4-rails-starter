@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="row mb-3">
-            <%= f.label :roles, t(".roles"), class: 'col-4 col-form-label' %>
+            <%= f.label :roles, t("user.roles"), class: 'col-4 col-form-label' %>
             <div class="col-8" data-controller="selectizes">
               <%= f.select :role_ids, Role.pluck(:role_name, :id), {}, multiple: true, class: 'form-control', data: { 'selectizes-target': 'select' } -%>
             </div>

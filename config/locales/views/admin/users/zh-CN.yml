@@ -11,7 +11,6 @@ zh-CN:
         title: "新建用户"
       edit:
         title: "编辑用户: %{email}"
-        roles: "角色"
       impersonation:
         title: "模仿为用户"
         description: "登录为: %{email}"

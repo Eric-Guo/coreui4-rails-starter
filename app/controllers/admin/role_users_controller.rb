@@ -19,7 +19,7 @@ module Admin
          link: root_path},
         {text: t("layouts.sidebars.admin.account"),
          link: nil},
-        {text: t("layouts.sidebars.admin.roles"),
+        {text: t("user.roles"),
          link: admin_roles_path}
       ]
     end
