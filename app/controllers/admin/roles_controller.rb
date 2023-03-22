@@ -7,8 +7,8 @@ module Admin
     before_action :set_breadcrumbs, if: -> { request.format.html? }
 
     def index
-      add_to_breadcrumbs t(".title")
-      @pagy, @roles = pagy(policy_scope(Role).all)
+      add_to_breadcrumbs t("user.roles")
+      @pagy, @roles = pagy(policy_scope(Role).all, items: current_user.preferred_page_length)
     end
 
     def new

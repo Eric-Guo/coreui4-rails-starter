@@ -12,7 +12,7 @@
 # Instance variables
 # See https://ddnexus.github.io/pagy/docs/api/pagy#instance-variables
 # Pagy::DEFAULT[:page]   = 1                                  # default
-Pagy::DEFAULT[:items] = 10
+Pagy::DEFAULT[:items] = 10 # change is also need to change user.preferred_page_length default
 # Pagy::DEFAULT[:outset] = 0                                  # default
 
 # Other Variables
@@ -215,9 +215,8 @@ require "pagy/extras/bootstrap"
 #
 # load the "de", "en" and "es" built-in locales:
 # (the first passed :locale will be used also as the default_locale)
-# Pagy::I18n.load({ locale: 'de' },
-#                 { locale: 'en' },
-#                 { locale: 'es' })
+Pagy::I18n.load({locale: "en"},
+  {locale: "zh-CN"})
 #
 # load the "en" built-in locale, a custom "es" locale,
 # and a totally custom locale complete with a custom :pluralize proc:
