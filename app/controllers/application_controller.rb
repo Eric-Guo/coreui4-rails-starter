@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   def set_page_layout_data
     @_wrapper_class = %w[wrapper d-flex flex-column min-vh-100 bg-light]
-    @_sidebar_name = if current_user.admin?
+    @_sidebar_name = if current_user&.admin?
       "admin"
     else
       "application"
