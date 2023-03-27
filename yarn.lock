@@ -3823,9 +3823,9 @@ simplebar-core@^1.2.2:
     lodash-es "^4.17.21"
 
 simplebar@^6.2.0:
-  version "6.2.2"
-  resolved "https://registry.npmmirror.com/simplebar/-/simplebar-6.2.2.tgz#4b87781d9340560862d8a2873d2ae22209c3c4de"
-  integrity sha512-vmAU5kpgKqJcbL6yCtBrEd0QexEk/GAfRVVwYipa9pNtOkLz+Z9B8ds0Oh6J4RlF0dGS/ucHTjgf0ozk/Tp8UQ==
+  version "6.2.3"
+  resolved "https://registry.npmmirror.com/simplebar/-/simplebar-6.2.3.tgz#70ad5e9a77fe0b3bb782101d30b44996bce77f31"
+  integrity sha512-meFgVBAshIHXlrz0vYckqwEUJ1EgyWPm1Stzho77uY16SrPEj9Gf6778hT6AA/Bgal2q2/O8tncu6UY3UhQ6Mw==
   dependencies:
     can-use-dom "^0.1.0"
     simplebar-core "^1.2.2"
