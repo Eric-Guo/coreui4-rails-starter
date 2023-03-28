@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 7c5b9a46ea10eb74a6c7b193b4fe66d519eac1f6
+  revision: 854d146189af03538f941ed1405c603f2b3fbade
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -65,7 +65,6 @@ GIT
       activerecord (= 7.1.0.alpha)
       activesupport (= 7.1.0.alpha)
       marcel (~> 1.0)
-      mini_mime (>= 1.1.0)
     activesupport (7.1.0.alpha)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       connection_pool (>= 2.2.5)
