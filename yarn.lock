@@ -1100,9 +1100,9 @@
     "@types/estree" "*"
 
 "@types/eslint@*":
-  version "8.21.3"
-  resolved "https://registry.npmmirror.com/@types/eslint/-/eslint-8.21.3.tgz#5794b3911f0f19e34e3a272c49cbdf48d6f543f2"
-  integrity sha512-fa7GkppZVEByMWGbTtE5MbmXWJTVbrjjaS8K6uQj+XtuuUv1fsuPAxhygfqLmsb/Ufb3CV8deFCpiMfAgi00Sw==
+  version "8.37.0"
+  resolved "https://registry.npmmirror.com/@types/eslint/-/eslint-8.37.0.tgz#29cebc6c2a3ac7fea7113207bf5a828fdf4d7ef1"
+  integrity sha512-Piet7dG2JBuDIfohBngQ3rCt7MgO9xCO4xIMKxBThCq5PNRB91IjlJ10eJVwfoNtvTErmxLzwBZ7rHZtbOMmFQ==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
@@ -1166,6 +1166,18 @@
   version "7.0.11"
   resolved "https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
+
+"@types/lodash-es@^4.17.6":
+  version "4.17.7"
+  resolved "https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.7.tgz#22edcae9f44aff08546e71db8925f05b33c7cc40"
+  integrity sha512-z0ptr6UI10VlU6l5MYhGwS4mC8DZyYer2mCoyysZtSF7p26zOX8UpbrV0YpNYLGS8K4PUFIyEr62IMFFjveSiQ==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.192"
+  resolved "https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.192.tgz#5790406361a2852d332d41635d927f1600811285"
+  integrity sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==
 
 "@types/mime@*":
   version "3.0.1"
@@ -3813,22 +3825,23 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.npmmirror.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simplebar-core@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.npmmirror.com/simplebar-core/-/simplebar-core-1.2.2.tgz#09c8e1b0e5fab9250ecf7cfda11d6bf0d7b8f165"
-  integrity sha512-uVNCnLtZRHgzBd5Tg23hGA5LX2NBt15xPQ3UhPUbPRnSx3rEYuWLK3iEnkR8Yxkcp/Kf/Vu/PJTEaiaJ3T0gTw==
+simplebar-core@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npmmirror.com/simplebar-core/-/simplebar-core-1.2.3.tgz#d270ecec9aca14850c400a7aa80503858f6f23a5"
+  integrity sha512-xWZOYLlqWMW8qDCh1vcyyPdb10FOb8KJNCgqimsBKWS/o6a/9LnATjBgR2+nTzTHUT+DGOOf+TM8yj54/Io+dw==
   dependencies:
+    "@types/lodash-es" "^4.17.6"
     can-use-dom "^0.1.0"
     lodash "^4.17.21"
     lodash-es "^4.17.21"
 
 simplebar@^6.2.0:
-  version "6.2.3"
-  resolved "https://registry.npmmirror.com/simplebar/-/simplebar-6.2.3.tgz#70ad5e9a77fe0b3bb782101d30b44996bce77f31"
-  integrity sha512-meFgVBAshIHXlrz0vYckqwEUJ1EgyWPm1Stzho77uY16SrPEj9Gf6778hT6AA/Bgal2q2/O8tncu6UY3UhQ6Mw==
+  version "6.2.4"
+  resolved "https://registry.npmmirror.com/simplebar/-/simplebar-6.2.4.tgz#3ce79c2bb24b8f2c2ea2e79c651990d7c090950c"
+  integrity sha512-0jWrclPRQgKZB8zPE3Nkij4GCCPWA2yLxag16/Hl99sNnZvdB1pIpnkNL1IcPfZty9fGtlTiIWMYq9vMlP1q8g==
   dependencies:
     can-use-dom "^0.1.0"
-    simplebar-core "^1.2.2"
+    simplebar-core "^1.2.3"
 
 slash@^2.0.0:
   version "2.0.0"
@@ -4209,9 +4222,9 @@ webpack-sources@^3.2.3:
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
 webpack@5:
-  version "5.76.3"
-  resolved "https://registry.npmmirror.com/webpack/-/webpack-5.76.3.tgz#dffdc72c8950e5b032fddad9c4452e7787d2f489"
-  integrity sha512-18Qv7uGPU8b2vqGeEEObnfICyw2g39CHlDEK4I7NK13LOur1d0HGmGNKGT58Eluwddpn3oEejwvBPoP4M7/KSA==
+  version "5.77.0"
+  resolved "https://registry.npmmirror.com/webpack/-/webpack-5.77.0.tgz#dea3ad16d7ea6b84aa55fa42f4eac9f30e7eb9b4"
+  integrity sha512-sbGNjBr5Ya5ss91yzjeJTLKyfiwo5C628AFjEa6WSXcZa4E+F57om3Cc8xLb1Jh0b243AWuSYRf3dn7HVeFQ9Q==
   dependencies:
     "@types/eslint-scope" "^3.7.3"
     "@types/estree" "^0.0.51"
