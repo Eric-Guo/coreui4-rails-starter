@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: f93aa0ab70c7bb1f88a05bc24c1b94b2c4a5757e
+  revision: ed1489cda3c44451ec42b24f39aaf58ca3200efa
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -241,7 +241,7 @@ GEM
       rack
       railties (>= 7.0.0)
     public_suffix (5.0.1)
-    puma (6.2.0)
+    puma (6.2.1)
       nio4r (~> 2.0)
     pundit (2.3.0)
       activesupport (>= 3.0.0)
