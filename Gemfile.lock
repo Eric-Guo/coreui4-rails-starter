@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 2dd6a0177e2c4b1c0cc5789e7251e148a85301ba
+  revision: 662a7b5bab5eff9753fbd64ab6aa3c525eb76468
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -97,7 +97,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.1)
+    addressable (2.8.2)
       public_suffix (>= 2.0.2, < 6.0)
     airbrussh (1.4.1)
       sshkit (>= 1.6.1, != 1.7.0)
@@ -231,9 +231,9 @@ GEM
     nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pagy (6.0.2)
+    pagy (6.0.3)
     parallel (1.22.1)
-    parser (3.2.1.1)
+    parser (3.2.2.0)
       ast (~> 2.4.1)
     propshaft (0.7.0)
       actionpack (>= 7.0.0)
