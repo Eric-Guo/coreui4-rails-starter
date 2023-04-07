@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 7a90cd2fcde0d4427fbe298c652f7790755ed40e
+  revision: 77af28547d822b607126ab5193f8fb5093276faf
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -166,12 +166,12 @@ GEM
       concurrent-ruby (~> 1.0)
       dry-core (~> 1.0, < 2)
       zeitwerk (~> 2.6)
-    dry-schema (1.13.0)
+    dry-schema (1.13.1)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 1.0, >= 1.0.1)
       dry-core (~> 1.0, < 2)
       dry-initializer (~> 3.0)
-      dry-logic (>= 1.5, < 2)
+      dry-logic (>= 1.4, < 2)
       dry-types (>= 1.7, < 2)
       zeitwerk (~> 2.6)
     dry-types (1.7.1)
