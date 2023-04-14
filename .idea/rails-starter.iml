@@ -154,6 +154,7 @@
         <option value="generator" />
         <option value="helper" />
         <option value="integration_test" />
+        <option value="jbuilder" />
         <option value="job" />
         <option value="mailbox" />
         <option value="mailer" />
@@ -200,6 +201,7 @@
         <option value="generator" />
         <option value="helper" />
         <option value="integration_test" />
+        <option value="jbuilder" />
         <option value="job" />
         <option value="mailbox" />
         <option value="mailer" />
