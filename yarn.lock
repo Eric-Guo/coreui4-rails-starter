@@ -2049,9 +2049,9 @@ dns-equal@^1.0.0:
   integrity sha512-z+paD6YUQsk+AbGCEM4PrOXSss5gd66QfcVBFTKR/HpFL9jCqikS94HYwKww6fQyO7IxrIIyUu+g0Ka9tUS2Cg==
 
 dns-packet@^5.2.2:
-  version "5.5.0"
-  resolved "https://registry.npmmirror.com/dns-packet/-/dns-packet-5.5.0.tgz#f59cbf3396c130957c56a6ad5fd3959ccdc30065"
-  integrity sha512-USawdAUzRkV6xrqTjiAEp6M9YagZEzWcSUaZTcIFAiyQWW1SoI6KyId8y2+/71wbgHKQAKd+iupLv4YvEwYWvA==
+  version "5.6.0"
+  resolved "https://registry.npmmirror.com/dns-packet/-/dns-packet-5.6.0.tgz#2202c947845c7a63c23ece58f2f70ff6ab4c2f7d"
+  integrity sha512-rza3UH1LwdHh9qyPXp8lkwpjSNk/AMD3dPytUoRoqnypDUhY0xvbdmVhWOfxO68frEfV9BU8V12Ez7ZsHGZpCQ==
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
@@ -3993,9 +3993,9 @@ terser-webpack-plugin@5, terser-webpack-plugin@^5.3.7:
     terser "^5.16.5"
 
 terser@^5.16.5:
-  version "5.16.9"
-  resolved "https://registry.npmmirror.com/terser/-/terser-5.16.9.tgz#7a28cb178e330c484369886f2afd623d9847495f"
-  integrity sha512-HPa/FdTB9XGI2H1/keLFZHxl6WNvAI4YalHGtDQTlMnJcoqSab1UwL4l1hGEhs6/GmLHBZIg/YgB++jcbzoOEg==
+  version "5.17.0"
+  resolved "https://registry.npmmirror.com/terser/-/terser-5.17.0.tgz#2b1bc90b5917e09ecffbcd2ff911f6922a4f5743"
+  integrity sha512-3die3+pYW4mta4xF6K8Wtf7id8+oYyfqtAhjwzqY01+CfDSDMx/VA1Sp8sXWs5AVNIoAKoUfmp/gnPqRjBxuDA==
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     acorn "^8.5.0"
