@@ -47,6 +47,9 @@ group :development, :test do
 end
 
 group :development do
+  # To support VSCdoe https://shopify.engineering/improving-the-developer-experience-with-ruby-lsp
+  gem "ruby-lsp", require: false
+
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
