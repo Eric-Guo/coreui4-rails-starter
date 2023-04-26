@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: af3ec4fb76d29bcc140a3103bb315dc8ac384268
+  revision: 86497e00879fa1405f1a5bd4af4cd1bf2752eb10
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -190,7 +190,7 @@ GEM
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    i18n (1.12.0)
+    i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
     irb (1.6.4)
