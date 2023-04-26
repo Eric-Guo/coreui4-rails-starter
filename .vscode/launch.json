@@ -9,7 +9,15 @@
       "type": "rdbg",
       "request": "launch",
       "script": "${workspaceRoot}/bin/rails",
-      "args": ["server"]
+      "args": [
+        "server"
+      ]
+    },
+    {
+      "type": "chrome",
+      "name": "localhost:3000",
+      "request": "launch",
+      "url": "localhost:3000"
     }
   ]
 }
