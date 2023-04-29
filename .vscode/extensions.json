@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "shopify.ruby-lsp",
-    "koichisasada.vscode-rdbg"
+    "koichisasada.vscode-rdbg",
+    "mrmlnc.vscode-scss"
   ]
 }
