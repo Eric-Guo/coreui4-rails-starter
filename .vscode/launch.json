@@ -15,7 +15,7 @@
     },
     {
       "type": "chrome",
-      "name": "localhost:3000",
+      "name": "Chrome Localhost",
       "request": "launch",
       "url": "localhost:3000"
     }
