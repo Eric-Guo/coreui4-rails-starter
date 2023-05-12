@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 30d6844558ed9a8c4ac1e6e2f86c182587567e4d
+  revision: 953e21edf6c9cf150e4a766f554ec0bd1331e5b3
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -126,7 +126,7 @@ GEM
       capistrano (~> 3.7)
       capistrano-bundler
       puma (>= 5.1, < 7.0)
-    capybara (3.39.0)
+    capybara (3.39.1)
       addressable
       matrix
       mini_mime (>= 0.1.3)
