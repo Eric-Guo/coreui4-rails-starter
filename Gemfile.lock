@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 6df3ac86c045483d456166506b49166bf965ff3c
+  revision: eb5898e11f17808f1ef40d77df81893faf9f53c9
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -265,7 +265,7 @@ GEM
     rainbow (3.1.1)
     rake (13.0.6)
     regexp_parser (2.8.0)
-    reline (0.3.3)
+    reline (0.3.4)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
