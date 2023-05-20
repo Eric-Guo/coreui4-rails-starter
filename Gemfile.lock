@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 06816d6f1ca62160c6aaf858272a23f1f337ba8c
+  revision: 6df3ac86c045483d456166506b49166bf965ff3c
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -139,7 +139,7 @@ GEM
     config (4.2.0)
       deep_merge (~> 1.2, >= 1.2.1)
       dry-validation (~> 1.0, >= 1.0.0)
-    connection_pool (2.4.0)
+    connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
@@ -225,11 +225,11 @@ GEM
       net-protocol
     net-ssh (7.1.0)
     nio4r (2.5.9)
-    nokogiri (1.15.0-arm64-darwin)
+    nokogiri (1.15.1-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.15.0-x86_64-darwin)
+    nokogiri (1.15.1-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.15.0-x86_64-linux)
+    nokogiri (1.15.1-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pagy (6.0.4)
