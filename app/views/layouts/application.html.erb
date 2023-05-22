@@ -22,7 +22,7 @@
           </div>
         <% end %>
         <div class="body flex-grow-1 px-2 py-3">
-          <div class="container-lg">
+          <div class="<%= @_container_class -%>">
             <% unless @skip_title %>
               <div class="fs-3 fw-semibold"><%= title -%></div>
             <% end %>
