@@ -75,17 +75,18 @@
   }
 
   .btn {
+    padding: 0 $input-btn-padding-x;
     vertical-align: top;
   }
 
   .action_bar-item {
     // The separator between breadcrumbs (by default, a forward-slash: "/")
     + .action_bar-item {
-      padding-left: $action_bar-item-padding;
+      padding-left: $action_bar-item-left-padding;
 
       &::before {
         display: inline-block; // Suppress underlining of the separator in modern browsers
-        padding-right: $action_bar-item-padding;
+        padding-right: $action_bar-item-right-padding;
         color: $action_bar-divider-color;
         content: $action_bar-divider;
       }
