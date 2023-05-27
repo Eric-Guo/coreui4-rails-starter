@@ -76,12 +76,6 @@
 
   .btn {
     vertical-align: top;
-
-    &:hover,
-    &.active {
-      color: $body-color;
-      background: transparent;
-    }
   }
 
   .action_bar-item {
