@@ -4,7 +4,7 @@
 		{
       "path": ".",
       "folder_exclude_patterns": [".bundle",".ruby-lsp",".vscode",".idea",".capistrano","log","tmp",
-                                  "node_modules", "public/packs", "public/packs-test"],
+                                  "node_modules", "public/packs", "public/packs-test", "public/assets"],
       "file_exclude_patterns": ["*.sublime-workspace",".DS_Store","config/master.key",
                                 "config/credentials.yml.enc"]
     },
