@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 48caa57f0a0dbbf7d2c9c09485471b0a426f5eb8
+  revision: 18520470ae5fd3b3709de7d2bf43adea989c2294
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -234,8 +234,9 @@ GEM
     orm_adapter (0.5.0)
     pagy (6.0.4)
     parallel (1.23.0)
-    parser (3.2.2.1)
+    parser (3.2.2.3)
       ast (~> 2.4.1)
+      racc
     propshaft (0.7.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -246,7 +247,7 @@ GEM
       nio4r (~> 2.0)
     pundit (2.3.0)
       activesupport (>= 3.0.0)
-    racc (1.6.2)
+    racc (1.7.0)
     rack (3.0.7)
     rack-proxy (0.7.6)
       rack
