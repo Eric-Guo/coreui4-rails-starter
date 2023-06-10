@@ -5,7 +5,9 @@
 <%- content_for :action_bar do %>
   <ol>
     <li class="action_bar-item">
-      <%= link_to t("form.new"), new_admin_role_path, class: "btn btn-outline-primary", data: {controller: "modal", action: "modal#click", 'modal-page-reload-value': true} -%>
+      <%= link_to new_admin_role_path, class: "btn btn-outline-primary", data: {controller: "modal", action: "modal#click", 'modal-page-reload-value': true} do -%>
+        <%= t("form.new") -%> <%= svg_icon('free.svg#cil-plus', %w[icon]) -%>
+      <% end %>
     </li>
   </ol>
 <% end %>
