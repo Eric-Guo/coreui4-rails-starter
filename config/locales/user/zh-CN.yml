@@ -1,6 +1,7 @@
 ---
 zh-CN:
   user:
+    users: "用户"
     account: "账户"
     email: "电子邮件"
     admin: "管理员"

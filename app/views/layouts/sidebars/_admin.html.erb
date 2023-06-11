@@ -18,7 +18,7 @@
     <% end %>
 
     <li class="nav-title"><%= t('user.account') -%></li>
-    <%= nav_item(t('.users'), admin_users_path, 'free.svg#cil-user') %>
+    <%= nav_item(t('user.users'), admin_users_path, 'free.svg#cil-user') %>
     <li class="nav-group <%= %w[role_users roles].include?(controller_name) ? "show" : "" -%>" data-controller="expender"
       data-expender-loaded-value=<%= %w[role_users roles].include?(controller_name) -%>
       data-expender-url-value="<%= expender_admin_roles_path -%>">

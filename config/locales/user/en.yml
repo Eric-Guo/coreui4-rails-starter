@@ -1,6 +1,7 @@
 ---
 en:
   user:
+    users: "User"
     account: "Account"
     email: "Email"
     admin: "Admin"
