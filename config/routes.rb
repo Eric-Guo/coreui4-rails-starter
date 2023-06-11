@@ -23,6 +23,7 @@ Rails.application.routes.draw do
         get :account
       end
     end
+    resource :user_select, only: %i[show]
   end
   # Defines the root path route ("/")
   root "home#index"

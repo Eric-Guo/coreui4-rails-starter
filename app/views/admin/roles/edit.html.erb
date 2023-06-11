@@ -13,10 +13,10 @@
               <%= f.text_field :role_name, class: 'form-control' -%>
             </div>
           </div>
-          <div class="row mb-2">
+          <div class="row mb-2" data-controller="selectize-user-ids">
             <%= f.label :user_ids, t("user.users"), class: 'col-3 col-form-label' %>
             <div class="col-9">
-              <%= f.select :user_ids, options_from_collection_for_select(User.where(id: @role.user_ids), "id", "chinese_name"), {multiple: true}, class: 'form-control' -%>
+              <%= f.select :user_ids, options_from_collection_for_select(User.where(id: @role.user_ids), "id", "email", @role.user_ids), {multiple: true}, class: 'form-control', id: 'user-ids-select' -%>
             </div>
           </div>
         </div>
