@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: b35f23ba00b813f736fd5fc453a95b9ef8900abb
+  revision: ebbe5ffca8cda337119680ba8c9c1cc411b75397
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -215,7 +215,7 @@ GEM
       actionpack (>= 3.2.0, < 7.1)
     mini_mime (1.1.2)
     minitest (5.18.0)
-    net-imap (0.3.4)
+    net-imap (0.3.6)
       date
       net-protocol
     net-pop (0.1.2)
@@ -276,10 +276,10 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.5)
-    rubocop (1.52.0)
+    rubocop (1.52.1)
       json (~> 2.3)
       parallel (~> 1.10)
-      parser (>= 3.2.0.0)
+      parser (>= 3.2.2.3)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
@@ -382,4 +382,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.13
+   2.4.14
