@@ -60,6 +60,7 @@ group :development do
 
   gem "capistrano"
   gem "capistrano-rails"
+  gem "capistrano-yarn"
   gem "capistrano-rbenv"
   gem "capistrano3-puma", ">= 6.0.0.beta.1"
 
