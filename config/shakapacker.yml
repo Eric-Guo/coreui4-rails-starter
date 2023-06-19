@@ -1,5 +1,4 @@
-# Note: You must restart bin/webpacker-dev-server for changes to take effect
-
+---
 default: &default
   source_path: app/javascript
 
@@ -19,7 +18,7 @@ default: &default
 
   public_root_path: public
   public_output_path: packs
-  cache_path: tmp/webpacker
+  cache_path: tmp/shakapacker
   webpack_compile_output: true
   # See https://github.com/shakacode/shakapacker#deployment
   webpacker_precompile: true
