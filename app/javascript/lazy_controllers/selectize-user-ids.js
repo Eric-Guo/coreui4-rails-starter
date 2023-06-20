@@ -6,6 +6,7 @@ Stimulus.register("selectize-user-ids", class extends Controller {
   connect() {
     roleUserIDsSelect = $('#user-ids-select').selectize({
       plugins: ["remove_button"],
+      respect_word_boundaries: false,
       valueField: "id",
       labelField: "name",
       searchField: "name",
