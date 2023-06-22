@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 622804df65a3ea9012dc1dfbe80a8d2e22626522
+  revision: de4cfe3342a4e7f0d4eb0653e857bc9262a97f5b
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
