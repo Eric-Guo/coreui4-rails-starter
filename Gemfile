@@ -14,7 +14,7 @@ gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma"
 
-gem "shakapacker", "~> 7.0.0.rc.1"
+gem "shakapacker", "~> 7.0.0.rc.2"
 
 gem "jbuilder"
 
