@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: de4cfe3342a4e7f0d4eb0653e857bc9262a97f5b
+  revision: 8aa2ffea4e2cf2f77d54773112294c165885f345
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -326,7 +326,7 @@ GEM
       lint_roller (~> 1.0)
       rubocop-performance (~> 1.18.0)
     thor (1.2.2)
-    timeout (0.3.2)
+    timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
