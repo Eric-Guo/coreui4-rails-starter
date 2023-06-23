@@ -105,7 +105,7 @@ GEM
       rails (>= 5.2)
       zeitwerk
     ast (2.4.2)
-    bcrypt (3.1.18)
+    bcrypt (3.1.19)
     bcrypt_pbkdf (1.1.0)
     bindex (0.8.1)
     builder (3.2.4)
