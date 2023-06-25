@@ -40,6 +40,9 @@
     "webpack-merge": "5"
   },
   "version": "0.1.0",
+  "resolutions": {
+    "semver": "^7.5.3"
+  },
   "babel": {
     "presets": [
       "./node_modules/shakapacker/package/babel/preset.js"
