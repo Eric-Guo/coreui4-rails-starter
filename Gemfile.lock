@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 8e7022b04eb23bba3ee592c23810d516dc567e5a
+  revision: 31eb21f1ab55d07189e9dc5d0a683818f78694f3
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -302,7 +302,7 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     semantic_range (3.0.0)
-    shakapacker (7.0.0)
+    shakapacker (7.0.1)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
