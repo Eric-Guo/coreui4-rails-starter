@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: e83840de85135b5a41680d2c111c2b1a425c0309
+  revision: 8e7022b04eb23bba3ee592c23810d516dc567e5a
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -353,6 +353,7 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin-21
+  arm64-darwin-22
   x86_64-darwin-19
   x86_64-linux
 
