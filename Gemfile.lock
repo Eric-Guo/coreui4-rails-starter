@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: a754dd01cfeac2a06a8c937c14ad71fc12e2035e
+  revision: fbd5831a7ccdc093fc03232c0ebf6ae0aab518ed
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -230,13 +230,13 @@ GEM
       net-protocol
     net-ssh (7.1.0)
     nio4r (2.5.9)
-    nokogiri (1.15.2-aarch64-linux)
+    nokogiri (1.15.3-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.15.2-arm64-darwin)
+    nokogiri (1.15.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.15.2-x86_64-darwin)
+    nokogiri (1.15.3-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.15.2-x86_64-linux)
+    nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pagy (6.0.4)
