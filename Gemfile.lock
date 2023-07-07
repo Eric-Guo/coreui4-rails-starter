@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: fbd5831a7ccdc093fc03232c0ebf6ae0aab518ed
+  revision: 9ef5772fdaf6e0faf52582d3ab84c17dddebde11
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -202,7 +202,7 @@ GEM
       activesupport (>= 5.0.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
-    lint_roller (1.0.0)
+    lint_roller (1.1.0)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -315,7 +315,7 @@ GEM
     sshkit (1.21.5)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    standard (1.29.0)
+    standard (1.30.1)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.52.0)
@@ -323,8 +323,8 @@ GEM
       standard-performance (~> 1.1.0)
     standard-custom (1.0.1)
       lint_roller (~> 1.0)
-    standard-performance (1.1.0)
-      lint_roller (~> 1.0)
+    standard-performance (1.1.1)
+      lint_roller (~> 1.1)
       rubocop-performance (~> 1.18.0)
     thor (1.2.2)
     timeout (0.4.0)
@@ -391,4 +391,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.14
+   2.4.15
