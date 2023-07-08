@@ -29,6 +29,7 @@
     "postinstall-postinstall": "^2.1.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
+    "semver": "^7.5.3",
     "shakapacker": "=7.0.2",
     "simplebar": "^6.2.0",
     "style-loader": "^3.3.1",
