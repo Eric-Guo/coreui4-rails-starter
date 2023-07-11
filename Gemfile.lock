@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 5bfb622d2c7cae9b3c6a8ec412b022029461b54b
+  revision: 348c822be4fe37444882e3d44bba580bf4be5242
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -59,6 +59,7 @@ GIT
     activerecord (7.1.0.alpha)
       activemodel (= 7.1.0.alpha)
       activesupport (= 7.1.0.alpha)
+      timeout (>= 0.4.0)
     activestorage (7.1.0.alpha)
       actionpack (= 7.1.0.alpha)
       activejob (= 7.1.0.alpha)
@@ -391,4 +392,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.15
+   2.4.16
