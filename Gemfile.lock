@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 76c4a67497353c09fa74d84b6525f05eafe77368
+  revision: 5e2bc436d91b87390244aaeadb267ae01ccde8af
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -329,8 +329,9 @@ GEM
       rubocop (~> 1.52.0)
       standard-custom (~> 1.0.0)
       standard-performance (~> 1.1.0)
-    standard-custom (1.0.1)
+    standard-custom (1.0.2)
       lint_roller (~> 1.0)
+      rubocop (~> 1.50)
     standard-performance (1.1.1)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.18.0)
