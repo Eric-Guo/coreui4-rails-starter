@@ -1,4 +1,16 @@
 GIT
+  remote: https://git.thape.com.cn/rails/devise.git
+  revision: 27004c2bd1294cc353a7a33399ffa4305e9f58a3
+  branch: main
+  specs:
+    devise (4.9.2)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
+
+GIT
   remote: https://git.thape.com.cn/rails/rails.git
   revision: 76c4a67497353c09fa74d84b6525f05eafe77368
   branch: eric_read
@@ -150,12 +162,6 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     deep_merge (1.2.2)
-    devise (4.9.2)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 4.1.0)
-      responders
-      warden (~> 1.2.3)
     devise-i18n (1.11.0)
       devise (>= 4.9.0)
     dry-configurable (1.0.1)
@@ -372,7 +378,7 @@ DEPENDENCIES
   capybara
   config
   debug (~> 1.8.0)
-  devise
+  devise!
   devise-i18n
   ed25519
   jbuilder

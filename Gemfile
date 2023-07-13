@@ -24,7 +24,7 @@ gem "jbuilder"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
-gem "devise"
+gem "devise", git: "https://git.thape.com.cn/rails/devise.git", branch: "main"
 gem "devise-i18n"
 gem "pundit"
 
