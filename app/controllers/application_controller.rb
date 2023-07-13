@@ -35,6 +35,7 @@ class ApplicationController < ActionController::Base
 
   def modern_browser?
     [
+      browser.bot?, # support rails test
       browser.chrome?(">= 86"),
       browser.safari?(">= 12"),
       browser.firefox?(">= 86"),
