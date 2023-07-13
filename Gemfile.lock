@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 348c822be4fe37444882e3d44bba580bf4be5242
+  revision: 76c4a67497353c09fa74d84b6525f05eafe77368
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -196,7 +196,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.7.2)
+    irb (1.7.3)
       reline (>= 0.3.6)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
