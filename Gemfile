@@ -29,6 +29,7 @@ gem "devise-i18n"
 gem "pundit"
 
 gem "meta-tags"
+gem "browser"
 
 gem "config"
 

@@ -1,5 +1,7 @@
 module Admin
   class HomeController < BaseController
+    before_action :check_brower, if: -> { request.format.html? }
+
     def index
     end
 

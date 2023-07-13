@@ -32,4 +32,20 @@ class ApplicationController < ActionController::Base
   def prepare_meta_tags
     set_meta_tags title: t(".title")
   end
+
+  def modern_browser?
+    [
+      browser.chrome?(">= 86"),
+      browser.safari?(">= 12"),
+      browser.firefox?(">= 86"),
+      browser.edge?(">= 86"),
+      browser.opera?(">= 75")
+    ].any?
+  end
+
+  def check_brower
+    unless modern_browser?
+      redirect_to "/nosupport-browser.html"
+    end
+  end
 end

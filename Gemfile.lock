@@ -109,6 +109,7 @@ GEM
     bcrypt (3.1.19)
     bcrypt_pbkdf (1.1.0)
     bindex (0.8.1)
+    browser (5.3.1)
     builder (3.2.4)
     capistrano (3.17.3)
       airbrussh (>= 1.0.0)
@@ -362,6 +363,7 @@ PLATFORMS
 DEPENDENCIES
   ajax-datatables-rails
   bcrypt_pbkdf
+  browser
   capistrano
   capistrano-rails
   capistrano-rbenv

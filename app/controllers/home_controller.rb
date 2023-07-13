@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   skip_before_action :authenticate_user!
+  before_action :check_brower, if: -> { request.format.html? }
   before_action :set_breadcrumbs, if: -> { request.format.html? }
 
   def index
