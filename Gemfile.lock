@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 5e2bc436d91b87390244aaeadb267ae01ccde8af
+  revision: 0e4b810abefc6ca749ce28b1dab866ef95dc6133
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -332,7 +332,7 @@ GEM
     standard-custom (1.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.50)
-    standard-performance (1.1.1)
+    standard-performance (1.1.2)
       lint_roller (~> 1.1)
       rubocop-performance (~> 1.18.0)
     thor (1.2.2)
@@ -401,4 +401,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.16
+   2.4.17
