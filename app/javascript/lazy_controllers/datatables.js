@@ -23,6 +23,17 @@ Stimulus.register("datatables", class extends Controller {
       "pagingType": "full_numbers",
       "columns": columns
     });
+
+    $(document).on('keydown', (event) => {
+      switch(event.key) {
+        case 'ArrowLeft':
+          this.datatable.page('previous').draw('page');
+          break;
+        case 'ArrowRight':
+          this.datatable.page('next').draw('page');
+          break;
+      }
+    });    
   }
 
   reload() {
@@ -30,6 +41,7 @@ Stimulus.register("datatables", class extends Controller {
   }
 
   disconnect() {
+    $(document).off('keydown');    
     this.datatable.destroy();
   }
 });
