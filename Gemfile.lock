@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: e1e6fa1411916e2bda57c90cb7d7084ad25a1b6d
+  revision: 3a75102d3a5217f86b94e38e7b3740953178519b
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -260,7 +260,7 @@ GEM
     public_suffix (5.0.3)
     puma (6.3.0)
       nio4r (~> 2.0)
-    pundit (2.3.0)
+    pundit (2.3.1)
       activesupport (>= 3.0.0)
     racc (1.7.1)
     rack (3.0.8)
