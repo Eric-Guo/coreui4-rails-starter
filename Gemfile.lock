@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 5bb9f610ce6dcc6be05e345fc3bac1043fde708e
+  revision: 6fee2d26eede4bd26c0798c3d350d2c04a6bd851
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -353,12 +353,12 @@ GEM
       selenium-webdriver (~> 4.0)
     webrick (1.8.1)
     websocket (1.2.9)
-    websocket-driver (0.7.5)
+    websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.9)
 
 PLATFORMS
   aarch64-linux
