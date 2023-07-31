@@ -1698,9 +1698,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001517:
-  version "1.0.30001517"
-  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001517.tgz#90fabae294215c3495807eb24fc809e11dc2f0a8"
-  integrity sha512-Vdhm5S11DaFVLlyiKu4hiUTkpZu+y1KA/rZZqVQfOD5YdDT/eQKlkt7NaE0WGOFgX32diqt9MiP9CAiFeRklaA==
+  version "1.0.30001518"
+  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001518.tgz#b3ca93904cb4699c01218246c4d77a71dbe97150"
+  integrity sha512-rup09/e3I0BKjncL+FesTayKtPrdwKhUufQFd3riFw1hHg8JmIFoInYfB102cFcY/pPgGmdyl/iy+jgiDi2vdA==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -2026,17 +2026,17 @@ csso@^4.2.0:
     css-tree "^1.1.2"
 
 datatables.net-bs5@^1.13.3:
-  version "1.13.5"
-  resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.5.tgz#38bdaec42f9fa08c5ac9cb9a7c51d3efafeafa69"
-  integrity sha512-q+/CSEPYULV6//8kvrjaAH/rVkoLOP9s6z+ajEbgNC/6b3WRbCbcifPXRp6XVZ94VapaqtZKveS1s2eeqZMr1g==
+  version "1.13.6"
+  resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.6.tgz#33bf10c0844bb08e17327d841089c1f277f796ff"
+  integrity sha512-lXroZoXhLhDulp8gvU7y7wBherg38SbLMGXcHwbnj+XXh4Hvy+d67zSPYbrVI3YiRwYq+aCx15G5qmMj7KjYQg==
   dependencies:
     datatables.net ">=1.13.4"
     jquery ">=1.7"
 
 datatables.net@>=1.13.4:
-  version "1.13.5"
-  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.5.tgz#790a3d70d5e103f5465ed8c52a50eb242e1e2dc4"
-  integrity sha512-XoCQHkUM5MwbC3Wx7WpVvt4i880J8pIFDA9HIKD4GhvtalryBfmdd+bZvrc/rEbraZS7U4eR2k8/wFY0NeHVqQ==
+  version "1.13.6"
+  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.6.tgz#6e282adbbb2732e8df495611b8bb54e19f7a943e"
+  integrity sha512-rHNcnW+yEP9me82/KmRcid5eKrqPqW3+I/p1TwqCW3c/7GRYYkDyF6aJQOQ9DNS/pw+nyr4BVpjyJ3yoZXiFPg==
   dependencies:
     jquery ">=1.7"
 
