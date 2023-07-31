@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 509fed19784801a9eb84da5efa8f482cfda86338
+  revision: 33e3058ffa661bb8a14f1195297e103429157614
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -236,7 +236,7 @@ GEM
       net-ssh (>= 2.6.5, < 8.0.0)
     net-smtp (0.3.3)
       net-protocol
-    net-ssh (7.1.0)
+    net-ssh (7.2.0)
     nio4r (2.5.9)
     nokogiri (1.15.3-aarch64-linux)
       racc (~> 1.4)
@@ -358,7 +358,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.9)
+    zeitwerk (2.6.10)
 
 PLATFORMS
   aarch64-linux
