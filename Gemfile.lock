@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 33e3058ffa661bb8a14f1195297e103429157614
+  revision: c7eeebd93b0e1afacdf9bf67dd6d97a37a453a92
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -347,10 +347,10 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (5.2.0)
+    webdrivers (5.3.1)
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
-      selenium-webdriver (~> 4.0)
+      selenium-webdriver (~> 4.0, < 4.11)
     webrick (1.8.1)
     websocket (1.2.9)
     websocket-driver (0.7.6)
