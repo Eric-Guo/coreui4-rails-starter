@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: b6a615e776e5b5fec1f61f480ffb8f481f5f5e62
+  revision: 2687b73ce33986985fb65907d5234b1e02923385
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -358,7 +358,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.10)
+    zeitwerk (2.6.11)
 
 PLATFORMS
   aarch64-linux
@@ -401,4 +401,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.17
+   2.4.18
