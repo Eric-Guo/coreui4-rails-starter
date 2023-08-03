@@ -1,4 +1,4 @@
-<div class="sidebar sidebar-dark sidebar-fixed bg-dark-gradient" id="sidebar">
+<div class="sidebar sidebar-dark sidebar-fixed bg-dark-gradient <%= current_user&.sidebar_narrow? ? "sidebar-narrow-unfoldable" : "" -%>" id="sidebar">
   <div class="sidebar-brand d-none d-md-flex">
     <%= link_to root_path, class: "text-reset text-decoration-none" do %>
       <svg alt="CoreUI Logo" class="sidebar-brand-full" height="46" width="118">

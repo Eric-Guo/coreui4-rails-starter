@@ -4,6 +4,8 @@ en:
     profiles:
       show:
         title: "Edit Profile"
+        sidebar_narrow: "Narrow sidebar"
+        email: "Email"
         submit: "Submit"
         updated: "Profile update successfully"
         section:
@@ -13,3 +15,6 @@ en:
           preferred_page_length:
             title: "Preferred page length"
             description: "Chooose your preferred page length."
+          sidebar_narrow:
+            title: "Change sidebar width"
+            description: "Whether to display narrow sidebars to fit width-constrained monitors."

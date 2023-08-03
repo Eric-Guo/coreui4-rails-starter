@@ -39,6 +39,24 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-md-4">
+            <h5>
+              <%= t(".section.sidebar_narrow.title") %>
+            </h5>
+            <p class="text-medium-emphasis">
+              <%= t(".section.sidebar_narrow.description") %>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <div class="form-group mt-2">
+              <div class="form-check form-switch form-switch-xl">
+                <%= f.check_box :sidebar_narrow, class: "form-check-input" %>
+                <%= f.label :sidebar_narrow, t(".sidebar_narrow"), class: "form-check-label" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-md-4 offset-md-4">
               <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
           </div>

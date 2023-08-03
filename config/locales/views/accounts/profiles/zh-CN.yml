@@ -4,6 +4,8 @@ zh-CN:
     profiles:
       show:
         title: "编辑个人资料"
+        sidebar_narrow: "窄侧边栏"
+        email: "电子邮箱"
         submit: "提交"
         updated: "个人资料更新成功"
         section:
@@ -13,3 +15,6 @@ zh-CN:
           preferred_page_length:
             title: "首选页面长度"
             description: "请选择您喜欢的页面长度。"
+          sidebar_narrow:
+            title: "更改侧边栏宽度"
+            description: "是否显示窄侧边栏以适应宽度受限的显示器。"

@@ -30,7 +30,7 @@ module Accounts
     end
 
     def user_params
-      params.require(:user).permit(:preferred_language, :preferred_page_length)
+      params.require(:user).permit(:preferred_language, :preferred_page_length, :sidebar_narrow)
     end
 
     def set_breadcrumbs
