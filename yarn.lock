@@ -963,6 +963,13 @@
     "@coreui/coreui" "^4.2.6"
     chart.js "^3.9.1"
 
+"@coreui/coreui@=4.2.6":
+  version "4.2.6"
+  resolved "https://registry.npmmirror.com/@coreui/coreui/-/coreui-4.2.6.tgz#8ae8aa4c834552328c5748385be5bc33df86aab7"
+  integrity sha512-h9j1BVnaDi9vSr1t0H8NL3hlDD4lU9kIdGLXn7g9k5iaFq5EDlRDcSBDer6lR2O4sIEl7W7YqTlevLxFC+1cIA==
+  dependencies:
+    postcss-combine-duplicated-selectors "^10.0.3"
+
 "@coreui/coreui@^4.2.6":
   version "4.3.0"
   resolved "https://registry.npmmirror.com/@coreui/coreui/-/coreui-4.3.0.tgz#d9dca67d45aa245ecbfe5c0f1cd97030e1b9b4c5"
