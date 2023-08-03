@@ -1,4 +1,4 @@
-<div class="sidebar sidebar-dark sidebar-fixed bg-dark-gradient <%= current_user&.sidebar_narrow? ? "sidebar-narrow-unfoldable" : "" -%>" id="sidebar">
+<div class="sidebar sidebar-dark sidebar-fixed bg-dark-gradient <%= current_user&.sidebar_narrow? ? "sidebar-narrow-unfoldable" : "" -%>" id="sidebar" data-controller="sidebar">
   <div class="sidebar-brand d-none d-md-flex">
     <%= link_to root_path, class: "text-reset text-decoration-none" do %>
       <svg alt="CoreUI Logo" class="sidebar-brand-full" height="46" width="118">
@@ -10,7 +10,7 @@
         <use xlink:href="<%= asset_path('coreui.svg#signet') %>"></use>
       </svg>
     <% end %>
-    <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+    <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable" data-action="click->sidebar#click"></button>
   </div>
   <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
     <%= nav_item(t('.dashboard'), root_path, 'free.svg#cil-speedometer') do %>
