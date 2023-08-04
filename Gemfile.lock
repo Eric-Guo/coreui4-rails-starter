@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 2687b73ce33986985fb65907d5234b1e02923385
+  revision: e02567b9cd1d520231d2eeaad3915ba68b1c6551
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -40,7 +40,7 @@ GIT
       net-imap
       net-pop
       net-smtp
-      rails-dom-testing (~> 2.0)
+      rails-dom-testing (~> 2.2)
     actionpack (7.1.0.alpha)
       actionview (= 7.1.0.alpha)
       activesupport (= 7.1.0.alpha)
@@ -48,7 +48,7 @@ GIT
       rack (>= 2.2.4)
       rack-session (>= 1.0.1)
       rack-test (>= 0.6.3)
-      rails-dom-testing (~> 2.0)
+      rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
     actiontext (7.1.0.alpha)
       actionpack (= 7.1.0.alpha)
@@ -61,7 +61,7 @@ GIT
       activesupport (= 7.1.0.alpha)
       builder (~> 3.1)
       erubi (~> 1.11)
-      rails-dom-testing (~> 2.0)
+      rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
     activejob (7.1.0.alpha)
       activesupport (= 7.1.0.alpha)
