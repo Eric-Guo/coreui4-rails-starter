@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: 6c7481c67bf09b8172f2c6c2423005a14b2baede
+  revision: 04fa6311997007f218ff046c3142e760585dcd90
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -79,10 +79,13 @@ GIT
       activesupport (= 7.1.0.alpha)
       marcel (~> 1.0)
     activesupport (7.1.0.alpha)
+      base64
       concurrent-ruby (~> 1.0, >= 1.0.2)
       connection_pool (>= 2.2.5)
+      drb
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
+      mutex_m
       tzinfo (~> 2.0)
     rails (7.1.0.alpha)
       actioncable (= 7.1.0.alpha)
@@ -112,12 +115,13 @@ GEM
   specs:
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
-    airbrussh (1.4.1)
+    airbrussh (1.4.2)
       sshkit (>= 1.6.1, != 1.7.0)
     ajax-datatables-rails (1.4.0)
       rails (>= 5.2)
       zeitwerk
     ast (2.4.2)
+    base64 (0.1.1)
     bcrypt (3.1.19)
     bcrypt_pbkdf (1.1.0)
     bindex (0.8.1)
@@ -164,6 +168,8 @@ GEM
     deep_merge (1.2.2)
     devise-i18n (1.11.0)
       devise (>= 4.9.0)
+    drb (2.1.1)
+      ruby2_keywords
     dry-configurable (1.1.0)
       dry-core (~> 1.0, < 2)
       zeitwerk (~> 2.6)
@@ -223,8 +229,9 @@ GEM
     matrix (0.4.2)
     meta-tags (2.18.0)
       actionpack (>= 3.2.0, < 7.1)
-    mini_mime (1.1.2)
+    mini_mime (1.1.5)
     minitest (5.19.0)
+    mutex_m (0.1.2)
     net-imap (0.3.7)
       date
       net-protocol
@@ -305,6 +312,7 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.13.0)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.11.0)
       rexml (~> 3.2, >= 3.2.5)
