@@ -1,6 +1,6 @@
 GIT
   remote: https://git.thape.com.cn/rails/devise.git
-  revision: 27004c2bd1294cc353a7a33399ffa4305e9f58a3
+  revision: 07c6764a14a6e9d7a4701f9f7aacfd6bce7d29f2
   branch: main
   specs:
     devise (4.9.2)
