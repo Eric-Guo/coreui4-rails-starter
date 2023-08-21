@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   before_action :set_breadcrumbs, if: -> { request.format.html? }
 
   def index
-    return redirect_to admin_root_path if current_user&.admin?
+    redirect_to admin_root_path if current_user&.admin?
   end
 
   protected
