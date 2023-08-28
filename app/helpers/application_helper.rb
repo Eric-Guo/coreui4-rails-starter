@@ -1,9 +1,10 @@
 module ApplicationHelper
   include Pagy::Frontend
 
-  def svg_icon(cil_name, icon_class)
+  def svg_icon(cil_name, icon_class, options = {})
+    options["xlink:href"] = asset_path(cil_name)
     content_tag :svg, nil, class: icon_class do
-      content_tag :use, nil, "xlink:href": asset_path(cil_name)
+      content_tag :use, nil, options
     end
   end
 
