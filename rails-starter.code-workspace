@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.bundle": true,
+			"**/.idea": true,
+			"**/log": true,
+			"**/node_modules": true,
+			"**/tmp": true
+		}
+	}
+}
