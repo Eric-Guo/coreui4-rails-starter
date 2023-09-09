@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: a3d4ba93836241fffaca497018b2b42f58a4bfb5
+  revision: c3f45eb29aeaab793746a3fa6c8410fde90f683e
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -340,10 +340,10 @@ GEM
     sshkit (1.21.5)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    standard (1.31.0)
+    standard (1.31.1)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
-      rubocop (~> 1.56.0)
+      rubocop (~> 1.56.2)
       standard-custom (~> 1.0.0)
       standard-performance (~> 1.2)
     standard-custom (1.0.2)
