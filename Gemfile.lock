@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://git.thape.com.cn/rails/rails.git
-  revision: ab0dd0cd8eaa83b3fbb41362817a9c86bce9d060
+  revision: abe876a3af0c173fd346934cf0e3f1e0196b80d3
   branch: eric_read
   specs:
     actioncable (7.1.0.alpha)
@@ -303,7 +303,7 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.6)
-    rubocop (1.56.2)
+    rubocop (1.56.3)
       base64 (~> 0.1.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
