@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "~> 3.0"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
-gem "rails", git: "https://git.thape.com.cn/rails/rails.git", branch: "eric_read"
+gem "rails", "~> 7.1.0.beta1"
 
 gem "propshaft"
 
