@@ -23,6 +23,9 @@ module CoreuiProRailsStarter
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 
+    # Please, see https://guides.rubyonrails.org/autoloading_and_reloading_constants.html#config-autoload-lib-ignore.
+    config.autoload_lib(ignore: %w[assets tasks])
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
