@@ -1,11 +1,6 @@
-<p align="center">
-  <p align="center">The CoreUI 4 Rails starter template</p>
-  <p align="center">
-    <a href="https://github.com/Eric-Guo/coreui4-rails-starter/actions">
-      <img src="https://github.com/Eric-Guo/coreui4-rails-starter/actions/workflows/rubyonrails.yml/badge.svg">
-    </a>
-  </p>
-</p>
+# The CoreUI 4 Rails Starter Template
+
+[![Build Status](https://github.com/Eric-Guo/coreui4-rails-starter/actions/workflows/rubyonrails.yml/badge.svg)](https://github.com/Eric-Guo/coreui4-rails-starter/actions)
 
 ## Development notes
 
