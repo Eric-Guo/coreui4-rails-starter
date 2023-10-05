@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "~> 3.0"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
-gem "rails", "~> 7.1.0.rc2"
+gem "rails", "~> 7.1.0"
 
 gem "propshaft"
 
@@ -28,7 +28,8 @@ gem "devise", git: "https://git.thape.com.cn/rails/devise.git", branch: "main"
 gem "devise-i18n"
 gem "pundit"
 
-gem "meta-tags"
+# bundle config local.meta-tags /Users/guochunzhong/git/oss/meta-tags/
+gem "meta-tags", git: "https://git.thape.com.cn/rails/meta-tags", branch: "main"
 gem "browser"
 
 gem "config"
