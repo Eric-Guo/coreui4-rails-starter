@@ -89,7 +89,7 @@ GEM
     bindex (0.8.1)
     browser (5.3.1)
     builder (3.2.4)
-    capistrano (3.17.3)
+    capistrano (3.18.0)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
@@ -390,7 +390,7 @@ DEPENDENCIES
   propshaft
   puma
   pundit
-  rails (~> 7.1.0)
+  rails (~> 7.1.1)
   selenium-webdriver (>= 4.11.0)
   shakapacker
   sqlite3 (~> 1.4)
@@ -402,4 +402,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.20
+   2.4.21
