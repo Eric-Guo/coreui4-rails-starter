@@ -2029,17 +2029,17 @@ csso@^4.2.0:
     css-tree "^1.1.2"
 
 datatables.net-bs5@^1.13.3:
-  version "1.13.6"
-  resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.6.tgz#33bf10c0844bb08e17327d841089c1f277f796ff"
-  integrity sha512-lXroZoXhLhDulp8gvU7y7wBherg38SbLMGXcHwbnj+XXh4Hvy+d67zSPYbrVI3YiRwYq+aCx15G5qmMj7KjYQg==
+  version "1.13.7"
+  resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.7.tgz#21031683f963c631b3ea7c308b9bcf0044076795"
+  integrity sha512-saPdg9YEUlbnRn8BuMvLSUhcNMk3cMaLUxmeGOdoOvtSqTjWCp3WYLkSOXuW7SOsdkC9eQnC+DrFnHyMba7LOA==
   dependencies:
-    datatables.net ">=1.13.4"
+    datatables.net "1.13.7"
     jquery ">=1.7"
 
-datatables.net@>=1.13.4:
-  version "1.13.6"
-  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.6.tgz#6e282adbbb2732e8df495611b8bb54e19f7a943e"
-  integrity sha512-rHNcnW+yEP9me82/KmRcid5eKrqPqW3+I/p1TwqCW3c/7GRYYkDyF6aJQOQ9DNS/pw+nyr4BVpjyJ3yoZXiFPg==
+datatables.net@1.13.7:
+  version "1.13.7"
+  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.7.tgz#8b130845a59ab16fedd760ecf4b96d96418aca1b"
+  integrity sha512-lbmcCSrMU8VTaGwgCxWs/jbP8NVJlzXaUkK3SiiZY7tTjRp7XJw4InlOU+XUVZ4i4B2GBxue02/P5iVto1CGDg==
   dependencies:
     jquery ">=1.7"
 
@@ -2158,9 +2158,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.535:
-  version "1.4.575"
-  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.575.tgz#7c0b87eb2c6214a993699792abd704de41255c39"
-  integrity sha512-kY2BGyvgAHiX899oF6xLXSIf99bAvvdPhDoJwG77nxCSyWYuRH6e9a9a3gpXBvCs6lj4dQZJkfnW2hdKWHEISg==
+  version "1.4.576"
+  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.576.tgz#0c6940fdc0d60f7e34bd742b29d8fa847c9294d1"
+  integrity sha512-yXsZyXJfAqzWk1WKryr0Wl0MN2D47xodPvEEwlVePBnhU5E7raevLQR+E6b9JAD3GfL/7MbAL9ZtWQQPcLx7wA==
 
 emojis-list@^3.0.0:
   version "3.0.0"
