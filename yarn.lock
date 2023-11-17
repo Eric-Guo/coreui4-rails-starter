@@ -1229,9 +1229,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "20.9.0"
-  resolved "https://registry.npmmirror.com/@types/node/-/node-20.9.0.tgz#bfcdc230583aeb891cf51e73cfdaacdd8deae298"
-  integrity sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==
+  version "20.9.1"
+  resolved "https://registry.npmmirror.com/@types/node/-/node-20.9.1.tgz#9d578c610ce1e984adda087f685ace940954fe19"
+  integrity sha512-HhmzZh5LSJNS5O8jQKpJ/3ZcrrlG6L70hpGqMIAoM9YVD0YBRNWYsfwcXq8VnSjlNpCpgLzMXdiPo+dxcvSmiA==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2037,17 +2037,17 @@ csso@^4.2.0:
     css-tree "^1.1.2"
 
 datatables.net-bs5@^1.13.3:
-  version "1.13.7"
-  resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.7.tgz#21031683f963c631b3ea7c308b9bcf0044076795"
-  integrity sha512-saPdg9YEUlbnRn8BuMvLSUhcNMk3cMaLUxmeGOdoOvtSqTjWCp3WYLkSOXuW7SOsdkC9eQnC+DrFnHyMba7LOA==
+  version "1.13.8"
+  resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.8.tgz#807dca4b95c139fe217ed87bd25f3502b1d873d3"
+  integrity sha512-3B6S8LiKGtUtOsA97SkMddwggrza6JDtubnw1qjFb/mjqDmWO0PC1+QWeUspkLPFQCCbLaSVfXLWMdo44IGEmQ==
   dependencies:
-    datatables.net "1.13.7"
+    datatables.net "1.13.8"
     jquery ">=1.7"
 
-datatables.net@1.13.7:
-  version "1.13.7"
-  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.7.tgz#8b130845a59ab16fedd760ecf4b96d96418aca1b"
-  integrity sha512-lbmcCSrMU8VTaGwgCxWs/jbP8NVJlzXaUkK3SiiZY7tTjRp7XJw4InlOU+XUVZ4i4B2GBxue02/P5iVto1CGDg==
+datatables.net@1.13.8:
+  version "1.13.8"
+  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.8.tgz#05a2fb5a036b0b65b66d1bb1eae0ba018aaea8a3"
+  integrity sha512-2pDamr+GUwPTby2OgriVB9dR9ftFKD2AQyiuCXzZIiG4d9KkKFQ7gqPfNmG7uj9Tc5kDf+rGj86do4LAb/V71g==
   dependencies:
     jquery ">=1.7"
 
@@ -2166,9 +2166,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.535:
-  version "1.4.585"
-  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.585.tgz#7b3cb6846bb5cc10a8d5904c351a9b8aaa76ea90"
-  integrity sha512-B4yBlX0azdA3rVMxpYwLQfDpdwOgcnLCkpvSOd68iFmeedo+WYjaBJS3/W58LVD8CB2nf+o7C4K9xz1l09RkWg==
+  version "1.4.586"
+  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.586.tgz#68683163ed52a111213e2482ff847e76a5c6e891"
+  integrity sha512-qMa+E6yf1fNQbg3G66pHLXeJUP5CCCzNat1VPczOZOqgI2w4u+8y9sQnswMdGs5m4C1rOePq37EVBr/nsPQY7w==
 
 emojis-list@^3.0.0:
   version "3.0.0"
