@@ -80,8 +80,9 @@
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.12.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.1, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="irb (v1.9.1, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="irb (v1.10.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.7.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.3, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lint_roller (v1.1.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.22.0, ruby-3.2.2-p53) [gem]" level="application" />
@@ -92,13 +93,13 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.20.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mutex_m (v0.2.0, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.4.6, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.4.7, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.2, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-protocol (v0.2.2, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-scp (v4.0.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.4.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-ssh (v7.2.0, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.6.1, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.7.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.15.5, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pagy (v6.2.0, ruby-3.2.2-p53) [gem]" level="application" />
@@ -121,9 +122,9 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v7.1.2, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.1.0, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.6.0, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.8.2, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="reline (v0.4.0, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.6.1, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.8.3, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="reline (v0.4.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v3.1.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.6, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.57.2, ruby-3.2.2-p53) [gem]" level="application" />
@@ -131,15 +132,15 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.19.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.15.0, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.16.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="semantic_range (v3.0.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shakapacker (v7.1.0, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.6.8, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.6.9, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sshkit (v1.21.6, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="standard (v1.32.0, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="standard (v1.32.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="standard-custom (v1.0.2, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="standard-performance (v1.2.1, ruby-3.2.2-p53) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="stringio (v3.0.9, ruby-3.2.2-p53) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="stringio (v3.1.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.0, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.4.1, ruby-3.2.2-p53) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, ruby-3.2.2-p53) [gem]" level="application" />
@@ -252,6 +253,108 @@
         <option value="test_unit:policy" />
       </list>
     </option>
+  </component>
+  <component name="RailsPaths" isManagedAutomatically="true">
+    <entry key="app">
+      <value>file://$MODULE_DIR$/app</value>
+    </entry>
+    <entry key="app/assets">
+      <value>file://$MODULE_DIR$/app/assets</value>
+    </entry>
+    <entry key="app/channels">
+      <value>file://$MODULE_DIR$/app/channels</value>
+    </entry>
+    <entry key="app/controllers">
+      <value>file://$MODULE_DIR$/app/controllers</value>
+    </entry>
+    <entry key="app/helpers">
+      <value>file://$MODULE_DIR$/app/helpers</value>
+    </entry>
+    <entry key="app/mailers">
+      <value>file://$MODULE_DIR$/app/mailers</value>
+    </entry>
+    <entry key="app/models">
+      <value>file://$MODULE_DIR$/app/models</value>
+    </entry>
+    <entry key="app/views">
+      <value>file://$MODULE_DIR$/app/views</value>
+    </entry>
+    <entry key="config">
+      <value>file://$MODULE_DIR$/config</value>
+    </entry>
+    <entry key="config/cable">
+      <value>file://$MODULE_DIR$/config/cable.yml</value>
+    </entry>
+    <entry key="config/database">
+      <value>file://$MODULE_DIR$/config/database.yml</value>
+    </entry>
+    <entry key="config/environment">
+      <value>file://$MODULE_DIR$/config/environment.rb</value>
+    </entry>
+    <entry key="config/environments">
+      <value>file://$MODULE_DIR$/config/environments</value>
+    </entry>
+    <entry key="config/initializers">
+      <value>file://$MODULE_DIR$/config/initializers</value>
+    </entry>
+    <entry key="config/locales">
+      <value>file://$MODULE_DIR$/config/locales</value>
+    </entry>
+    <entry key="config/routes">
+      <value>file://$MODULE_DIR$/config/routes</value>
+    </entry>
+    <entry key="config/routes.rb">
+      <value>file://$MODULE_DIR$/config/routes.rb</value>
+    </entry>
+    <entry key="config/secrets">
+      <value>file://$MODULE_DIR$/config</value>
+    </entry>
+    <entry key="db">
+      <value>file://$MODULE_DIR$/db</value>
+    </entry>
+    <entry key="db/migrate">
+      <value>file://$MODULE_DIR$/db/migrate</value>
+    </entry>
+    <entry key="db/seeds.rb">
+      <value>file://$MODULE_DIR$/db/seeds.rb</value>
+    </entry>
+    <entry key="lib">
+      <value>file://$MODULE_DIR$/lib</value>
+    </entry>
+    <entry key="lib/assets">
+      <value>file://$MODULE_DIR$/lib/assets</value>
+    </entry>
+    <entry key="lib/tasks">
+      <value>file://$MODULE_DIR$/lib/tasks</value>
+    </entry>
+    <entry key="lib/templates">
+      <value>file://$MODULE_DIR$/lib/templates</value>
+    </entry>
+    <entry key="log">
+      <value>file://$MODULE_DIR$/log/development.log</value>
+    </entry>
+    <entry key="public">
+      <value>file://$MODULE_DIR$/public</value>
+    </entry>
+    <entry key="public/javascripts">
+      <value>file://$MODULE_DIR$/public/javascripts</value>
+    </entry>
+    <entry key="public/stylesheets">
+      <value>file://$MODULE_DIR$/public/stylesheets</value>
+    </entry>
+    <entry key="test/mailers/previews">
+      <value>file://$MODULE_DIR$/test/mailers/previews</value>
+      <value>file://$MODULE_DIR$/test/mailers/previews</value>
+    </entry>
+    <entry key="tmp">
+      <value>file://$MODULE_DIR$/tmp</value>
+    </entry>
+    <entry key="vendor">
+      <value>file://$MODULE_DIR$/vendor</value>
+    </entry>
+    <entry key="vendor/assets">
+      <value>file://$MODULE_DIR$/vendor/assets</value>
+    </entry>
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">
