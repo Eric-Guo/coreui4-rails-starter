@@ -217,7 +217,11 @@ GEM
     nio4r (2.7.0)
     nokogiri (1.15.5-aarch64-linux)
       racc (~> 1.4)
+    nokogiri (1.15.5-arm-linux)
+      racc (~> 1.4)
     nokogiri (1.15.5-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.5-x86-linux)
       racc (~> 1.4)
     nokogiri (1.15.5-x86_64-darwin)
       racc (~> 1.4)
@@ -225,7 +229,7 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pagy (6.2.0)
-    parallel (1.23.0)
+    parallel (1.24.0)
     parser (3.2.2.4)
       ast (~> 2.4.1)
       racc
@@ -322,7 +326,9 @@ GEM
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
     sqlite3 (1.6.9-aarch64-linux)
+    sqlite3 (1.6.9-arm-linux)
     sqlite3 (1.6.9-arm64-darwin)
+    sqlite3 (1.6.9-x86-linux)
     sqlite3 (1.6.9-x86_64-darwin)
     sqlite3 (1.6.9-x86_64-linux)
     sshkit (1.21.6)
@@ -364,9 +370,10 @@ GEM
 
 PLATFORMS
   aarch64-linux
-  arm64-darwin-21
-  arm64-darwin-22
-  x86_64-darwin-19
+  arm-linux
+  arm64-darwin
+  x86-linux
+  x86_64-darwin
   x86_64-linux
 
 DEPENDENCIES
@@ -399,7 +406,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.2.0p0
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.22
+   2.5.1
