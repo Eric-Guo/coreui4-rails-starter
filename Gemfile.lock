@@ -232,7 +232,7 @@ GEM
     package_json (0.1.0)
     pagy (6.2.0)
     parallel (1.24.0)
-    parser (3.3.0.0)
+    parser (3.3.0.1)
       ast (~> 2.4.1)
       racc
     propshaft (0.8.0)
