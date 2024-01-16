@@ -43,6 +43,7 @@
   "version": "0.1.0",
   "resolutions": {
     "@types/retry": "^0.12.5",
+    "mdn-data": "~2.0.30",
     "semver": "^7.5.3"
   },
   "babel": {
