@@ -2031,7 +2031,7 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
-datatables.net-bs5@^1.13.3:
+datatables.net-bs5@^1.13.10:
   version "1.13.10"
   resolved "https://registry.npmmirror.com/datatables.net-bs5/-/datatables.net-bs5-1.13.10.tgz#5e8b74a15ad31ba6ae13fe7c156d4e4326090ce9"
   integrity sha512-6SPQ7NWufVD4+ibxVMHmaWiObz4SGBaNeZglne4m2xwThaWIAPiJ9OQ2QypcN9Y7ap2uU6QVTPvVmorA9CF5fQ==
@@ -2039,10 +2039,10 @@ datatables.net-bs5@^1.13.3:
     datatables.net "1.13.8"
     jquery ">=1.7"
 
-datatables.net@1.13.8:
-  version "1.13.8"
-  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.8.tgz#05a2fb5a036b0b65b66d1bb1eae0ba018aaea8a3"
-  integrity sha512-2pDamr+GUwPTby2OgriVB9dR9ftFKD2AQyiuCXzZIiG4d9KkKFQ7gqPfNmG7uj9Tc5kDf+rGj86do4LAb/V71g==
+datatables.net@1.13.8, datatables.net@^1.13.10:
+  version "1.13.10"
+  resolved "https://registry.npmmirror.com/datatables.net/-/datatables.net-1.13.10.tgz#4527e2b5428394732331c8b7db8fa20a56c0cc7b"
+  integrity sha512-lVjpXGX9VzOpiPYnJ/KxOsYMAVa3oc3UniYGGo6pLBVCyajzMo80yisgXRz8J392wkZOc3bpp6VPs2pDbpKlyw==
   dependencies:
     jquery ">=1.7"
 
