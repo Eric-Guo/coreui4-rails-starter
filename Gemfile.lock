@@ -181,7 +181,7 @@ GEM
       net-ssh (>= 5.0.0, < 8.0.0)
     net-smtp (0.5.0)
       net-protocol
-    net-ssh (7.2.1)
+    net-ssh (7.2.3)
     nio4r (2.7.1)
     nokogiri (1.16.3-aarch64-linux)
       racc (~> 1.4)
@@ -210,7 +210,7 @@ GEM
       railties (>= 7.0.0)
     psych (5.1.2)
       stringio
-    public_suffix (5.0.4)
+    public_suffix (5.0.5)
     puma (6.4.2)
       nio4r (~> 2.0)
     pundit (2.3.1)
@@ -282,7 +282,7 @@ GEM
     rubocop-performance (1.20.2)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.30.0, < 2.0)
-    ruby-lsp (0.15.0)
+    ruby-lsp (0.16.0)
       language_server-protocol (~> 3.17.0)
       prism (>= 0.22.0, < 0.25)
       sorbet-runtime (>= 0.5.10782)
