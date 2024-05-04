@@ -29,7 +29,7 @@ gem "devise-i18n"
 gem "pundit"
 
 gem "meta-tags"
-gem "browser"
+gem "browser", "< 6" # support ruby 3.0
 
 gem "config"
 
