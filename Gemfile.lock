@@ -212,7 +212,7 @@ GEM
       railties (>= 7.0.0)
     psych (5.1.2)
       stringio
-    public_suffix (5.1.0)
+    public_suffix (5.1.1)
     puma (6.4.2)
       nio4r (~> 2.0)
     pundit (2.3.2)
@@ -287,11 +287,13 @@ GEM
     rubocop-performance (1.21.1)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    ruby-lsp (0.17.3)
+    ruby-lsp (0.17.4)
       language_server-protocol (~> 3.17.0)
       prism (>= 0.29.0, < 0.31)
       rbs (>= 3, < 4)
       sorbet-runtime (>= 0.5.10782)
+    ruby-lsp-rails (0.3.7)
+      ruby-lsp (>= 0.17.0, < 0.18.0)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.21.1)
@@ -385,6 +387,7 @@ DEPENDENCIES
   pundit
   rails (~> 7.1.2)
   ruby-lsp
+  ruby-lsp-rails
   selenium-webdriver (>= 4.11.0)
   shakapacker (~> 8.0)
   sqlite3 (~> 1.4)
