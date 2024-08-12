@@ -4,12 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "~> 3.0"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
-gem "rails", "~> 7.1.2"
+gem "rails", "~> 7.2.0"
 
 gem "propshaft"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "sqlite3"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma"
@@ -34,7 +34,7 @@ gem "browser", "< 6" # support ruby 3.0
 gem "config"
 
 gem "ajax-datatables-rails"
-gem "pagy", "~> 6.4"
+gem "pagy"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
@@ -76,5 +76,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  gem "selenium-webdriver", ">= 4.11.0"
+  gem "selenium-webdriver", ">= 4.23.0"
 end
