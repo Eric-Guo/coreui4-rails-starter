@@ -203,7 +203,7 @@ GEM
       ast (~> 2.4.1)
       racc
     prism (1.0.0)
-    propshaft (1.0.0)
+    propshaft (1.0.1)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
       rack
@@ -267,7 +267,7 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.3.7)
+    rexml (3.3.8)
     rubocop (1.65.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
