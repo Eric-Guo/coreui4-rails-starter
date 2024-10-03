@@ -180,7 +180,7 @@ GEM
       net-ssh (>= 5.0.0, < 8.0.0)
     net-smtp (0.5.0)
       net-protocol
-    net-ssh (7.2.3)
+    net-ssh (7.3.0)
     nio4r (2.7.3)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
@@ -202,7 +202,7 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
-    prism (1.0.0)
+    prism (1.1.0)
     propshaft (1.1.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -257,7 +257,7 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.2.1)
-    rbs (3.6.0)
+    rbs (3.6.1)
       logger
     rdoc (6.7.0)
       psych (>= 4.0.0)
@@ -307,7 +307,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    sorbet-runtime (0.5.11589)
+    sorbet-runtime (0.5.11592)
     sqlite3 (2.1.0-aarch64-linux-gnu)
     sqlite3 (2.1.0-arm-linux-gnu)
     sqlite3 (2.1.0-arm64-darwin)
