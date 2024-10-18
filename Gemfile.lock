@@ -86,7 +86,7 @@ GEM
     bcrypt_pbkdf (1.1.1-x86_64-darwin)
     bigdecimal (3.1.8)
     bindex (0.8.1)
-    browser (5.3.1)
+    browser (6.0.0)
     builder (3.3.0)
     capistrano (3.19.1)
       airbrussh (>= 1.0.0)
@@ -306,7 +306,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    sorbet-runtime (0.5.11604)
+    sorbet-runtime (0.5.11608)
     sqlite3 (2.1.0-aarch64-linux-gnu)
     sqlite3 (2.1.0-arm-linux-gnu)
     sqlite3 (2.1.0-arm64-darwin)
@@ -365,7 +365,7 @@ PLATFORMS
 DEPENDENCIES
   ajax-datatables-rails
   bcrypt_pbkdf
-  browser (< 6)
+  browser
   capistrano
   capistrano-rails
   capistrano-rbenv
@@ -383,10 +383,10 @@ DEPENDENCIES
   propshaft
   puma
   pundit
-  rails (~> 7.2.0)
+  rails (~> 7.2.1)
   ruby-lsp
   ruby-lsp-rails
-  selenium-webdriver (>= 4.23.0)
+  selenium-webdriver (>= 4.25.0)
   shakapacker (~> 8.0)
   sqlite3
   standard

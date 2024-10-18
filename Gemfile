@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "~> 3.0"
+ruby "~> 3.1"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 7.2.1"
 
 gem "propshaft"
 
@@ -29,7 +29,7 @@ gem "devise-i18n"
 gem "pundit"
 
 gem "meta-tags"
-gem "browser", "< 6" # support ruby 3.0
+gem "browser"
 
 gem "config"
 
@@ -76,5 +76,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  gem "selenium-webdriver", ">= 4.23.0"
+  gem "selenium-webdriver", ">= 4.25.0"
 end
