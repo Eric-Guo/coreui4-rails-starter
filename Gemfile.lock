@@ -199,9 +199,9 @@ GEM
     orm_adapter (0.5.0)
     ostruct (0.6.0)
     package_json (0.1.0)
-    pagy (9.1.1)
+    pagy (9.2.0)
     parallel (1.26.3)
-    parser (3.3.5.1)
+    parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
     prism (1.2.0)
@@ -284,13 +284,13 @@ GEM
     rubocop-performance (1.22.1)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    ruby-lsp (0.20.1)
+    ruby-lsp (0.21.3)
       language_server-protocol (~> 3.17.0)
       prism (>= 1.2, < 2.0)
       rbs (>= 3, < 4)
       sorbet-runtime (>= 0.5.10782)
-    ruby-lsp-rails (0.3.21)
-      ruby-lsp (>= 0.20.0, < 0.21.0)
+    ruby-lsp-rails (0.3.23)
+      ruby-lsp (>= 0.21.2, < 0.22.0)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     securerandom (0.3.1)
@@ -307,7 +307,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    sorbet-runtime (0.5.11633)
+    sorbet-runtime (0.5.11635)
     sqlite3 (2.2.0-aarch64-linux-gnu)
     sqlite3 (2.2.0-arm-linux-gnu)
     sqlite3 (2.2.0-arm64-darwin)
@@ -397,4 +397,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.5.22
+   2.5.23
