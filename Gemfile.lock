@@ -168,7 +168,7 @@ GEM
     meta-tags (2.22.1)
       actionpack (>= 6.0.0, < 8.1)
     mini_mime (1.1.5)
-    minitest (5.25.1)
+    minitest (5.25.2)
     net-imap (0.5.1)
       date
       net-protocol
@@ -308,12 +308,12 @@ GEM
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
     sorbet-runtime (0.5.11647)
-    sqlite3 (2.2.0-aarch64-linux-gnu)
-    sqlite3 (2.2.0-arm-linux-gnu)
-    sqlite3 (2.2.0-arm64-darwin)
-    sqlite3 (2.2.0-x86-linux-gnu)
-    sqlite3 (2.2.0-x86_64-darwin)
-    sqlite3 (2.2.0-x86_64-linux-gnu)
+    sqlite3 (2.3.0-aarch64-linux-gnu)
+    sqlite3 (2.3.0-arm-linux-gnu)
+    sqlite3 (2.3.0-arm64-darwin)
+    sqlite3 (2.3.0-x86-linux-gnu)
+    sqlite3 (2.3.0-x86_64-darwin)
+    sqlite3 (2.3.0-x86_64-linux-gnu)
     sshkit (1.23.2)
       base64
       net-scp (>= 1.1.2)
