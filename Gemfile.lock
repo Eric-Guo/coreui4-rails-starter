@@ -213,7 +213,7 @@ GEM
     psych (5.2.0)
       stringio
     public_suffix (6.0.1)
-    puma (6.4.3)
+    puma (6.5.0)
       nio4r (~> 2.0)
     pundit (2.4.0)
       activesupport (>= 3.0.0)
@@ -284,13 +284,13 @@ GEM
     rubocop-performance (1.22.1)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    ruby-lsp (0.21.3)
+    ruby-lsp (0.22.1)
       language_server-protocol (~> 3.17.0)
       prism (>= 1.2, < 2.0)
       rbs (>= 3, < 4)
       sorbet-runtime (>= 0.5.10782)
-    ruby-lsp-rails (0.3.26)
-      ruby-lsp (>= 0.21.2, < 0.22.0)
+    ruby-lsp-rails (0.3.27)
+      ruby-lsp (>= 0.22.0, < 0.23.0)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     securerandom (0.3.2)
@@ -352,7 +352,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.7.1)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   aarch64-linux
