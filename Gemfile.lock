@@ -168,7 +168,7 @@ GEM
     meta-tags (2.22.1)
       actionpack (>= 6.0.0, < 8.1)
     mini_mime (1.1.5)
-    minitest (5.25.3)
+    minitest (5.25.4)
     net-imap (0.5.1)
       date
       net-protocol
@@ -308,7 +308,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    sorbet-runtime (0.5.11672)
+    sorbet-runtime (0.5.11678)
     sqlite3 (2.4.0-aarch64-linux-gnu)
     sqlite3 (2.4.0-arm-linux-gnu)
     sqlite3 (2.4.0-arm64-darwin)
@@ -339,7 +339,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
-    useragent (0.16.10)
+    useragent (0.16.11)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.1)
