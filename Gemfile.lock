@@ -210,7 +210,7 @@ GEM
       activesupport (>= 7.0.0)
       rack
       railties (>= 7.0.0)
-    psych (5.2.1)
+    psych (5.2.2)
       date
       stringio
     public_suffix (6.0.1)
