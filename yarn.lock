@@ -2357,9 +2357,9 @@ hpack.js@^2.1.6:
     wbuf "^1.1.0"
 
 html-entities@^2.3.2:
-  version "2.5.3"
-  resolved "https://registry.npmmirror.com/html-entities/-/html-entities-2.5.3.tgz#d8a0680bd24ee35af8c74d6d4b695627dde61c00"
-  integrity sha512-D3AfvN7SjhTgBSA8L1BN4FpPzuEd06uy4lHwSoRWr0lndi9BKaNzPLKGOWZ2ocSGguozr08TTb2jhCLHaemruw==
+  version "2.6.0"
+  resolved "https://registry.npmmirror.com/html-entities/-/html-entities-2.6.0.tgz#7c64f1ea3b36818ccae3d3fb48b6974208e984f8"
+  integrity sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==
 
 http-deceiver@^1.2.7:
   version "1.2.7"
