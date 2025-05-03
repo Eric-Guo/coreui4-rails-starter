@@ -44,6 +44,7 @@
   "version": "0.1.0",
   "resolutions": {
     "@types/retry": "^0.12.5",
+    "cookie": "~0.7.2",
     "datatables.net": "^1.13.10",
     "inherits": "~2.0.4",
     "mdn-data": "~2.0.33",
