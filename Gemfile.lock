@@ -313,9 +313,9 @@ GEM
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
     sorbet-runtime (0.5.12163)
-    sqlite3 (2.6.0-aarch64-linux-gnu)
-    sqlite3 (2.6.0-arm64-darwin)
-    sqlite3 (2.6.0-x86_64-linux-gnu)
+    sqlite3 (2.7.0-aarch64-linux-gnu)
+    sqlite3 (2.7.0-arm64-darwin)
+    sqlite3 (2.7.0-x86_64-linux-gnu)
     sshkit (1.24.0)
       base64
       logger
