@@ -1,6 +1,7 @@
 module Admin
   class RolesController < BaseController
     include Pagy::Backend
+
     after_action :verify_authorized, except: %i[index expender]
     after_action :verify_policy_scoped, only: %i[index expender]
     before_action :set_role, only: %i[edit update]

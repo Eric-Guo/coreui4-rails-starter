@@ -8,6 +8,7 @@ class ApplicationDatatable < ::AjaxDatatablesRails::ActiveRecord
   def initialize(params, opts = {})
     @view = opts[:view_context]
     raise "Need pass view_context in opts" unless @view.present?
+
     super
   end
 end

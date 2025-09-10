@@ -30,6 +30,7 @@ module SetLocale
 
   def locale_from_user
     return unless user_signed_in?
+
     permit_locale(current_user.preferred_language)
   end
 
