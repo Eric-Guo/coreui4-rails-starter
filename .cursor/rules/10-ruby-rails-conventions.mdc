@@ -1,0 +1,20 @@
+---
+globs: *.rb
+description: Rails controller, policy, datatable, and routing conventions for this repo
+---
+### Rails Conventions in This Repo
+
+- **Routing**: Main routes in [config/routes.rb](mdc:config/routes.rb) and admin scope in [config/routes/admin.rb](mdc:config/routes/admin.rb). Prefer `namespace :admin` for admin controllers.
+- **Controllers**: Inherit from `ApplicationController`. Admin controllers inherit from `Admin::BaseController` to enforce `require_admin!`.
+- **Auth**: Use Devise helpers `authenticate_user!`, `user_signed_in?`, and `current_user`.
+- **Authorization**: Use Pundit (`include Pundit::Authorization`). Authorize actions with policies in `app/policies/**`.
+- **I18n**: Locale determined by `SetLocale` concern. Use `t(".key")` for per-action scoped translations.
+- **Meta tags**: Use `prepare_meta_tags` in `ApplicationController` and `config/initializers/meta_tags.rb`.
+- **Datatables**: Server-side datatables live in `app/datatables/**`. Use `view_columns`, `data`, and `get_raw_records` like [app/datatables/users_datatable.rb](mdc:app/datatables/users_datatable.rb).
+- **Admin UI**: `@_sidebar_name` and layout classes set in `set_page_layout_data`.
+
+Patterns to follow:
+- Prefer `before_action :authenticate_user!` in HTML controllers.
+- For admin-only: `before_action :require_admin!` in controllers inheriting from `Admin::BaseController`.
+- Use service objects or POROs in `app/models/concerns` or `lib/` for non-controller logic.
+- Keep `render partial: ..., formats: :html` when returning HTML snippets for JSON APIs used by datatables.

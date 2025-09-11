@@ -1,0 +1,10 @@
+---
+description: I18n usage patterns and meta tags conventions
+globs: app/**/*.rb,app/**/*.erb
+---
+### I18n & Meta
+
+- **Locale detection**: Implemented in [app/controllers/concerns/set_locale.rb](mdc:app/controllers/concerns/set_locale.rb). Order: params → user → header → default.
+- **Views**: Use `t(".title")` and scoped keys. Keep translations under `config/locales/views/**` aligned with view paths.
+- **Pagy**: Set `@pagy_locale` in `SetLocale` for pagination components.
+- **Meta tags**: `ApplicationController#prepare_meta_tags` sets page title via I18n. Configure defaults in `config/initializers/meta_tags.rb`.

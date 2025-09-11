@@ -1,0 +1,25 @@
+---
+globs: app/javascript/**/*.js
+description: Stimulus, Shakapacker packs, and frontend conventions for this repo
+---
+### Frontend Conventions
+
+- **Bundler**: Shakapacker. Entry packs in `app/javascript/packs/**`.
+  - Load Stimulus via [app/javascript/packs/stimulus.js](mdc:app/javascript/packs/stimulus.js) which auto-imports controllers from `app/javascript/controllers/**`.
+- **Global deps**:
+  - `@coreui/coreui` exposed as `global.coreui` in `stimulus.js`.
+  - jQuery is made global in packs that need it (e.g., [app/javascript/packs/datatables.js](mdc:app/javascript/packs/datatables.js), [app/javascript/packs/selectize.js](mdc:app/javascript/packs/selectize.js)).
+- **Stimulus controllers**:
+  - Eager controllers placed in `app/javascript/controllers/**` and auto-loaded by Stimulus.
+  - Feature/lazy controllers placed in `app/javascript/lazy_controllers/**` and required from specific packs.
+- **Datatables**:
+  - Initialize in `lazy_controllers/datatables.js` using `DataTables` with server-side mode.
+  - Locale file path passed via a `data-` attribute (`dt-url-value`) referencing `app/assets/datatables/*.json`.
+- **Selectize**:
+  - Generic initializer in `lazy_controllers/selectizes.js`.
+  - Special async user search in `lazy_controllers/selectize-user-ids.js` via `/ui/user_select.json`.
+
+Guidelines:
+- Avoid polluting the global scope; if needed, explicitly assign to `global`.
+- Keep controller state on `this` and clean up in `disconnect()`.
+- Prefer `data-*-target` and `static values` for configuration.

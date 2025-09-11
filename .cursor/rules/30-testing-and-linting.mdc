@@ -1,0 +1,15 @@
+---
+description: How to run tests and keep changes lint-clean in this repo
+---
+### Testing & Linting
+
+- **Ruby tests**: Use `bin/rails test`. System tests live in `test/system/**` and use `ApplicationSystemTestCase`.
+- **Policies**: Unit tests under `test/policies/**`.
+- **JS linting**: Follow existing ESLint config if present; otherwise keep code minimal and consistent.
+- **RuboCop**: Use `bin/rubocop` if configured. Prefer conventional Rails formatting and guard clauses.
+
+Quick commands:
+```bash
+bin/rails test | cat
+bin/rubocop | cat
+```

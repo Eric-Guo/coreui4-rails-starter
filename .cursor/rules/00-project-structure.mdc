@@ -1,0 +1,22 @@
+---
+alwaysApply: true
+---
+### Rails Starter: Project Structure and Entry Points
+
+- **Rails entry**: `config/routes.rb` draws `config/routes/admin.rb` for admin.
+- **Base controllers**: `app/controllers/application_controller.rb`, `app/controllers/admin/base_controller.rb`.
+- **Auth/I18n**: Devise (`devise_for :users`), Pundit, locale via `app/controllers/concerns/set_locale.rb`.
+- **Frontend bundler**: Shakapacker. Packs in `app/javascript/packs/`:
+  - `application.js`, `stimulus.js`, `dashboard.js`, `datatables.js`, `selectize.js` and their `.scss`.
+- **Stimulus setup**: `app/javascript/packs/stimulus.js` auto-loads controllers from `app/javascript/controllers`.
+- **Lazy controllers**: `app/javascript/lazy_controllers/` (e.g., `datatables.js`).
+- **Assets**: static in `app/assets`, translations in `config/locales/**`.
+- **Policies**: `app/policies/**` for Pundit.
+- **Datatables**: server-side code in `app/datatables/**` and views under `app/views/datatable/**`.
+
+Key files to read first:
+- [config/routes.rb](mdc:config/routes.rb)
+- [config/routes/admin.rb](mdc:config/routes/admin.rb)
+- [app/controllers/application_controller.rb](mdc:app/controllers/application_controller.rb)
+- [app/controllers/admin/base_controller.rb](mdc:app/controllers/admin/base_controller.rb)
+- [app/javascript/packs/stimulus.js](mdc:app/javascript/packs/stimulus.js)
