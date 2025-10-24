@@ -25,11 +25,22 @@ jobs:
         with:
           ruby-version: 3.2.6
           bundler-cache: true
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+          cache-dependency-path: "pnpm-lock.yaml"
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.0.0
+          run_install: false
       - name: Set up database schema
         run: bin/rails db:schema:load
       - name: Install dependencies
         run: |
-          pnpm
+          pnpm install --frozen-lockfile
       - name: Assets Precompile
         run: bundle exec rails assets:precompile RAILS_PRECOMPILE=1 RAILS_ENV=production SECRET_KEY_BASE=fake_secure_for_compile
       - name: Run tests
