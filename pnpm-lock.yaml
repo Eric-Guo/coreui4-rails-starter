@@ -60,6 +60,9 @@ importers:
       babel-loader:
         specifier: '8'
         version: 8.4.1(@babel/core@7.28.5)(webpack@5.102.1)
+      chart.js:
+        specifier: ^3.9.1
+        version: 3.9.1
       compression-webpack-plugin:
         specifier: '9'
         version: 9.2.0(webpack@5.102.1)
@@ -78,6 +81,9 @@ importers:
       date-fns:
         specifier: ^2.29.3
         version: 2.30.0
+      jquery:
+        specifier: ^3.7.1
+        version: 3.7.1
       mini-css-extract-plugin:
         specifier: ^2.7.2
         version: 2.9.4(webpack@5.102.1)
