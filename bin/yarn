@@ -1,4 +1,0 @@
-#!/usr/bin/env ruby
-
-warn "This project now uses pnpm. Run bin/pnpm instead of bin/yarn."
-exit 1

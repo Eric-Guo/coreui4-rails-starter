@@ -11,13 +11,13 @@ before_script:
   - bash nodesource_setup.sh
   - apt-get install -y nodejs
 
-  # Install Yarn
+  # Install Pnpm
   - npm config set registry https://registry.npmmirror.com/ --global
-  - npm install --global yarn
+  - npm install --global pnpm
 
   # Verify installations
   - node -v
-  - yarn -v
+  - pnpm -v
   - ruby -v
   - which ruby
 
@@ -27,7 +27,7 @@ before_script:
   - bundle install --jobs $(nproc)
 
   # Install JavaScript dependencies
-  - yarn install --cache-folder .yarn-cache
+  - pnpm install --frozen-lockfile
 
 stages:
   - test
@@ -40,11 +40,6 @@ test:
           - Gemfile.lock
       paths:
         - vendor/ruby
-    - key:
-        files:
-          - yarn.lock
-      paths:
-        - .yarn-cache/
   script:
     - bundle exec standardrb
     - bin/rails db:drop RAILS_ENV=test
