@@ -4,7 +4,7 @@
 Core Rails app lives in `app/`, with controllers, models, policies, and component views aligned by feature. Stimulus controllers, entrypoints, and styles compile through Shakapacker under `app/javascript` (`packs/` for entry bundles, `controllers/` for Stimulus files named `*_controller.js`). Shared utilities stay in `lib/`, while background configuration and initializers live in `config/`. Tests are organized in `test/` following Rails defaults (`test/controllers`, `test/system`, etc.). Environment-specific settings rely on the Config gem in `config/settings/*.yml`; prefer overriding via `ENV` rather than editing production files.
 
 ## Build, Test, and Development Commands
-- `bin/setup` installs gems, yarn packages, and prepares the database.
+- `bin/setup` installs gems, pnpm packages, and prepares the database.
 - `bin/rails server` starts the Rails app; pair with `bin/shakapacker-dev-server` for live asset recompilation.
 - `bin/rails db:migrate` applies schema changes; use `bin/rails db:rollback STEP=1` to undo.
 - `bin/shakapacker` builds production assets.
@@ -17,7 +17,7 @@ Ruby code follows StandardRB (two-space indentation, double quotes preferred). R
 Rails ships with Minitest; run suites via `bin/rails test` and system specs with `bin/rails test:system`. For targeted debugging use `bin/rails test TEST=test/controllers/accounts_controller_test.rb`. Feature work should include system tests when UI changes are involved and policy tests when touching authorization. Keep fixtures under `test/fixtures` lean and create factory helpers in `test/support` when scenarios repeat.
 
 ## Commit & Pull Request Guidelines
-Make commits concise and imperative, mirroring the existing history (`yarn upgrade`, `gem upgrade`). Every pull request should describe the change, reference issues (e.g., `Fixes #123`), and note any migrations. Attach UI screenshots or console output when behavior changes. Verify `bin/rails test` and `bundle exec standardrb --fix` locally before requesting review.
+Make commits concise and imperative, mirroring the existing history (`pnpm up`, `gem upgrade`). Every pull request should describe the change, reference issues (e.g., `Fixes #123`), and note any migrations. Attach UI screenshots or console output when behavior changes. Verify `bin/rails test` and `bundle exec standardrb --fix` locally before requesting review.
 
 ## Security & Configuration Tips
 Store secrets via `bin/rails credentials:edit`; never commit raw keys to `config/settings`. Keep default admin or sample data out of production branches. Run `bin/brakeman` and review warnings before deployment, and ensure new endpoints enforce Pundit policies.

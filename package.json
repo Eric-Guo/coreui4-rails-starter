@@ -60,5 +60,5 @@
   "browserslist": [
     "defaults"
   ],
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "pnpm@10.19.0"
 }
