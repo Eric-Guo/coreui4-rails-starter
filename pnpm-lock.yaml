@@ -7,7 +7,7 @@ settings:
 overrides:
   '@types/retry': ^0.12.5
   cookie: ~0.7.2
-  datatables.net: ^1.13.10
+  datatables.net: ^1.13.11
   inherits: ~2.0.4
   mdn-data: ~2.0.33
   merge-descriptors: ~1.0.3
@@ -19,31 +19,31 @@ importers:
   .:
     dependencies:
       '@babel/core':
-        specifier: '7'
+        specifier: ^7.28.5
         version: 7.28.5
       '@babel/plugin-transform-runtime':
-        specifier: '7'
+        specifier: ^7.28.5
         version: 7.28.5(@babel/core@7.28.5)
       '@babel/preset-env':
-        specifier: '7'
+        specifier: ^7.28.5
         version: 7.28.5(@babel/core@7.28.5)
       '@babel/runtime':
-        specifier: '7'
+        specifier: ^7.28.4
         version: 7.28.4
       '@coreui/chartjs':
-        specifier: ^3.1.1
+        specifier: ^3.1.2
         version: 3.1.2(@popperjs/core@2.11.8)(postcss@8.5.6)
       '@coreui/coreui':
-        specifier: '=4.2.6'
+        specifier: 4.2.6
         version: 4.2.6(@popperjs/core@2.11.8)(postcss@8.5.6)
       '@coreui/icons':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: 3.0.1
       '@coreui/utils':
-        specifier: ^2.0.0
+        specifier: ^2.0.2
         version: 2.0.2
       '@hotwired/stimulus':
-        specifier: ^3.2.1
+        specifier: ^3.2.2
         version: 3.2.2
       '@hotwired/stimulus-webpack-helpers':
         specifier: ^1.0.1
@@ -58,34 +58,34 @@ importers:
         specifier: ^0.15.2
         version: 0.15.2(jquery@3.7.1)
       babel-loader:
-        specifier: '8'
+        specifier: ^8.4.1
         version: 8.4.1(@babel/core@7.28.5)(webpack@5.102.1)
       chart.js:
         specifier: ^3.9.1
         version: 3.9.1
       compression-webpack-plugin:
-        specifier: '9'
+        specifier: ^9.2.0
         version: 9.2.0(webpack@5.102.1)
       css-loader:
-        specifier: ^6.7.3
+        specifier: ^6.11.0
         version: 6.11.0(webpack@5.102.1)
       css-minimizer-webpack-plugin:
         specifier: ^4.2.2
         version: 4.2.2(webpack@5.102.1)
       datatables.net:
-        specifier: ^1.13.10
+        specifier: ^1.13.11
         version: 1.13.11
       datatables.net-bs5:
-        specifier: ^1.13.10
+        specifier: ^1.13.11
         version: 1.13.11
       date-fns:
-        specifier: ^2.29.3
+        specifier: ^2.30.0
         version: 2.30.0
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
       mini-css-extract-plugin:
-        specifier: ^2.7.2
+        specifier: ^2.9.4
         version: 2.9.4(webpack@5.102.1)
       patch-package:
         specifier: ^6.5.1
@@ -94,40 +94,40 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0
       sass:
-        specifier: '=1.77.6'
+        specifier: 1.77.6
         version: 1.77.6
       sass-loader:
-        specifier: ^13.2.0
+        specifier: ^13.3.3
         version: 13.3.3(sass@1.77.6)(webpack@5.102.1)
       semver:
         specifier: ^7.5.3
         version: 7.7.3
       shakapacker:
-        specifier: '=8.4.0'
+        specifier: 8.4.0
         version: 8.4.0(@babel/core@7.28.5)(@babel/plugin-transform-runtime@7.28.5(@babel/core@7.28.5))(@babel/preset-env@7.28.5(@babel/core@7.28.5))(@babel/runtime@7.28.4)(babel-loader@8.4.1(@babel/core@7.28.5)(webpack@5.102.1))(compression-webpack-plugin@9.2.0(webpack@5.102.1))(terser-webpack-plugin@5.3.14(webpack@5.102.1))(webpack-assets-manifest@5.2.1(webpack@5.102.1))(webpack-cli@6.0.1)(webpack-dev-server@4.15.2)(webpack-merge@5.10.0)(webpack@5.102.1)
       simplebar:
-        specifier: ^6.2.0
+        specifier: ^6.3.2
         version: 6.3.2
       style-loader:
-        specifier: ^3.3.1
+        specifier: ^3.3.4
         version: 3.3.4(webpack@5.102.1)
       terser-webpack-plugin:
-        specifier: '5'
+        specifier: ^5.3.14
         version: 5.3.14(webpack@5.102.1)
       webpack:
-        specifier: '5'
+        specifier: ^5.102.1
         version: 5.102.1(webpack-cli@6.0.1)
       webpack-assets-manifest:
-        specifier: '5'
+        specifier: ^5.2.1
         version: 5.2.1(webpack@5.102.1)
       webpack-cli:
-        specifier: ^6
+        specifier: ^6.0.1
         version: 6.0.1(webpack-dev-server@4.15.2)(webpack@5.102.1)
       webpack-dev-server:
-        specifier: ^4.11.1
+        specifier: ^4.15.2
         version: 4.15.2(webpack-cli@6.0.1)(webpack@5.102.1)
       webpack-merge:
-        specifier: '5'
+        specifier: ^5.10.0
         version: 5.10.0
 
 packages:
@@ -641,11 +641,6 @@ packages:
     peerDependencies:
       '@popperjs/core': ^2.11.6
 
-  '@coreui/coreui@4.3.2':
-    resolution: {integrity: sha512-SKGY6E6v7QGq0P3YTnZQRSrU8t0euLQ3UV/FH5j0JmHYBBu7Mv0Hd9g8AESnj8xrCelKZ5bdZKZhmKaIdG5clw==}
-    peerDependencies:
-      '@popperjs/core': ^2.11.6
-
   '@coreui/icons@3.0.1':
     resolution: {integrity: sha512-u9UKEcRMyY9pa4jUoLij8pAR03g5g6TLWV33/Mx2ix8sffyi0eO4fLV8DSTQljDCw938zt7KYog5cVKEAJUxxg==}
 
@@ -741,9 +736,6 @@ packages:
 
   '@types/express@4.17.24':
     resolution: {integrity: sha512-Mbrt4SRlXSTWryOnHAh2d4UQ/E7n9lZyGSi6KgX+4hkuL9soYbLOVXVhnk/ODp12YsGc95f4pOvqywJ6kngUwg==}
-
-  '@types/express@5.0.4':
-    resolution: {integrity: sha512-g64dbryHk7loCIrsa0R3shBnEu5p6LPJ09bu9NG58+jz+cRUjFrc3Bz0kNQ7j9bXeCsrRDvNET1G54P/GJkAyA==}
 
   '@types/http-errors@2.0.5':
     resolution: {integrity: sha512-r8Tayk8HJnX0FztbZN7oVqGccWgw98T/0neJphO91KkmOzug1KkofZURD4UaD5uH8AqcFLfdPErnBod0u71/qg==}
@@ -1750,10 +1742,9 @@ packages:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
     engines: {node: '>= 0.6'}
 
-  memfs@3.6.0:
-    resolution: {integrity: sha512-EGowvkkgbMcIChjMTMkESFDbZeSh8xZ7kNSF0hAiAN4Jh6jgHCRS0Ga/+C8y6Au+oqpezRHCfPsmJ2+DwAgiwQ==}
+  memfs@3.5.3:
+    resolution: {integrity: sha512-UERzLsxzllchadvbPs5aolHh65ISpKpM+ccLbOJ8/vvpBKmAWf+la7dXFy7Mr0ySHbdHrFv5kGFCUHHe6GFEmw==}
     engines: {node: '>= 4.0.0'}
-    deprecated: this will be v4
 
   merge-descriptors@1.0.3:
     resolution: {integrity: sha512-gaNvAS7TZ897/rVaZ0nMtAyxNyi/pdbjbAwUpFQpN70GqnVfOiXpeUUMKRBmzXaSQ8DdTX4/0ms62r2K+hE6mQ==}
@@ -3354,20 +3345,13 @@ snapshots:
 
   '@coreui/chartjs@3.1.2(@popperjs/core@2.11.8)(postcss@8.5.6)':
     dependencies:
-      '@coreui/coreui': 4.3.2(@popperjs/core@2.11.8)(postcss@8.5.6)
+      '@coreui/coreui': 4.2.6(@popperjs/core@2.11.8)(postcss@8.5.6)
       chart.js: 3.9.1
     transitivePeerDependencies:
       - '@popperjs/core'
       - postcss
 
   '@coreui/coreui@4.2.6(@popperjs/core@2.11.8)(postcss@8.5.6)':
-    dependencies:
-      '@popperjs/core': 2.11.8
-      postcss-combine-duplicated-selectors: 10.0.3(postcss@8.5.6)
-    transitivePeerDependencies:
-      - postcss
-
-  '@coreui/coreui@4.3.2(@popperjs/core@2.11.8)(postcss@8.5.6)':
     dependencies:
       '@popperjs/core': 2.11.8
       postcss-combine-duplicated-selectors: 10.0.3(postcss@8.5.6)
@@ -3490,12 +3474,6 @@ snapshots:
       '@types/qs': 6.14.0
       '@types/serve-static': 1.15.10
 
-  '@types/express@5.0.4':
-    dependencies:
-      '@types/body-parser': 1.19.6
-      '@types/express-serve-static-core': 5.1.0
-      '@types/serve-static': 1.15.10
-
   '@types/http-errors@2.0.5': {}
 
   '@types/http-proxy@1.17.17':
@@ -3541,7 +3519,7 @@ snapshots:
 
   '@types/serve-index@1.9.4':
     dependencies:
-      '@types/express': 5.0.4
+      '@types/express': 4.17.24
 
   '@types/serve-static@1.15.10':
     dependencies:
@@ -4534,7 +4512,7 @@ snapshots:
 
   media-typer@0.3.0: {}
 
-  memfs@3.6.0:
+  memfs@3.5.3:
     dependencies:
       fs-monkey: 1.1.0
 
@@ -5350,7 +5328,7 @@ snapshots:
   webpack-dev-middleware@5.3.4(webpack@5.102.1):
     dependencies:
       colorette: 2.0.20
-      memfs: 3.6.0
+      memfs: 3.5.3
       mime-types: 2.1.35
       range-parser: 1.2.1
       schema-utils: 4.3.3
