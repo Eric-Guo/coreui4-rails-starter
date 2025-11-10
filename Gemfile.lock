@@ -173,7 +173,7 @@ GEM
     meta-tags (2.22.2)
       actionpack (>= 6.0.0, < 8.2)
     mini_mime (1.1.5)
-    minitest (5.26.0)
+    minitest (5.26.1)
     net-imap (0.5.12)
       date
       net-protocol
@@ -290,7 +290,7 @@ GEM
       rubocop-ast (>= 1.46.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.47.1)
+    rubocop-ast (1.48.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
     rubocop-performance (1.25.0)
