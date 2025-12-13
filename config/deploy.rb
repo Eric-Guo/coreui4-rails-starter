@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.19.0"
+lock "~> 3.20.0"
 
 # Default branch is :master
 set :branch, :main
