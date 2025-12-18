@@ -173,8 +173,9 @@ GEM
     meta-tags (2.22.2)
       actionpack (>= 6.0.0, < 8.2)
     mini_mime (1.1.5)
-    minitest (5.27.0)
-    net-imap (0.5.12)
+    minitest (6.0.0)
+      prism (~> 1.5)
+    net-imap (0.6.2)
       date
       net-protocol
     net-pop (0.1.2)
@@ -349,7 +350,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
-    unicode-emoji (4.1.0)
+    unicode-emoji (4.2.0)
     useragent (0.16.11)
     warden (1.2.9)
       rack (>= 2.0.9)
