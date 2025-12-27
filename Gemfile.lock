@@ -173,7 +173,7 @@ GEM
     meta-tags (2.22.2)
       actionpack (>= 6.0.0, < 8.2)
     mini_mime (1.1.5)
-    minitest (6.0.0)
+    minitest (6.0.1)
       prism (~> 1.5)
     net-imap (0.6.2)
       date
