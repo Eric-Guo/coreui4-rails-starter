@@ -5,10 +5,10 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@babel/core": "^7.28.5",
+    "@babel/core": "^7.28.6",
     "@babel/plugin-transform-runtime": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
-    "@babel/runtime": "^7.28.4",
+    "@babel/preset-env": "^7.28.6",
+    "@babel/runtime": "^7.28.6",
     "@coreui/chartjs": "^3.1.2",
     "@coreui/coreui": "4.2.6",
     "@coreui/icons": "^3.0.1",
