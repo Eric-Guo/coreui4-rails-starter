@@ -5,6 +5,7 @@ ruby "~> 3.1"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
 gem "rails", "~> 7.2.1"
+gem "minitest", "< 6" # rails 7.2 not support minitest 6.0.1
 
 gem "propshaft"
 
