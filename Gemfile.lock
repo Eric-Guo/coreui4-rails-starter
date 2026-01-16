@@ -200,7 +200,7 @@ GEM
     package_json (0.2.0)
     pagy (9.4.0)
     parallel (1.27.0)
-    parser (3.3.10.0)
+    parser (3.3.10.1)
       ast (~> 2.4.1)
       racc
     pp (0.6.3)
@@ -409,4 +409,4 @@ RUBY VERSION
   ruby 3.2.2p53
 
 BUNDLED WITH
-  4.0.2
+  4.0.4
