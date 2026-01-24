@@ -62,5 +62,5 @@
   "browserslist": [
     "defaults"
   ],
-  "packageManager": "pnpm"
+  "packageManager": "pnpm@10.28.1"
 }
