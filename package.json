@@ -52,7 +52,7 @@
     "mdn-data": "~2.0.33",
     "merge-descriptors": "~1.0.3",
     "mime-db": "~1.54.0",
-    "semver": "^7.7.3"
+    "semver": "^7.7.4"
   },
   "babel": {
     "presets": [
