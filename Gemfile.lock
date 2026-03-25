@@ -397,7 +397,7 @@ DEPENDENCIES
   propshaft
   puma
   pundit
-  rails (~> 7.2.1)
+  rails (~> 7.2.3.1)
   ruby-lsp
   ruby-lsp-rails
   selenium-webdriver (>= 4.25.0)
