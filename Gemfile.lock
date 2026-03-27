@@ -156,7 +156,7 @@ GEM
     jbuilder (2.14.1)
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
-    json (2.19.2)
+    json (2.19.3)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -201,7 +201,7 @@ GEM
     package_json (0.2.0)
     pagy (9.4.0)
     parallel (1.27.0)
-    parser (3.3.10.2)
+    parser (3.3.11.1)
       ast (~> 2.4.1)
       racc
     pp (0.6.3)
@@ -267,8 +267,9 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.3.1)
-    rbs (3.10.3)
+    rbs (4.0.2)
       logger
+      prism (>= 1.6.0)
       tsort
     rdoc (7.2.0)
       erb
@@ -299,7 +300,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.47.1, < 2.0)
-    ruby-lsp (0.26.8)
+    ruby-lsp (0.26.9)
       language_server-protocol (~> 3.17.0)
       prism (>= 1.2, < 2.0)
       rbs (>= 3, < 5)

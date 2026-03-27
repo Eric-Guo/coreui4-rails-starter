@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "~> 3.1"
+ruby ">= 3.1"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
 gem "rails", "~> 7.2.3.1"
