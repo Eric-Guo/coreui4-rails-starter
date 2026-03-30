@@ -86,7 +86,7 @@ GEM
     bcrypt (3.1.22)
     bcrypt_pbkdf (1.1.2)
     benchmark (0.5.0)
-    bigdecimal (4.0.1)
+    bigdecimal (4.1.0)
     bindex (0.8.1)
     browser (6.2.0)
     builder (3.3.0)
@@ -316,7 +316,7 @@ GEM
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
     semantic_range (3.1.1)
-    shakapacker (9.6.1)
+    shakapacker (9.7.0)
       activesupport (>= 5.2)
       package_json
       rack-proxy (>= 0.6.1)
@@ -412,4 +412,4 @@ RUBY VERSION
   ruby 3.2.2p53
 
 BUNDLED WITH
-  4.0.6
+  4.0.9
