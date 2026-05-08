@@ -1,2 +1,4 @@
+allowBuilds:
+  postinstall-postinstall: true
 ignoredBuiltDependencies:
   - postinstall-postinstall
