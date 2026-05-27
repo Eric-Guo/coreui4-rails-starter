@@ -5,10 +5,10 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@babel/core": "^7.29.0",
-    "@babel/plugin-transform-runtime": "^7.29.0",
-    "@babel/preset-env": "^7.29.5",
-    "@babel/runtime": "^7.29.2",
+    "@babel/core": "^7.29.7",
+    "@babel/plugin-transform-runtime": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/runtime": "^7.29.7",
     "@coreui/chartjs": "^3.1.2",
     "@coreui/coreui": "4.2.6",
     "@coreui/icons": "^3.1.0",
@@ -37,7 +37,7 @@
     "simplebar": "^6.3.3",
     "style-loader": "^3.3.4",
     "terser-webpack-plugin": "^5.6.0",
-    "webpack": "^5.107.1",
+    "webpack": "^5.107.2",
     "webpack-assets-manifest": "^5.2.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^4.15.2",
