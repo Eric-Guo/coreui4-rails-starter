@@ -28,7 +28,7 @@
     "date-fns": "^2.30.0",
     "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.10.2",
-    "patch-package": "^6.5.1",
+    "patch-package": "^8.0.1",
     "postinstall-postinstall": "^2.1.0",
     "sass": "1.77.6",
     "sass-loader": "^13.3.3",
