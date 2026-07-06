@@ -37,7 +37,7 @@
     "simplebar": "^6.3.3",
     "style-loader": "^3.3.4",
     "terser-webpack-plugin": "^5.6.1",
-    "webpack": "^5.108.1",
+    "webpack": "^5.108.4",
     "webpack-assets-manifest": "^5.2.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^4.15.2",
@@ -62,5 +62,5 @@
   "browserslist": [
     "defaults"
   ],
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.10.0"
 }
