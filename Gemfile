@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby ">= 3.1"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
-gem "rails", "~> 7.2.3.1"
+gem "rails", "~> 8.1.2.1"
 gem "minitest", "< 6" # rails 7.2 not support minitest 6.0.1
 
 gem "propshaft"
@@ -15,7 +15,7 @@ gem "sqlite3"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma"
 
-gem "shakapacker", "~> 9.5"
+gem "shakapacker", "~> 9.7", ">= 9.7.0"
 
 gem "jbuilder"
 
@@ -52,7 +52,7 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  gem "web-console", ">= 4.3.0"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
