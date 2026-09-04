@@ -1,1 +1,47 @@
 @use "@selectize/selectize/dist/css/selectize.bootstrap5.css";
+
+[data-coreui-theme="dark"] {
+  .selectize-input {
+    background: var(--cui-body-bg);
+    color: var(--cui-body-color);
+    border-color: var(--cui-border-color);
+  }
+
+  .selectize-control.multi .selectize-input > div {
+    background: var(--cui-secondary-bg);
+    color: var(--cui-body-color);
+    border-color: var(--cui-border-color);
+  }
+
+  .selectize-control.plugin-remove_button .item .remove {
+    border-left-color: var(--cui-border-color);
+  }
+
+  .selectize-control.single .selectize-input::after {
+    border-top-color: var(--cui-body-color);
+  }
+
+  .selectize-control.single .selectize-input.dropdown-active::after {
+    border-bottom-color: var(--cui-body-color);
+  }
+
+  .selectize-input.dropdown-active::before {
+    background: var(--cui-border-color);
+  }
+
+  .selectize-dropdown {
+    background: var(--cui-body-bg);
+    color: var(--cui-body-color);
+    border-color: var(--cui-border-color);
+  }
+
+  .selectize-dropdown .optgroup-header {
+    background: var(--cui-body-bg);
+    color: var(--cui-body-color);
+  }
+
+  .selectize-dropdown .active:not(.selected) {
+    background: var(--cui-secondary-bg);
+    color: var(--cui-emphasis-color);
+  }
+}
