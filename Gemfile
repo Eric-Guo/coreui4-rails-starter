@@ -2,6 +2,8 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby ">= 3.1"
+gem "rbs", "< 4.2" # require by Ruby 3.2
+gem "parallel", "< 2.0"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
 gem "rails", "~> 7.2.3.1"
@@ -79,5 +81,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  gem "selenium-webdriver", ">= 4.25.0"
+  gem "selenium-webdriver", "~> 4.26.0"
 end
