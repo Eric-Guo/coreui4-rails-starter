@@ -7,6 +7,11 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     sign_in users(:user_fangzixue)
     get root_url
     assert_response :success
+    assert_select "body[data-controller~=?]", "coreui"
+    assert_select "body[data-controller~=?]", "theme"
+    assert_select ".sidebar-header .sidebar-brand"
+    assert_select "[data-coreui-theme-value]", count: 3
+    assert_select "script[src*='application']"
   end
 
   test "should redirect to admin home page if user admin" do
@@ -19,5 +24,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
   test "should get root if not sign in" do
     get root_url
     assert_response :success
+    assert_select ".sidebar[data-controller='sidebar']"
+    assert_select ".sidebar-nav[data-coreui='navigation']"
   end
 end

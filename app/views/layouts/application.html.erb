@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= I18n.locale %>">
   <head>
     <%= display_meta_tags site: "CoreUI Rails Starter", separator: "-", reverse: true %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= yield :head %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_pack_tag "application" %>
     <%= javascript_pack_tag "application" %>
+    <%= yield :head %>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden" data-controller="coreui theme">
     <%= render "layouts/sidebars/#{@_sidebar_name}" unless @_sidebar_name.nil? -%>
     <div class="<%= @_wrapper_class.join(" ") unless @_wrapper_class.nil? -%>">
       <% if @_sidebar_name.nil? %>
@@ -18,12 +18,12 @@
       <% else %>
         <%= render partial: 'layouts/header', locals: {} %>
         <% if content_for?(:action_bar) %>
-          <div class="action_bar dark:bg-transparent">
+          <div class="action_bar">
             <%= yield :action_bar %>
           </div>
         <% end %>
-        <div class="body flex-grow-1 px-2 py-3">
-          <div class="<%= @_container_class -%>">
+        <div class="body flex-grow-1 py-4">
+          <div class="<%= @_container_class -%> px-4">
             <% unless @skip_title %>
               <div class="fs-3 fw-semibold"><%= title -%></div>
             <% end %>

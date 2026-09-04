@@ -9,7 +9,7 @@
                                 "config/credentials.yml.enc"]
     },
     {
-      "path": "./node_modules/@coreui/coreui",
+      "path": "./node_modules/@coreui/coreui-pro",
       "folder_exclude_patterns": ["dist"]
     }
 	],

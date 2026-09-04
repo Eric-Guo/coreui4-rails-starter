@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Rails 7.2.1 application using the CoreUI 4 admin template. It features user authentication (Devise), role-based authorization (Pundit), pagination (Pagy), and a Stimulus-powered frontend with Shakapacker (Webpack 5) for asset compilation. The app supports both English and Chinese (zh-CN) locales.
+This is a Rails 7.2 application using the CoreUI 5 Pro admin template. It features user authentication (Devise), role-based authorization (Pundit), pagination (Pagy), and a Stimulus-powered frontend with Shakapacker (Webpack 5) for asset compilation. The app supports both English and Chinese (zh-CN) locales.
 
 ## Architecture
 
@@ -85,12 +85,12 @@ NODE_ENV=test bin/shakapacker
 
 ## Key Technologies
 
-- **Backend**: Rails 7.2.1, Ruby 3.1+, SQLite3, Redis adapter (optional)
-- **Frontend**: CoreUI 4, Stimulus 3.2, Shakapacker 8 (Webpack 5)
+- **Backend**: Rails 7.2, Ruby 3.1+, SQLite3, Redis adapter (optional)
+- **Frontend**: CoreUI 5 Pro, Stimulus 3.2, Shakapacker 10 (Webpack 5)
 - **Authentication**: Devise with i18n
 - **Authorization**: Pundit policies
-- **UI Components**: CoreUI 4, jQuery, DataTables, Selectize
-- **Charts**: Chart.js 3.9 via @coreui/chartjs
+- **UI Components**: CoreUI 5 Pro, jQuery, DataTables, Selectize
+- **Charts**: Chart.js 4 via @coreui/chartjs
 - **Linting**: StandardRB (extends RuboCop)
 - **Testing**: Minitest, Capybara, Selenium
 - **Deployment**: Capistrano with pnpm, rbenv, and Puma support
@@ -115,9 +115,6 @@ For SCSS debugging, enable HMR in `config/shakapacker.yml`:
 ```yaml
 hmr: true
 ```
-
-#### Webpack 5 Loading Order
-Always include Stimulus in packs due to webpack 5's loading sequence requirements.
 
 #### VSCode Debugging
 Install `Ruby LSP` (Shopify) and `VSCode rdbg Ruby Debugger` (KoichiSasada). Ensure only one version of the `debug` gem is installed as a default gem.

@@ -1,10 +1,12 @@
 import { Controller } from "@hotwired/stimulus"
-import { put } from '@rails/request.js'
+import { Sidebar } from "@coreui/coreui-pro"
+import { put } from "@rails/request.js"
 
 export default class extends Controller {
-  click() {
-    const sidebarNode = document.getElementById('sidebar');
-    const sidebar = coreui.Sidebar.getInstance(sidebarNode);
-    put("/account/profile.json", {body: {sidebar_unfoldable: sidebar._unfoldable}});
+  toggle() {
+    const sidebar = Sidebar.getOrCreateInstance(this.element)
+    sidebar.toggleUnfoldable()
+    const unfoldable = this.element.classList.contains("sidebar-narrow-unfoldable")
+    put("/account/profile.json", { body: { sidebar_unfoldable: unfoldable } })
   }
 }

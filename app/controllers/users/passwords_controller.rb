@@ -26,7 +26,7 @@ class Users::PasswordsController < Devise::PasswordsController
   protected
 
   def set_page_layout_data
-    @_wrapper_class = %w[bg-light min-vh-100 d-flex flex-row align-items-center dark:bg-transparent]
+    @_wrapper_class = %w[min-vh-100 d-flex flex-row align-items-center]
     @_sidebar_name = nil
   end
 

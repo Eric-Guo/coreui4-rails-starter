@@ -1,4 +1,4 @@
-# The CoreUI 4 Rails Starter Template
+# The CoreUI 5 Pro Rails Starter Template
 
 [![Build Status](https://github.com/Eric-Guo/coreui4-rails-starter/actions/workflows/rubyonrails.yml/badge.svg)](https://github.com/Eric-Guo/coreui4-rails-starter/actions)
 
@@ -11,10 +11,6 @@ Set `shakapacker.yml` hmr to true.
 ```yml
 hmr: true
 ```
-
-### Why should always include "stimulus"
-
-Because using webpack 5, the loading sequence do matter.
 
 ### How to debug in VSCode?
 

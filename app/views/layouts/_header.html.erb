@@ -1,26 +1,51 @@
-<header class="header header-sticky">
-  <div class="container-fluid">
-    <button class="header-toggler px-md-0 me-md-3 d-md-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
-      <%= svg_icon('free.svg#cil-menu', %w[icon icon-lg]) %>
+<header class="header header-sticky p-0 border-bottom">
+  <div class="container-fluid px-4">
+    <button class="header-toggler d-lg-none" type="button" style="margin-inline-start: -14px" data-action="coreui#toggleSidebar" data-coreui-target="#sidebar" aria-label="Toggle navigation">
+      <%= svg_icon("free.svg#cil-menu", %w[icon icon-lg]) %>
     </button>
-    <a class="header-brand d-md-none">
-      <svg width="118" height="46" alt="CoreUI Logo">
-        <use xlink:href="<%= asset_path('coreui.svg#full') -%>"></use>
-      </svg>
-    </a>
     <div id="flash-root" class="d-flex ms-auto">
-      <% flash.each do |k, v| %>
-        <div class="mb-0 alert alert-<%= k == "alert" ? "danger" : (k == "notice" ? "primary" : k) -%> alert-dismissible fade show" role="alert">
-          <%= sanitize v.html_safe -%>
+      <% flash.each do |key, value| %>
+        <div class="mb-0 alert alert-<%= key == "alert" ? "danger" : (key == "notice" ? "primary" : key) -%> alert-dismissible fade show" role="alert">
+          <%= sanitize value.html_safe -%>
           <button aria-label="Close" class="btn-close" data-coreui-dismiss="alert" type="button"></button>
         </div>
       <% end %>
     </div>
     <ul class="header-nav ms-auto">
-      <li class="nav-item dropdown d-flex align-items-center" data-controller="expender" data-expender-loaded-value="<%= false %>" data-expender-url-value="<%= ui_avatar_area_path %>">
-        <a class="nav-link py-0" data-action="expender#click" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown">
+        <button class="btn btn-link nav-link" type="button" data-coreui-toggle="dropdown" aria-expanded="false" aria-label="Select color theme">
+          <svg class="icon icon-lg theme-icon-active">
+            <use xlink:href="<%= asset_path("free.svg#cil-contrast") %>"></use>
+          </svg>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-action="theme#select" data-coreui-theme-value="light">
+              <%= svg_icon("free.svg#cil-sun", %w[icon icon-lg me-3]) %>
+              Light
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-action="theme#select" data-coreui-theme-value="dark">
+              <%= svg_icon("free.svg#cil-moon", %w[icon icon-lg me-3]) %>
+              Dark
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center active" type="button" data-action="theme#select" data-coreui-theme-value="auto">
+              <%= svg_icon("free.svg#cil-contrast", %w[icon icon-lg me-3]) %>
+              Auto
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item py-1">
+        <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+      </li>
+      <li class="nav-item dropdown d-flex align-items-center" data-controller="expender" data-expender-loaded-value="false" data-expender-url-value="<%= ui_avatar_area_path %>">
+        <a class="nav-link py-0" data-action="expender#click" data-coreui-toggle="dropdown" href="#" role="button" aria-expanded="false">
           <div class="avatar avatar-md">
-            <img alt="user@email.com" class="avatar-img" src="<%= asset_path('default_avatar.jpg') %>"/>
+            <img alt="user@email.com" class="avatar-img" src="<%= asset_path("default_avatar.jpg") %>"/>
             <span class="avatar-status bg-secondary"></span>
           </div>
         </a>

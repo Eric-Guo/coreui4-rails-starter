@@ -1,9 +1,6 @@
 <% content_for :head do %>
   <%= append_stylesheet_pack_tag 'datatables' %>
   <%= append_stylesheet_pack_tag 'selectize' %>
-  <%= append_javascript_pack_tag 'stimulus' %>
-  <%= append_javascript_pack_tag 'datatables' %>
-  <%= append_javascript_pack_tag 'selectize' %>
 <% end %>
 
 <%- content_for :action_bar do %>
@@ -24,7 +21,7 @@
 <div class="row justify-content-center">
   <div class="col-lg-12">
     <div class="container" data-controller="datatables"
-      data-action="modal:reloadDT->datatables#reload"
+      data-action="modal:reloadDT@document->datatables#reload"
       data-datatables-page-length-value=<%= current_user.preferred_page_length -%>
       data-datatables-source-value="<%= admin_users_path(format: :json) -%>"
       data-datatables-columns-value='["email","preferred_language","status","actions"]'

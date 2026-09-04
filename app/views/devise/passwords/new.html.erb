@@ -4,7 +4,7 @@
       <div class="clearfix">
         <h1 class="float-start display-3 me-4"><%= t(".title") -%></h1>
         <h4 class="pt-3"><%= t(".forgot_description") -%></h4>
-        <p class="text-medium-emphasis"><%= t(".instruction") -%></p>
+        <p class="text-body-secondary"><%= t(".instruction") -%></p>
       </div>
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
         <div class="input-group">

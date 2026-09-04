@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
-import { get } from '@rails/request.js'
+import { Modal } from "@coreui/coreui-pro"
+import { get } from "@rails/request.js"
 
 export default class extends Controller {
   static values = {
@@ -7,25 +8,24 @@ export default class extends Controller {
   }
 
   click(e) {
-    const target_url = e.target.getAttribute('href') || e.target.parentNode.getAttribute('href') || e.target.parentNode.parentNode.getAttribute('href');
-    get(target_url).then((response) => {
+    const targetUrl = e.currentTarget.getAttribute("href")
+    get(targetUrl).then((response) => {
       if (response.ok) {
-        const result_text = response.text;
-        result_text.then(result => {
-          const htmlContent = document.getElementById('coreuiModal');
-          htmlContent.innerHTML = result;
-          const modal = new coreui.Modal('#coreuiModal');
-          modal.show();
-          htmlContent.addEventListener('hidden.coreui.modal', event => {
-            if(this.pageReloadValue) {
-              location.reload();
+        response.text.then((result) => {
+          const htmlContent = document.getElementById("coreuiModal")
+          htmlContent.innerHTML = result
+          const modal = Modal.getOrCreateInstance(htmlContent)
+          modal.show()
+          htmlContent.addEventListener("hidden.coreui.modal", () => {
+            if (this.pageReloadValue) {
+              location.reload()
             } else {
-              this.dispatch("reloadDT", { detail: {} });
+              this.dispatch("reloadDT", { detail: {}, target: document })
             }
-          });
-        });
+          }, { once: true })
+        })
       }
-    });
-    e.preventDefault();
+    })
+    e.preventDefault()
   }
 }

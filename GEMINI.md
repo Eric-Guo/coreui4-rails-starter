@@ -1,4 +1,4 @@
-# CoreUI 4 Rails Starter
+# CoreUI 5 Pro Rails Starter
 
 ## Project Overview
 

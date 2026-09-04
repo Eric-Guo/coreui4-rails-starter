@@ -1,0 +1,8 @@
+@use "@coreui/coreui-pro/scss/functions/color" as *;
+
+@function gradient($color, $tint: 10%, $shade: 10%) {
+  @return (
+    "start": tint-color($color, $tint),
+    "stop": shade-color($color, $shade)
+  );
+}

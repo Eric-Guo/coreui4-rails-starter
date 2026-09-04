@@ -1,71 +1,184 @@
-// simplebar styles
-@import "simplebar/dist/simplebar.min.css";
+@use "sass:color";
+@use "@coreui/coreui-pro/scss/functions/color" as *;
+@use "stylesheets/functions" as *;
 
-// Configuration
-@import "@coreui/coreui/scss/functions";
+$primary-color: #39f !default;
+$success-color: #51cc8a !default;
+$danger-color: #ef376e !default;
+$warning-color: #fc0 !default;
+$info-color: #747af2 !default;
 
-@import "stylesheets/theme-colors";
+$primary-dark-color: color.adjust($primary-color, $saturation: -10%) !default;
+$success-dark-color: color.adjust($success-color, $saturation: -10%) !default;
+$info-dark-color: color.adjust($info-color, $saturation: -10%) !default;
+$warning-dark-color: color.adjust($warning-color, $saturation: -10%) !default;
+$danger-dark-color: color.adjust($danger-color, $saturation: -10%) !default;
 
-@import "@coreui/coreui/scss/variables";
-@import "@coreui/coreui/scss/maps";
-@import "@coreui/coreui/scss/mixins";
+$primary-gradient-dark-color: gradient($primary-dark-color) !default;
+$danger-gradient-dark-color: gradient($danger-dark-color) !default;
+$warning-gradient-dark-color: gradient($warning-dark-color) !default;
+$success-gradient-dark-color: gradient($success-dark-color) !default;
+$info-gradient-dark-color: gradient($info-dark-color) !default;
 
-// If you want to override variables do it here
-@import "stylesheets/variables";
+@use "@coreui/coreui-pro/scss/coreui" as * with (
+  $enable-deprecation-messages: false,
+  $primary: $primary-color,
+  $success: $success-color,
+  $danger: $danger-color,
+  $warning: $warning-color,
+  $info: $info-color,
+  $primary-text-emphasis: shade-color($primary-color, 60%),
+  $success-text-emphasis: shade-color($success-color, 60%),
+  $info-text-emphasis: shade-color($info-color, 60%),
+  $warning-text-emphasis: shade-color($warning-color, 60%),
+  $danger-text-emphasis: shade-color($danger-color, 60%),
+  $primary-bg-subtle: tint-color($primary-color, 80%),
+  $success-bg-subtle: tint-color($success-color, 80%),
+  $info-bg-subtle: tint-color($info-color, 80%),
+  $warning-bg-subtle: tint-color($warning-color, 80%),
+  $danger-bg-subtle: tint-color($danger-color, 80%),
+  $primary-border-subtle: tint-color($primary-color, 60%),
+  $success-border-subtle: tint-color($success-color, 60%),
+  $info-border-subtle: tint-color($info-color, 60%),
+  $warning-border-subtle: tint-color($warning-color, 60%),
+  $danger-border-subtle: tint-color($danger-color, 60%),
+  $primary-gradient: gradient($primary-color, 30%, 10%),
+  $danger-gradient: gradient($danger-color, 30%, 10%),
+  $warning-gradient: gradient($warning-color, 30%, 10%),
+  $success-gradient: gradient($success-color, 30%, 10%),
+  $info-gradient: gradient($info-color, 30%, 10%),
+  $theme-gradients-dark: (
+    "primary": $primary-gradient-dark-color,
+    "success": $success-gradient-dark-color,
+    "info": $info-gradient-dark-color,
+    "warning": $warning-gradient-dark-color,
+    "danger": $danger-gradient-dark-color
+  ),
+  $primary-text-emphasis-dark: shade-color($primary-dark-color, 60%),
+  $success-text-emphasis-dark: shade-color($success-dark-color, 60%),
+  $info-text-emphasis-dark: shade-color($info-dark-color, 60%),
+  $warning-text-emphasis-dark: shade-color($warning-dark-color, 60%),
+  $danger-text-emphasis-dark: shade-color($danger-dark-color, 60%),
+  $primary-bg-subtle-dark: tint-color($primary-dark-color, 80%),
+  $success-bg-subtle-dark: tint-color($success-dark-color, 80%),
+  $info-bg-subtle-dark: tint-color($info-dark-color, 80%),
+  $warning-bg-subtle-dark: tint-color($warning-dark-color, 80%),
+  $danger-bg-subtle-dark: tint-color($danger-dark-color, 80%),
+  $primary-border-subtle-dark: tint-color($primary-dark-color, 60%),
+  $success-border-subtle-dark: tint-color($success-dark-color, 60%),
+  $info-border-subtle-dark: tint-color($info-dark-color, 60%),
+  $warning-border-subtle-dark: tint-color($warning-dark-color, 60%),
+  $danger-border-subtle-dark: tint-color($danger-dark-color, 60%),
+  $font-size-base: .9375rem,
+  $border-color-translucent: rgba(#080a0c, .0875),
+  $footer-bg: var(--cui-body-bg),
+  $table-cell-padding-y: .75rem,
+  $table-cell-padding-x: .75rem
+);
 
-@import "@coreui/coreui/scss/utilities";
+@use "simplebar/dist/simplebar.css";
 
-// Layout & components
-@import "@coreui/coreui/scss/root";
-@import "@coreui/coreui/scss/reboot";
-@import "@coreui/coreui/scss/type";
-@import "@coreui/coreui/scss/images";
-@import "@coreui/coreui/scss/containers";
-@import "@coreui/coreui/scss/grid";
-@import "@coreui/coreui/scss/tables";
-@import "@coreui/coreui/scss/forms";
-@import "@coreui/coreui/scss/buttons";
-// @import "@coreui/coreui-pro/scss/loading-button";
+body {
+  background-color: var(--#{$prefix}tertiary-bg);
+}
 
-@import "@coreui/coreui/scss/transitions";
-@import "@coreui/coreui/scss/dropdown";
-@import "@coreui/coreui/scss/button-group";
-@import "@coreui/coreui/scss/nav";
-@import "@coreui/coreui/scss/navbar";
-@import "@coreui/coreui/scss/card";
-@import "@coreui/coreui/scss/accordion";
-@import "@coreui/coreui/scss/breadcrumb";
-@import "@coreui/coreui/scss/pagination";
-@import "@coreui/coreui/scss/badge";
-@import "@coreui/coreui/scss/alert";
-@import "@coreui/coreui/scss/progress";
-@import "@coreui/coreui/scss/list-group";
-@import "@coreui/coreui/scss/close";
-@import "@coreui/coreui/scss/toasts";
-@import "@coreui/coreui/scss/modal";
-@import "@coreui/coreui/scss/tooltip";
-@import "@coreui/coreui/scss/popover";
-@import "@coreui/coreui/scss/carousel";
-@import "@coreui/coreui/scss/spinners";
-@import "@coreui/coreui/scss/offcanvas";
-@import "@coreui/coreui/scss/placeholders";
+.wrapper {
+  width: 100%;
+  padding-inline: var(--#{$prefix}sidebar-occupy-start, 0) var(--#{$prefix}sidebar-occupy-end, 0);
+  will-change: auto;
+  @include transition(padding .15s);
+}
 
-@import "@coreui/coreui/scss/avatar";
-@import "@coreui/coreui/scss/callout";
-@import "@coreui/coreui/scss/footer";
-@import "@coreui/coreui/scss/header";
-@import "@coreui/coreui/scss/icon";
-@import "@coreui/coreui/scss/sidebar";
-@import "@coreui/coreui/scss/subheader";
+.header {
+  min-height: calc(4rem + 1px);
+}
 
-// Helpers
-@import "@coreui/coreui/scss/helpers";
+.sidebar-brand-full {
+  margin-left: 3px;
+}
 
-// Utilities
-@import "@coreui/coreui/scss/utilities/api";
-// @import "@coreui/coreui-pro/scss/utilities/bg-gradients";
+.sidebar-toggler {
+  margin-inline-start: auto;
+}
 
-@import "stylesheets/layout";
+.sidebar-narrow,
+.sidebar-narrow-unfoldable:not(:hover) {
+  .sidebar-toggler {
+    display: none;
+  }
+}
 
-// If you want to add custom CSS you can put it here.
-@import "stylesheets/custom";
+.card,
+.dropdown-menu,
+.footer,
+.sidebar {
+  box-shadow: rgb(50 50 93 / 2%) 0 2px 5px -1px, rgb(0 0 0 / 5%) 0 1px 3px -1px;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+  --#{$prefix}sidebar-nav-link-hover-bg: rgba(255, 255, 255, .0375);
+  --#{$prefix}sidebar-nav-link-active-bg: rgba(255, 255, 255, .0375);
+}
+
+.simplebar-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.action_bar {
+  padding: .75rem 2rem;
+  margin-bottom: 0;
+  background-color: var(--#{$prefix}secondary-bg);
+  border-bottom: 1px solid var(--#{$prefix}border-color);
+
+  ol,
+  ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .btn-group {
+    vertical-align: top;
+  }
+
+  .btn {
+    padding-block: 0;
+    vertical-align: top;
+  }
+
+  .action_bar-item + .action_bar-item {
+    padding-left: .5rem;
+
+    &::before {
+      display: inline-block;
+      padding-right: .25rem;
+      color: var(--#{$prefix}secondary-color);
+      content: "|";
+    }
+  }
+}
+
+.rotate_180 {
+  transform: rotate(180deg);
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+@include color-mode(dark) {
+  body {
+    background-color: var(--#{$prefix}dark-bg-subtle);
+  }
+
+  .sidebar {
+    background-color: var(--#{$prefix}body-bg) !important;
+    background-image: none !important;
+  }
+}
