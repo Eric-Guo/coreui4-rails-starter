@@ -7,7 +7,7 @@ namespace :admin do
     end
   end
   resources :roles, only: %i[index new create edit update] do
-    resources :role_users, only: %i[index]
+    resources :role_users, only: %i[index destroy]
     collection do
       get :expender
     end

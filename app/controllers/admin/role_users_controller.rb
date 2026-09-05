@@ -1,5 +1,6 @@
 module Admin
   class RoleUsersController < BaseController
+    after_action :verify_authorized, only: :destroy
     after_action :verify_policy_scoped, only: :index
     before_action :set_breadcrumbs, if: -> { request.format.html? }
 
@@ -9,6 +10,12 @@ module Admin
       add_to_breadcrumbs title
       set_meta_tags(title: title)
       @role_users = policy_scope(UserRole).where(role_id: role.id)
+    end
+
+    def destroy
+      user_role = authorize UserRole.find(params[:id])
+      user_role.destroy
+      redirect_to admin_role_role_users_path(role_id: params[:role_id])
     end
 
     private

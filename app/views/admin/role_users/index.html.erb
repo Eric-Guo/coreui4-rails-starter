@@ -14,7 +14,11 @@
             <tr>
               <td><%= role_user.user.email -%></td>
               <td><%= role_user.user.preferred_language -%></td>
-              <td></td>
+              <td>
+                <%= button_to admin_role_role_user_path(role_id: role_user.role_id, id: role_user.id), method: :delete, class: "btn btn-sm btn-danger" do -%>
+                  <%= t("form.remove") -%>
+                <% end %>
+              </td>
             </tr>
           <% end %>
         </tbody>
