@@ -10,3 +10,4 @@ zh-CN:
         title: "新建角色"
       edit:
         title: "编辑角色：%{role_name}"
+        user_ids_placeholder: "输入邮箱以搜索用户"

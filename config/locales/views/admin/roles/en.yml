@@ -10,3 +10,4 @@ en:
         title: "Create role"
       edit:
         title: "Edit role：%{role_name}"
+        user_ids_placeholder: "Type an email to search users"
