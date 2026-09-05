@@ -6,3 +6,4 @@ en:
         profile: "Profile"
         password: "Password"
         logout: "Logout"
+        login: "Login"

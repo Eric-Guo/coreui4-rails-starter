@@ -1,16 +1,23 @@
-<div class="dropdown-header bg-body-tertiary py-2">
-  <div class="fw-semibold"><%= current_user&.email -%></div>
-</div>
-<%= link_to account_profile_path, class: "dropdown-item" do %>
-  <%= svg_icon('free.svg#cil-user', %w[icon me-2]) %>
-  <%= t('.profile') -%>
-<% end %>
-<div class="dropdown-divider"></div>
-<%= link_to edit_user_registration_path, class: "dropdown-item" do %>
-  <%= svg_icon('free.svg#cil-lock-unlocked', %w[icon me-2]) %>
-  <%= t('.password') -%>
-<% end %>
-<%= button_to destroy_user_session_path, method: :delete, class: "dropdown-item" do %>
-  <%= svg_icon('free.svg#cil-account-logout', %w[icon me-2]) %>
-  <%= t('.logout') -%>
+<% if current_user %>
+  <div class="dropdown-header bg-body-tertiary py-2">
+    <div class="fw-semibold"><%= current_user.email -%></div>
+  </div>
+  <%= link_to account_profile_path, class: "dropdown-item" do %>
+    <%= svg_icon('free.svg#cil-user', %w[icon me-2]) %>
+    <%= t('.profile') -%>
+  <% end %>
+  <div class="dropdown-divider"></div>
+  <%= link_to edit_user_registration_path, class: "dropdown-item" do %>
+    <%= svg_icon('free.svg#cil-lock-unlocked', %w[icon me-2]) %>
+    <%= t('.password') -%>
+  <% end %>
+  <%= button_to destroy_user_session_path, method: :delete, class: "dropdown-item" do %>
+    <%= svg_icon('free.svg#cil-account-logout', %w[icon me-2]) %>
+    <%= t('.logout') -%>
+  <% end %>
+<% else %>
+  <%= link_to new_user_session_path, class: "dropdown-item" do %>
+    <%= svg_icon('free.svg#cil-arrow-circle-right', %w[icon me-2]) %>
+    <%= t('.login') -%>
+  <% end %>
 <% end %>
