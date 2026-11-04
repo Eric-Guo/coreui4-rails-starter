@@ -3,6 +3,8 @@ image: "ruby:3.1"
 
 variables:
   RAILS_ENV: test
+  HEADLESS: "1"
+  SE_CHROMEDRIVER: /usr/bin/chromedriver
   CACHE_FALLBACK_KEY: "$CI_COMMIT_REF_SLUG"
 
 before_script:
@@ -10,6 +12,14 @@ before_script:
   - curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
   - bash nodesource_setup.sh
   - apt-get install -y nodejs
+
+  # Install a matching browser and driver without Selenium Manager downloads.
+  - apt-get install -y chromium chromium-driver
+  # Chromium runs as root in the CI container with limited shared memory.
+  - |
+    cat > /etc/chromium.d/ci <<'EOF'
+    CHROMIUM_FLAGS="$CHROMIUM_FLAGS --no-sandbox --disable-dev-shm-usage"
+    EOF
 
   # Install Pnpm
   - npm config set registry https://registry.npmmirror.com/ --global
@@ -20,6 +30,8 @@ before_script:
   - pnpm -v
   - ruby -v
   - which ruby
+  - chromium --version
+  - chromedriver --version
 
   # Setup Bundler
   - gem install bundler --no-document
