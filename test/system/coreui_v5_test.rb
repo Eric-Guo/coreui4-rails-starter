@@ -1,13 +1,6 @@
 require "application_system_test_case"
-require "warden/test/helpers"
 
 class CoreuiV5Test < ApplicationSystemTestCase
-  include Warden::Test::Helpers
-
-  teardown do
-    Warden.test_reset!
-  end
-
   test "theme and sidebar controls work" do
     visit root_path
 
@@ -37,7 +30,6 @@ class CoreuiV5Test < ApplicationSystemTestCase
     find("a[data-controller='modal'][href$='/edit']", match: :first).click
     assert_selector "#coreuiModal.show [data-controller='selectizes'] .selectize-control"
 
-    sleep 0.5
     find("#coreuiModal .btn-close").click
     assert_no_selector "#coreuiModal.show"
     assert_selector "[data-controller='datatables'] tbody tr", minimum: 1

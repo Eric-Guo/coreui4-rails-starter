@@ -1,45 +1,25 @@
 ---
-image: "ruby:3.1"
+image: cimg/ruby:4.0.9-browsers
 
 variables:
   RAILS_ENV: test
   HEADLESS: "1"
-  SE_CHROMEDRIVER: /usr/bin/chromedriver
   CACHE_FALLBACK_KEY: "$CI_COMMIT_REF_SLUG"
 
 before_script:
-  # Setup Node.js
-  - curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
-  - bash nodesource_setup.sh
-  - apt-get install -y nodejs
-
-  # Install a matching browser and driver without Selenium Manager downloads.
-  - apt-get install -y chromium chromium-driver
-  # Chromium runs as root in the CI container with limited shared memory.
+  - bundle config set path 'vendor' # Install dependencies into ./vendor/ruby
   - |
-    cat > /etc/chromium.d/ci <<'EOF'
-    CHROMIUM_FLAGS="$CHROMIUM_FLAGS --no-sandbox --disable-dev-shm-usage"
-    EOF
-
-  # Install Pnpm
-  - npm config set registry https://registry.npmmirror.com/ --global
-  - npm install --global pnpm
-
-  # Verify installations
-  - node -v
-  - pnpm -v
-  - ruby -v
-  - which ruby
-  - chromium --version
-  - chromedriver --version
-
-  # Setup Bundler
-  - gem install bundler --no-document
-  - bundle config set path 'vendor'  # Install dependencies into ./vendor/ruby
-  - bundle install --jobs $(nproc)
-
-  # Install JavaScript dependencies
-  - pnpm install --frozen-lockfile
+    if ! command -v pnpm >/dev/null; then
+      if command -v corepack >/dev/null; then
+        corepack enable
+        corepack prepare pnpm@11.25.0 --activate
+      elif command -v npm >/dev/null; then
+        npm install -g pnpm@11.25.0
+      else
+        echo 'pnpm is required but neither corepack nor npm is available.' >&2
+        exit 1
+      fi
+    fi
 
 stages:
   - test
@@ -53,6 +33,8 @@ test:
       paths:
         - vendor/ruby
   script:
+    - bundle install -j $(nproc)
+    - pnpm install --frozen-lockfile
     - bundle exec standardrb
     - bin/rails db:drop RAILS_ENV=test
     - bin/rails db:setup RAILS_ENV=test
