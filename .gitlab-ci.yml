@@ -4,6 +4,7 @@ image: cimg/ruby:4.0.9-browsers
 variables:
   RAILS_ENV: test
   HEADLESS: "1"
+  SE_CHROMEDRIVER: /usr/local/bin/chromedriver
   CACHE_FALLBACK_KEY: "$CI_COMMIT_REF_SLUG"
 
 before_script:
@@ -20,6 +21,20 @@ before_script:
         exit 1
       fi
     fi
+  - |
+    # Match the image's Chrome build and bypass Selenium Manager's runtime downloads.
+    chrome_version=$(google-chrome --product-version)
+    driver_version=$(curl --fail --silent --show-error --location --retry 3 \
+      "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_${chrome_version%.*}")
+    driver_dir=$(mktemp -d)
+    curl --fail --silent --show-error --location --retry 3 \
+      "https://storage.googleapis.com/chrome-for-testing-public/${driver_version}/linux64/chromedriver-linux64.zip" \
+      --output "$driver_dir/chromedriver.zip"
+    unzip -q "$driver_dir/chromedriver.zip" -d "$driver_dir"
+    sudo install -m 0755 "$driver_dir/chromedriver-linux64/chromedriver" "$SE_CHROMEDRIVER"
+    rm -rf "$driver_dir"
+    google-chrome --version
+    chromedriver --version
 
 stages:
   - test
