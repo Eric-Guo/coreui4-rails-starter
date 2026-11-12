@@ -53,4 +53,22 @@ class AdminUsersTest < ApplicationSystemTestCase
     end
     assert_equal roles(:role_staff, :role_intern, :role_guest).map(&:id).sort, @user.reload.roles.ids.sort
   end
+
+  test "the user table reloads after a slow save completes" do
+    # Ensure the old dismiss-on-click behavior reloads the table before the update.
+    delay_update = -> { sleep 0.5 }
+    Admin::UsersController.before_action delay_update, only: :update
+
+    find("a[href='#{edit_admin_user_path(@user)}']").click
+    within "#coreuiModal.show" do
+      select "English", from: "user_preferred_language"
+      find("input[type='submit']").click
+    end
+
+    assert_no_selector "#coreuiModal.show"
+    assert_selector "tbody tr", text: /#{Regexp.escape(@user.email)}.*en/m
+    assert_equal "en", @user.reload.preferred_language
+  ensure
+    Admin::UsersController.skip_before_action delay_update
+  end
 end

@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import { Modal } from "@coreui/coreui-pro"
-import { get } from "@rails/request.js"
+import { FetchRequest, get } from "@rails/request.js"
 
 export default class extends Controller {
   static values = {
@@ -27,5 +27,25 @@ export default class extends Controller {
       }
     })
     e.preventDefault()
+  }
+
+  async submit(event) {
+    event.preventDefault()
+    if (this.submitting) return
+
+    this.submitting = true
+    const submitter = event.submitter
+    if (submitter) submitter.disabled = true
+
+    try {
+      const request = new FetchRequest(this.element.method, this.element.action, {
+        body: new FormData(this.element)
+      })
+      const response = await request.perform()
+      if (response.ok) Modal.getInstance(this.element.closest(".modal"))?.hide()
+    } finally {
+      this.submitting = false
+      if (submitter) submitter.disabled = false
+    }
   }
 }

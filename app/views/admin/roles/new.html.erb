@@ -1,6 +1,6 @@
 <div class="modal-dialog">
   <div class="modal-content">
-    <%= form_with model: @role, url: admin_roles_path do |f| %>
+    <%= form_with model: @role, url: admin_roles_path, data: {controller: "modal", action: "submit->modal#submit"} do |f| %>
       <div class="modal-header">
         <h5 class="modal-title"><%= t(".title") -%></h5>
         <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <%= f.submit t('form.create'), class: 'btn btn-primary', data: {'coreui-dismiss': :modal} %>
+        <%= f.submit t('form.create'), class: 'btn btn-primary' %>
         <button class="btn btn-secondary" type="button" data-coreui-dismiss="modal"><%= t("form.close") -%></button>
       </div>
     <% end %>
