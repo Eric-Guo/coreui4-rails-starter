@@ -6,7 +6,7 @@ gem "rbs", "< 4.2" # require by Ruby 3.2
 gem "parallel", "< 2.0"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
-gem "rails", "~> 7.2.3.1"
+gem "rails", "~> 7.2.4"
 gem "minitest", "< 6" # rails 7.2 not support minitest 6.0.1
 
 gem "propshaft"
