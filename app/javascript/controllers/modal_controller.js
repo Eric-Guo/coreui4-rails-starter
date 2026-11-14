@@ -16,12 +16,13 @@ export default class extends Controller {
           htmlContent.innerHTML = result
           const modal = Modal.getOrCreateInstance(htmlContent)
           modal.show()
-          htmlContent.addEventListener("hidden.coreui.modal", () => {
+          htmlContent.addEventListener("hide.coreui.modal", () => {
             if (this.pageReloadValue) {
               location.reload()
-            } else {
-              this.dispatch("reloadDT", { detail: {}, target: document })
             }
+          }, { once: true })
+          htmlContent.addEventListener("hidden.coreui.modal", () => {
+            this.dispatch("reloadDT", { detail: {}, target: document })
           }, { once: true })
         })
       }
