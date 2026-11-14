@@ -5,8 +5,8 @@
   "dependencies": {
     "@babel/core": "^7.29.13",
     "@babel/plugin-transform-runtime": "^7.29.7",
-    "@babel/preset-env": "^7.29.7",
-    "@babel/runtime": "^7.29.13",
+    "@babel/preset-env": "^7.29.14",
+    "@babel/runtime": "^7.29.14",
     "@coreui/chartjs": "^4.2.0",
     "@coreui/coreui-pro": "^5.29.2",
     "@coreui/icons": "^3.1.0",
