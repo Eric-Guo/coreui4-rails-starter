@@ -24,7 +24,7 @@
     "datatables.net": "^1.13.11",
     "datatables.net-bs5": "^1.13.11",
     "date-fns": "^2.30.0",
-    "jquery": "^3.7.1",
+    "jquery": "^3.8.0",
     "mini-css-extract-plugin": "^2.10.2",
     "sass": "^1.108.2",
     "sass-loader": "^13.3.3",
