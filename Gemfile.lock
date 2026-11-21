@@ -123,7 +123,7 @@ GEM
     config (5.6.1)
       deep_merge (~> 1.2, >= 1.2.1)
       ostruct
-    connection_pool (3.0.2)
+    connection_pool (2.5.5)
     crass (1.0.8)
     date (3.6.0)
     debug (1.11.1)
@@ -174,7 +174,6 @@ GEM
     meta-tags (2.24.0)
       actionpack (>= 6.0.0)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     minitest (5.27.0)
     net-imap (0.6.8)
       date
@@ -193,14 +192,7 @@ GEM
       logger
       openssl (>= 3.2.0)
     nio4r (2.7.5)
-    nokogiri (1.19.7)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
-    nokogiri (1.19.7-aarch64-linux-gnu)
-      racc (~> 1.4)
     nokogiri (1.19.7-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.19.7-x86_64-linux-gnu)
       racc (~> 1.4)
     openssl (4.0.2)
     orm_adapter (0.5.0)
@@ -329,11 +321,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    sqlite3 (2.10.2)
-      mini_portile2 (~> 2.8.0)
-    sqlite3 (2.10.2-aarch64-linux-gnu)
     sqlite3 (2.10.2-arm64-darwin)
-    sqlite3 (2.10.2-x86_64-linux-gnu)
     sshkit (1.25.1)
       base64
       logger
@@ -381,11 +369,9 @@ GEM
     zeitwerk (2.8.3)
 
 PLATFORMS
-  aarch64-linux
   arm64-darwin-23
   arm64-darwin-24
   arm64-darwin-25
-  x86_64-linux
 
 DEPENDENCIES
   ajax-datatables-rails

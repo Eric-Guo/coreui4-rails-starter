@@ -4,6 +4,20 @@ require "warden/test/helpers"
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   include Warden::Test::Helpers
 
+  module ChromeResetFallback
+    def reset!
+      super
+    rescue Selenium::WebDriver::Error::InvalidArgumentError => error
+      raise unless error.message.include?("invalid argument: * is not a valid URL")
+
+      # Chrome 158 rejects Capybara 3.40's wildcard storage reset.
+      # Closing the session gives the next test a clean browser profile.
+      quit
+    end
+  end
+
+  Capybara::Selenium::Driver::ChromeDriver.prepend(ChromeResetFallback)
+
   teardown do
     Warden.test_reset!
   end
