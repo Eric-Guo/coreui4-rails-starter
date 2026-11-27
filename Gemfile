@@ -6,7 +6,7 @@ gem "rbs", "< 4.2" # require by Ruby 3.2
 gem "parallel", "< 2.0"
 
 # bundle config local.rails /Users/guochunzhong/git/oss/rails
-gem "rails", "~> 7.2.4"
+gem "rails", "~> 8.0.5", ">= 8.0.5.2"
 gem "minitest", "< 6" # rails 7.2 not support minitest 6.0.1
 
 gem "propshaft"
@@ -54,7 +54,7 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  gem "web-console", ">= 4.3.0"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
